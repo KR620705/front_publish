@@ -1,0 +1,231 @@
+.clfix {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+}
+
+.none {
+  display: none;
+}
+
+.hide {
+    position: absolute !important;
+    left: -9999px;
+}
+
+.no-pd {
+  padding: 0 !important;
+}
+
+.ellipsis {
+  display: block;
+  width: 100%;
+  padding: 0 1rem;
+  word-break: keep-all;
+  @include ellipsis();
+}
+
+textarea:focus,
+input:focus {
+  border-color: #c66;
+}
+
+//== element
+.js-menu-opener {
+  min-width: inherit !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 0 !important;
+
+  .menu-opener {
+    position: relative;
+    width: 22px;
+  }
+
+  span {
+    position: relative;
+    top: 0;
+    display: block;
+    height: 3px;
+    margin-bottom: 3px;
+    opacity: 1;
+    background-color: #333333;
+    transform: rotate(0deg);
+    transition: all .1s ease;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover span {
+    background-color: $danger-color;
+  }
+}
+
+//== sidemenu open
+.aside-open .js-menu-opener {
+  span {
+    &:first-child {
+      position: absolute;
+      top: 2px;
+      width: 26px;
+      transform: rotate(-45deg);
+    }
+    &:last-child {
+      position: absolute;
+      top: 2px;
+      width: 26px;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  }
+}
+
+
+//== form
+input, select, textarea, .inputbox {
+  background: #fff;
+}
+
+//input text, input password, input number, input email, input search
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {
+  min-width: 120px;
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #e6e6e6;
+
+  &:disabled {
+      color: #888;
+      background: #f3f3f3;
+  }
+}
+
+//checkbox & radio
+input[type="radio"], input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+
+  & + span{
+      display: inline-block;
+      position: relative;
+      padding-left: 28px;
+      min-height: 22px;
+      color: #767572;
+      user-select: none;
+      cursor: pointer;
+      line-height: 22px;
+      font-size: 14px;
+      vertical-align: top;
+
+  }
+}
+
+//input checkbox
+input[type="checkbox"] + span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/form_chk.png") no-repeat 0 0;
+  background-position-y: 0;
+}
+input[type="checkbox"]:checked + span:before {
+  background-position-y: -25px;
+}
+input[type="checkbox"]:disabled + span:before {
+  background-position-y: -50px;
+}
+input[type="checkbox"]:disabled:checked + span:before {
+  background-position-y: -75px;
+}
+
+//input radio
+input[type="radio"] + span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/form_rdo.png") no-repeat 0 0;
+  background-position-y:0;
+}
+input[type="radio"]:checked + span:before {
+  background-position-y: -25px;
+}
+input[type="radio"]:disabled + span:before {
+  background-position-y: -50px;
+}
+input[type="radio"]:disabled:checked + span:before {
+  background-position-y: -75px;
+}
+
+//input button
+input[type="button"] {
+  cursor: pointer;
+}
+
+//select
+select::-ms-expand {
+  display: none;
+}
+.selectbox {
+  display: inline-block;
+  position: relative;
+  min-width: 120px;
+  width: 100%;
+  height: 36px;
+  
+  &:before {
+      content: '';
+      position: absolute;
+      top: 17px;
+      right: 17px;
+      width: 11px;
+      height: 6px;
+      margin-top: -1px;
+      background: url('../images/common/form_select.png') no-repeat 0 0;
+  }
+  
+  select {
+      width: 100%;
+      height: 100%;
+      padding-left: 10px;
+      padding-right: 40px;
+      border: 1px solid #e6e6e6;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      option:checked, option:hover {
+          padding-left: 20px;
+          padding-right: 30px;
+      }
+  }
+  
+  &.open:before {
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+  }
+}
+
+//textarea
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  resize: none;
+}

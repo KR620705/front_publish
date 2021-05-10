@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "font/font.css";
+
+/* setting & util */
+@import "mixins/breakpoints";
+@import "mixins/module";
+@import "mixins/scrollbars";
+@import "mixins/prefix";
+
+@import "config/variables";
+@import "config/transition";
+@import "config/reset";
+@import "config/common";
+
+/*-------------------- 기본 layout ---------- */
+@import "base/layout";
+@import "base/header";
+@import "base/footer";
+@import "base/sidemenu";
+
+/*-------------------- 요소 Elements --------------------*/
+//@import "component/modal";
+//@import "component/table";
+//@import "component/pagination";
+@import "component/button";
+@import "component/text";
+@import "component/thumblist";
+
+/*-------------------- page --------------------*/
+//@import "views/landing"; //시작페이지
+//@import "views/auth"; // 로그인
+//@import "views/agree"; // 회원가입
+//@import "views/check-user"; // 사용자선택
+//@import "views/check-category"; // 선호 카테고리 선택
+//@import "views/dashboard"; // home
+@import "views/main"; //메인
+
+/*-------------------- spacing --------------------*/
+// @import 'config/spacing';

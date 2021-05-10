@@ -1,0 +1,36 @@
+// Variables
+$header-height: 80px;
+$header-mb-height: 45px;
+$footer-mb-height: 24px;
+
+$primary-color: #006699 !default;
+$secondary-color: #6c757d !default;
+$success-color: #198754 !default;
+$danger-color: #cc6666 !default;
+$warning-color: #fcb941 !default;
+$info-color: #0dcaf0 !default;
+$light-color: #f8f9fa !default;
+$dark-color: #212529 !default;
+$hover-color: #000 !default;
+$white-color: #fff !default;
+
+$header-index: 3;
+
+$breakpoints: (
+	xs: 480px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1000px,
+	xxl: 1600px,
+	xlst: 1920px
+);
+
+$max-breakpoints: (
+	xs: 479px,
+	sm: 575px,
+	md: 767px,
+	lg: 991px,
+	xl: 1000px,
+	xxl: 1599px
+);

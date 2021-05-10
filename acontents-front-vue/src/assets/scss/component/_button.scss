@@ -1,0 +1,49 @@
+/* button */
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 48px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: top;
+  
+  &.round {
+      height: 25px;
+      line-height: 23px;
+      padding: 0 1rem;
+      background: #fff;
+      color: #000;
+      font-size: 1rem;
+      border-radius: 0.923rem;
+  }
+  
+  &.arrow {
+      height: auto;
+      line-height: 1.2;
+      padding: 0 0.769rem 0 0;
+      background:  url("../images/common/btn_arrow_gray.png") no-repeat 100% 55% /0.462rem;
+      color: #B3B3B3;
+      font-size: 0.846rem;
+  }
+
+  &.plus {
+      height: auto;
+      line-height: 1.2;
+      padding: 0 1.538rem 0 0;
+      background:  url("../images/common/btn_plus.png") no-repeat 100% 55% /0.769rem;
+      font-size: 1rem;
+      font-weight: 600;
+  }
+
+  &:disabled {
+    background: #6e6e6e !important;
+    cursor: default;
+  }
+
+  @include prefix(transition, all 0.35s ease-out, webkit moz ms o);
+}
+
+

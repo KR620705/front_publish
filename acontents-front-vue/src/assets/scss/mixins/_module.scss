@@ -1,0 +1,14 @@
+// Typography ellipsisis
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+// Use @include ellipsis()
+
+@mixin floatclear() {
+  content: "";
+  display:block;
+  clear:both;
+}

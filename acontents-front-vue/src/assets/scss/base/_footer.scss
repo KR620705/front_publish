@@ -1,0 +1,29 @@
+.footer {
+  position: relative;
+  margin-top: 3.077rem;
+  background: #1D1D1D;
+
+  .inner {
+      padding: 2rem 20px 3.615rem;
+
+      .info a {
+          display: inline-block;
+          padding: 0 1rem;
+          color: #fff;
+          font-size: 1rem;
+          border-left: 1px solid #727272;
+      }
+
+      .info a:first-child {
+          padding-left: 0;
+          border-left: none;
+      }
+
+      .copyright {
+          margin-top: 2rem;
+          color: #727272;
+          font-size: 0.923rem;
+
+      }
+  }
+}

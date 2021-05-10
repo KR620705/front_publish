@@ -1,0 +1,38 @@
+// side menu
+
+$aside-width: 250px;
+.sidemenu {
+  position: fixed;
+  left: -$aside-width;  top:0; bottom: 0;
+  z-index: $header-index - 1;
+  transition: left .3s ease;
+
+  .mask {
+    display: none;
+    position: fixed;
+    left: 0; right: 0; top:0; bottom: 0;
+    background-color: rgba(0,0,0,.2);
+  }
+
+  &-body {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: $header-mb-height;
+    width: $aside-width;
+    height: 100vh;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @include scrollbars(5px, #999, #eee);
+  }
+}
+
+//== sidemenu open
+.aside-open .sidemenu {
+  left: 0; right: 0; top:0; bottom: 0;
+
+  .mask {
+    display: block;
+  }
+}

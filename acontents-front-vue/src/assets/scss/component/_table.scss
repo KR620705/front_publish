@@ -1,0 +1,20 @@
+table {
+  background-color: #fff;
+
+  thead th {
+    background: rgba(0,0,0,.05);
+  }
+
+  tbody {
+    th {
+      background: #F2F2F2;
+    }
+    tr:nth-child(2n) {
+      background: rgba(0,0,0,.02);
+    }
+
+    tr:hover {
+      background: #f7fafc;
+    }
+  }
+}
