@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no, email=no, address=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/common/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/css-library.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript" src="js/jquery-library.js"></script>
+	<title>A-Content : INDEX URL</title>
+	<style>
+		*{margin:0;padding:0;}
+		html, body {height: auto;background-color:#fff;font-weight:200;}
+		dl,ul,ol,menu,li {list-style:none}
+		img {border:0 none;vertical-align:top;}
+		table {border-collapse:collapse;border-spacing:0}
+		a {text-decoration:none;border-collapse:separate;color:#666;}
+		label {cursor:pointer;}
+		p { word-wrap:break-word; word-break:break-all;}
+		textarea {resize:none; }
+		#wrap {margin:0;padding:0;}
+		h2 {position:relative;padding:5px 0 5px 10px;font-size:14px;line-height:30px;font-weight:bold; cursor:pointer;}
+		h2 span {font-size:11px;font-weight:normal;}
+		h2 .enddate {position:absolute;top:12px;right:10px;display:inline-block;color:#888;text-align:right;font-size:12px;line-height:24px;}
+		.sti {border-top:2px solid #585858;color:#333;background-color:#f7f7f7;}
+		.header {padding:20px;line-height:1.1;font-size:14px;background-color:#fff;border-bottom:1px solid #585858;text-align:center; }
+		.folderbox {display:none;padding:0 10px 20px 10px;}
+		.folderbox:after {content:" ";display:block;clear:both;}
+		.folderbox dl {width:500px;}
+		.folderbox dl dt {float:left;display:inline-block;width:40%;}
+		.folderbox dl dd {float:left;display:inline-block;width:60%;}
+		.tabletype {width:100%;}
+		.tabletype table {width:100%;table-layout:fixed;color:#555;border:1px solid #e4e4e4;}
+		.tabletype table th {padding:5px 0;background:#f6f6f6;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;font-size:12px;}
+		.tabletype table th.l {padding:0 0 0 5px;text-align:left;}
+		.tabletype table td {padding:4px 4px 4px 4px;color:#000;text-align:center;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;vertical-align:top;font-size:12px;}
+		.tabletype table td.l {text-align:left;}
+		.tabletype table td.r {text-align:right;}
+		.tabletype table td.m {vertical-align:middle;}
+		.lstype {width:100%;border-top:1px solid #585858;}
+		.lstype ul li {position:relative;padding:5px;border-bottom:1px solid #ccc;line-height:22px;font-size:12px;}
+		.lstype ul li dl {width:100%;}
+		.lstype ul li dl:after {content:" ";display:block;clear:both;}
+		.lstype ul li dl dt {position:relative;float:left;padding-top:10px;width:14%;}
+		.lstype ul li dl dd {position:relative;float:left;width:86%;}
+		.lstype ul li dl dd a {position:relative;display:inline-block;margin-top:1px;padding:3px 125px 3px 75px;width:100%;line-height:16px;box-sizing:border-box;}
+		.lstype ul li dl dd dl {padding:10px 0;border-top:1px solid #ddd;}
+		.lstype ul li dl dd dl:first-child {border-top:none;}
+		.lstype ul li dl dd dl dt {padding-top:0;width:15%;}
+		.lstype ul li dl dd dl dd {width:85%;}
+		.enddate {position:absolute;top:0;right:5px;display:inline-block;color:#91a812;text-align:right;font-size:12px;line-height:24px;}
+		.modifydate {position:absolute;top:0;right:60px;display:inline-block;color:#ff6913;text-align:right;font-size:12px;line-height:24px;}
+		.pubdate {position:absolute;top:0;left:0;display:inline-block;color:#888;text-align:left;font-size:12px;line-height:20px;}
+		.bar0 {background-color:none;}
+		.bar1 {background-color:#f1f1f1;}
+		.bar2 {background-color:#ffeade;}
+		.bar3 {background-color:#faffdd;}
+		.bar4 {background-color:#f0f1ff;}
+		.bar5 {background-color:#fef0ff;}
+		.barx{background-color:#fff;}
+		.txt_blue {color:#2465ec;}
+		.txt_white {color:#fff;}
+		.htmlprocess {padding:0 10px;}
+		.htmlprocess .htmlprocess_tit {padding:5px;background:#777; color:#fff; font-weight:bold;margin-top:10px;}
+		.htmlprocess table {width: 100%; font-size:13px; margin-bottom:30px;}
+		.htmlprocess table th {border:1px solid #ccc; background:#eee;}
+		.htmlprocess table td {border:1px solid #ccc; text-align:right; padding:2px 5px 1px 5px;}
+		.htmlprocess .processbar {display:block;margin:5px;height:20px;background-color:rgba(0, 199, 240, 0.1);text-align:left;}
+		.htmlprocess .processbar span {display:inline-block;height:20px;background-color:#fb53ab;}
+		.fin {border-radius:2px;background-color:rgba(0, 0, 0, .1);}
+		.fin.end {background-color:#dbd9d6;}
+		.del {text-decoration:line-through;}
+		.htmlprocess .htmlprocess_tit {background:#777; color:#fff; font-weight:bold;margin-top:20px; }
+		.htmlprocess table {width: 100%; font-size:13px; margin-top:10px; margin-bottom:30px;}
+		.htmlprocess table th {border:1px solid #ccc; background:#eee;}
+		.htmlprocess table td {border:1px solid #ccc; text-align:right; padding:2px 5px 1px 0;}
+		.nav {position:-webkit-sticky;position:sticky;top:0;width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#fff;text-align:center;z-index:1;}
+		.nav a {position:relative;display:inline-block;width:13.5%;line-height:40px;}
+		.nav a:before {content:"";position:absolute;top:16px;left:0;width:1px;height:10px;background-color:#ccc;}
+		.nav a:first-child:before {display:none;}
+	</style>
+	<script type="text/javascript">
+	//<![CDATA[
+		$(function(){
+			$(".lstype").hide(0);
+			$(".lstype2").slideDown(800);
+			$(".lstype3").slideDown(800);
+			$(".sti").click(function(){
+				if( $(this).next("div").css('display') == 'none' ){
+					$(this).next("div").slideDown(400);
+				}else{
+					$(this).next("div").slideUp(400);
+				}
+			});
+			$(".folderbox").slideUp(0);
+			$(".foldersti").click(function(){
+				if( $(".folderbox").css('display') == 'none' ){
+					$(".folderbox").slideDown(400);
+				}else{
+					$(".folderbox").slideUp(400);
+				}
+			});
+			$(".nav a").click(function(){
+				var $this = $(this).attr("href");
+				$("html, body").animate({"scrollTop": ( $($this).offset().top-$(".nav").outerHeight()+2 ) });
+			});
+			$('.fin').each(function(){
+				if ( $(this).find(".enddate").text() != "" ){
+					$(this).addClass("end");
+				}
+			});
+			$(".guide").click(function(){
+				if ( $(this).hasClass("active") ){
+					$(".sample").slideUp();
+					$(this).removeClass("active")
+				}else{
+					$(".sample").slideDown();
+					$(this).addClass("active")
+				}
+			})
+		});
+	//]]>
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div class="header">
+		<h1>A-Content<br>INDEX URL</h1>
+	</div>
+	<h2 class="foldersti">- 폴더 네이밍<span> : 실제 작업 시 변경 될 수 있습니다.</span></h2>
+	<div class="folderbox">
+		<div class="tabletype">
+			<table summary="">
+				<caption></caption>
+				<colgroup>
+					<col width="25%" />
+					<col width="38%" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>시스템</th>
+						<th>분류</th>
+						<th>폴더명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="7" class="l">publish/</td>
+						<td class="l">공통파일(header, footer, gnb)</td>
+						<td class="l">/html/common/</td>
+					</tr>
+					<tr>
+						<td class="l">페이지</td>
+						<td class="l">/html/</td>
+					</tr>
+					<tr>
+						<td class="l">기타</td>
+						<td class="l">/etc/</td>
+					</tr>
+
+					<tr>
+						<td class="l">css</td>
+						<td class="l">/css/</td>
+					</tr>
+					<tr>
+						<td class="l">js</td>
+						<td class="l">/js/</td>
+					</tr>
+					<tr>
+						<td class="l">img</td>
+						<td class="l">/img/</td>
+					</tr>
+					<tr>
+						<td class="l">font</td>
+						<td class="l">/font/</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<h2 class="sti sti2">- pc</h2>
+	<div class="htmlprocess">
+		<script type="text/javascript">
+			$(function(){
+//				var totalfile = $(".frontlist dd > a").length - $(".frontlist dd > a.del").length;
+				var totalfile = $(".frontlist dd > a").length;
+				var finfile =0;
+				$(".frontlist dd > a .enddate").each(function(){
+					if ( $(this).text() != "" ){
+						finfile++;
+					}
+				});
+//				finfile-=1;
+				console.log(finfile);
+				var ingfile =totalfile-finfile
+				var processper=(finfile / totalfile) * 100;
+				$(".totalfile").text(totalfile);
+				$(".finfile").text(finfile);
+				$(".ingfile").text(ingfile);
+				$(".processper").text(processper.toFixed(3)+' %'); // 소수자리 지정
+				$(".processbar span").css({"width":+processper+"%"});
+			})
+		</script>
+
+		<p class="htmlprocess_tit">HTML 작업공정률</p>
+		<table>
+			<colgroup><col width="25%"><col width="25%"><col width="25%"><col width="25%"></colgroup>
+			<tr>
+				<th>파일수</th>
+				<th>완료</th>
+				<th>대기</th>
+				<th>작업률</th>
+			</tr>
+			<tr>
+				<td class="totalfile"></td>
+				<td class="finfile"></td>
+				<td class="ingfile"></td>
+				<td class="processper"></td>
+			</tr>
+			<tr>
+				<td colspan="4"><span class="processbar"><span></span></span></td>
+			</tr>
+		</table>
+	</div>
+	<div class="nav">
+		<a href="#Nav0">GUIDE</a>
+		<a href="#Nav1">전체공통</a>
+		<a href="#Nav3">메인</a>
+	</div>
+	<div class="lstype lstype2 frontlist">
+		<ul>
+			<li id="Nav0" class="bar0">
+				<dl>
+					<dt class="guide">GUIDE</dt>
+					<dd>
+						<dl>
+							<dt>&nbsp;</dt>
+							<dd>
+								<span class="pubdate">예정일</span><span class="modifydate">수정일(수정날짜로 주석처리)</span><span class="enddate">완료일</span><br>
+								<a href="./style_guide.html" target="_blank" class="">style_guide <span class="modifydate"></span> <span class="enddate">-</span></a><br>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+
+			<li id="Nav1" class="bar5">
+				<dl>
+					<dt>전체공통</dt>
+					<dd>
+						<dl>
+							<dt>&nbsp;</dt>
+							<dd>
+								<a href="./html/common/header.html" target="_blank" class="fin"><span class="pubdate"></span>header - 로그인 전 <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<a href="./html/common/header_login.html" target="_blank" class="fin">header - 로그인 후 <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<br>
+								<a href="./html/common/footer.html" target="_blank" class="fin"><span class="pubdate"></span>footer <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<br>
+								<a href="./html/common/loadding.html" target="_blank" class="fin"><span class="pubdate"></span>로딩중 <span class="modifydate"></span> <span class="enddate"></span></a><br>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+
+			<li id="Nav3" class="bar2">
+				<dl>
+					<dt>페이지</dt>
+					<dd>
+						<dl>
+							<dt>메인</dt>
+							<dd>
+								<a href="./html/main/main.html" target="_blank" class="fin"><span class="pubdate"></span>메인<br> <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<a href="./html/main/.html" target="_blank" class="fin"><span class="pubdate"></span>메인 팝업<br> <span class="modifydate"></span> <span class="enddate"></span></a><br>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2depth</dt>
+							<dd>
+								<a href="./html/sub/sub.html" target="_blank" class="fin"><span class="pubdate"></span>3depth<br> <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<a href="./html/sub/.html" target="_blank" class="fin"><span class="pubdate"></span>3depth <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<br>
+								<a href="./html/sub/.html" target="_blank" class="fin"><span class="pubdate"></span>3depth <span class="modifydate"></span> <span class="enddate"></span></a><br>
+							</dd>
+						</dl>
+						<dl>
+							<dt>2depth</dt>
+							<dd>
+								<a href="./html/sub/.html" target="_blank" class="fin"><span class="pubdate"></span>3depth<br> <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<a href="./html/sub/.html" target="_blank" class="fin"><span class="pubdate"></span>3depth <span class="modifydate"></span> <span class="enddate"></span></a><br>
+								<br>
+								<a href="./html/sub/.html" target="_blank" class="fin"><span class="pubdate"></span>3depth <span class="modifydate"></span> <span class="enddate"></span></a><br>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
