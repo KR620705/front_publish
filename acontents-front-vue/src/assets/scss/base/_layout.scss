@@ -1,24 +1,18 @@
 #wrap {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
-$space-contents: 30px;
 .container {
   position: relative;
-  min-height: calc(100vh - #{$header-mb-height} - #{$footer-mb-height});
-  padding-top: $header-mb-height;
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+  padding-top: $header-height;
 }
 
-.content {
-
-}
 
 /* width:768px */
 @media screen and (min-width:768px){
-  body{font-size:15px;}
 }
 
 /* width:1000 */
 @media screen and (min-width:1000px){
-  body{font-size:17px;}
 }

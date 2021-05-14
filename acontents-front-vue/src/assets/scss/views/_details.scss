@@ -1,0 +1,158 @@
+//video-wrap
+.video-wrap {
+    position: relative;
+
+    .inner {
+
+        &:empty:after {
+            content: "동영상 영역";
+            display: block;
+            width: 100%;
+            height: 18rem;
+            padding-top: 4rem;
+            background: #ccc;
+            color: $black-color;
+            font-size: 2rem;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+    .video-dim {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.7);
+
+        .btn-wrap {
+            position: absolute;
+            bottom: 1.8rem;
+            width: 100%;
+
+            .btn {
+                padding-left: 1.9rem;
+                padding-right: 1.9rem;
+            }
+        }
+    }
+}
+
+//detail-visual
+.detail-visual {
+    position: relative;
+    padding: 2rem 10px 0 10px;
+    overflow: hidden;
+
+    .titlearea {
+        .h3-title {
+            margin-top: 1.4rem;
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+    }
+    .tag {
+        margin-top: 1.385rem;
+    }
+    .year {
+        margin-top: 1rem;
+        color: #999;
+        font-size: 1.3rem;
+    }
+    .btns {
+        margin-top: 2.8rem;
+        text-align: center;
+
+        .btn {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 1rem;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 4rem;
+            text-indent: -9999px;
+
+            &.like {
+                background-image: url("../images/common/icon_like.png");
+                &.on{
+                    background-image: url("../images/common/icon_like_on.png");
+                }
+            }
+            &.share {
+                background-image: url("../images/common/icon_share.png");
+                &.on{
+                    background-image: url("../images/common/icon_share_on.png");
+                }
+            }
+            &.bookmark {
+                background-image: url("../images/common/icon_bookmark.png");
+                &.on{
+                    background-image: url("../images/common/icon_bookmark_on.png");
+                }
+            }
+        }
+    }
+    .desc {
+        margin-top: 2.5rem;
+        padding-top: 3rem;
+        color: $lightgray-color;
+        font-size: 1.3rem;
+        line-height: 1.7;
+        border-top: 1px solid #363636;
+    }
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        height: 3.2rem;
+        margin-top: 4rem;
+        padding: 0 20px;
+        background: #F6F6F6;
+        border-radius: 5px;
+
+        a {
+            position: relative;
+            margin-left: 1.6rem;
+            color: #191919;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #191919;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0.5rem;
+                left: -0.8rem;
+                width: 0.4rem;
+                height: 0.538rem;
+                background: url("../images/common/breadcrumb_arrow.png") no-repeat 0 50% /0.4rem;
+            }
+            &.home {
+                width: 2rem;
+                height: 2rem;
+                margin-left: 0;
+                background: url("../images/common/breadcrumb_home.png") no-repeat 0 50% /2rem;
+                border-bottom: 0;
+                text-indent: -9999px;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .caution {
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem 0.8rem 2rem;
+        background: #1D1D1D;
+        font-size: 1.2rem;
+        border-radius: 5px;
+
+        p {
+            color: $gray-color;
+            padding-left: 3.6rem;
+            font-weight: 200;
+            line-height: 1.4;
+            background: url("../images/common/icon_caution.png") no-repeat 0 50% /2.4rem;
+        }
+    }
+}

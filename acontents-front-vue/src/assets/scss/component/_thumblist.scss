@@ -1,11 +1,12 @@
 //thumb-list
 .thumb-list{
-    margin-top: 3.077rem;
+    margin-top: 4rem;
     padding: 0 10px;
 
     .titlearea {
         .h2-title {
-            padding-right: 4.615rem;
+            padding-right: 10rem;
+            font-size: 2.2rem;
         }
         .btn.arrow {
             position: absolute;
@@ -14,12 +15,12 @@
         }
     }
     .swiper-container {
-        margin-top: 0.846rem;
+        margin-top: 1.1rem;
     }
     .swiper-slide {
-        width: 10rem;
-        height: 10rem;
-        margin-right: 0.769rem;
+        width: 13rem;
+        height: 13rem;
+        margin-right: 1rem;
         border-radius: 5px;
         overflow: hidden;
 
@@ -30,7 +31,6 @@
             display: block;
         }
     }
-    
     .title {
         position: absolute;
         bottom: 0;
@@ -38,18 +38,14 @@
         display: flex;
         align-items: center;
         width: 100%;
-        height: 3.846rem;
-        padding: 0.538rem 0.462rem;
+        height: 5rem;
+        padding: 0.538rem 0.6rem;
         background: rgba(34,34,34,.5);
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.3rem;
 
         span {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            @include ellipsis2();
         }
     }
     
@@ -60,29 +56,79 @@
         
         .icon {
             display: inline-block;
-            width: 25px;
-            height: 25px;
+            width: 2.5rem;
+            height: 2.5rem;
             background-color: rgba(0,0,0,.7);
             background-repeat: no-repeat;
             background-position: 50% 50%;
             vertical-align: middle;
             border-radius: 5px;
+            
+            &.video {
+                background-image: url("../images/common/badge_video.png");
+                background-size: 1.1rem;
+            }
+            &.file {
+                background-image: url("../images/common/badge_file.png");
+                background-size: 1.1rem;
+            }
+            &.image {
+                background-image: url("../images/common/badge_image.png");
+                background-size: 1.7rem;
+            }
+            &.column {
+                background-image: url("../images/common/badge_column.png");
+                background-size: 1rem;
+            }
+            &.cart {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-image: url("../images/common/badge_cart.png");
+                background-size: 3.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
         }
-        .icon.video {
-            background-image: url("../images/common/icon_video.png");
-            background-size: 11px;
-        }
-        .icon.file {
-            background-image: url("../images/common/icon_file.png");
-            background-size: 11px;
-        }
-        .icon.image {
-            background-image: url("../images/common/icon_image.png");
-            background-size: 17px;
-        }
-        .icon.column {
-            background-image: url("../images/common/icon_column.png");
-            background-size: 13px;
+    }
+}
+
+//thumb-list.type-small
+.thumb-list.type-small {
+    margin-top: 3rem;
+    overflow: hidden;
+
+    .swiper-container {
+        overflow: visible;
+    }
+    .swiper-slide {
+        width: 10rem;
+        height: 10rem;
+        margin-right: 0.8rem;
+    }
+    .title {
+        height: 3.8rem;
+        font-size: 1rem;
+    }
+    .badge {
+        top: 4px;
+        right: 4px;
+        
+        .icon {
+            width: 1.9rem;
+            height: 1.9rem;
+            
+            &.video {
+                background-size: 0.8rem;
+            }
+            &.file {
+                background-size: 0.8rem;
+            }
+            &.image {
+                background-size: 1.3rem;
+            }
+            &.column {
+                background-size: 0.8rem;
+            }
         }
     }
 }
@@ -91,23 +137,23 @@
 .thumb-list.type-multiline {
 
     .swiper-container{
-        margin-bottom: -0.769rem;
-        margin-right: -0.769rem;
+        margin-bottom: -1rem;
+        margin-right: -10px;
 
         &:after {
             content: "";
             position: absolute;
             top: 0;
             right: 0;
-            width: 0.769rem;
+            width: 1rem;
             height: 100%;
-            background: #000;
+            background: $black-color;
             z-index: 1;
         }
     }
     .swiper-slide {
-        margin-right: 0.769rem;
-        margin-bottom: 0.769rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -115,29 +161,29 @@
 .thumb-list.type-one {
 
     .swiper-container {
-        margin-top: 1.231rem;
+        margin-top: 1.3rem;
         margin-left: -10px;
         margin-right: -10px;
     }
     .swiper-button-prev {
-        top: 1.308rem;
+        top: 1.7rem;
         left: 0;
         width: 11%;
-        height: 15.385rem;
+        height: 20rem;
         margin-top: 0;
-        background: url("../images/common/swiper_left.png") no-repeat 50% 50% /0.923rem;
+        background: url("../images/common/swiper_left.png") no-repeat 50% 50% /1.2rem;
         
         &:after {
             content: "";
         }
     }
     .swiper-button-next {
-        top: 1.308rem;
+        top: 1.7rem;
         right: 0;
         width: 11%;
-        height: 15.385rem;
+        height: 20rem;
         margin-top: 0;
-        background: url("../images/common/swiper_right.png") no-repeat 50% 50% /0.923rem;
+        background: url("../images/common/swiper_right.png") no-repeat 50% 50% /1.2rem;
         
         &:after {
             content: "";
@@ -146,7 +192,7 @@
     .swiper-slide {
         width: 70%;
         height: auto;
-        margin: 1.308rem 2% 0 2%;
+        margin: 1.7rem 2% 0 2%;
         border-radius: 0;
         
         .imgbox {
@@ -155,29 +201,26 @@
             overflow: hidden;
             
             img {
-                height: 15.385rem;
+                height: 20rem;
             }
         }
         .contentbox {
             display: none;
-            margin-top: 1rem;
+            margin-top: 1.6rem;
             color: #fff;
             text-align: center;
             
             .box-title {
-                line-height: 2.462rem;
-                font-size: 1.846rem;
+                line-height: 1.3;
+                font-size: 2.4rem;
             }
             .box-desc {
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                line-height: 1.385rem;
-                margin-top: 0.462rem;
-                font-size: 1rem;
+                line-height: 1.4;
+                margin-top: 0.4rem;
+                font-size: 1.3rem;
                 font-weight: 200;
-                text-overflow: ellipsis;
-                overflow: hidden;
+                
+                @include ellipsis2();
             }
         }
         
@@ -185,7 +228,7 @@
             margin-top: 0;
             
             .imgbox img {
-                height: 18rem;
+                height: 23rem;
             }
             .contentbox {
                 display: block;
@@ -201,9 +244,9 @@
 
         & > li {
             float: left;
-            width: calc(50% - 0.384rem);
-            margin-top: 0.769rem;
-            margin-right: 0.769rem;
+            width: calc(50% - 0.5rem);
+            margin-top: 1rem;
+            margin-right: 1rem;
             border-radius: 5px;
             overflow: hidden;
             
@@ -217,7 +260,7 @@
             }
         }
         .title {
-            height: 2.692rem;
+            height: 3.5rem;
             
             span {
                 -webkit-line-clamp: 1;

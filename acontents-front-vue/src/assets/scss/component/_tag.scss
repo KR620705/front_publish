@@ -1,0 +1,35 @@
+.tag {
+    margin-top: 1rem;
+
+    li {
+        display: inline-block;
+        margin-right: 0.5rem;
+
+        a {
+            font-size: 1.3rem;
+            color: $blue-color;
+        }
+    }
+    &.type-circle {
+        li {
+            height: 2.4rem;
+            margin-top: 1rem;
+            margin-right: 0.8rem;
+            border: 1px solid #6D6D6D;
+            border-radius: 1.2rem;
+
+            &:first-child {
+                background: $blue-color;
+                border-color: $blue-color;
+            }
+            a {
+                display: block;
+                height: 2.4rem;
+                padding: 0.3rem 0.8rem;
+                color: $white-color;
+            }
+
+        }
+
+    }
+}

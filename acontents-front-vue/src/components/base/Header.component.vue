@@ -20,17 +20,37 @@
     </div>
   </header> -->
 	<!-- header// -->
-	<header class="header type-main"><!-- 메인 header인 경우 : type-main 클래스 추가 --><!-- scroll 위치가 0 이라면 클래스 제거 / 0 보다 크면 fixed 클래스 추가 -->
-		<div class="inner">
-			<ul class="logo-list"><!-- 활성화 : open 클래스 추가 -->
-				<li class="acontent"><a href="javascript:;"><span class="hide">A Content</span></a></li>
-				<li class="amway"><a href="javascript:;" target="_blank" title="새창으로 열림"><span class="hide">Amway</span></a></li>
-			</ul>
-			<button type="button" class="btn-search">검색</button>
-			<button type="button" class="btn-menu">메뉴</button>
-		</div>
-	</header>
-	<!-- //header -->
+
+  <div><!-- div 제거하고 분기처리하여 template 바로 밑에 header가 나오게 해주세요 -->
+    
+    <!-- 상세 헤더// -->
+    <header class="header" style="display:none;"><!-- scroll시 fixed 클래스 추가 -->
+      <div class="inner">
+        <h1 class="hide">A Content</h1>
+        <button type="button" class="btn-prev">이전</button>
+        <button type="button" class="btn-search">검색</button>
+        <button type="button" class="btn-menu">메뉴</button>
+      </div>
+    </header>
+    <!-- //상세 헤더 -->
+
+    <!-- 메인 헤더// -->
+    <header class="header type-main" ><!-- 메인 header인 경우 : type-main 클래스 추가 --><!-- scroll시 fixed 클래스 추가 -->
+      <div class="inner">
+        <div class="logo-list"><!-- 활성화 : open 클래스 추가 -->
+          <ul>
+            <li class="acontent"><h1><a href="javascript:;"><span class="hide">A Content</span></a></h1></li>
+            <li class="amway"><a href="javascript:;" target="_blank" title="새창으로 열림"><span class="hide">Amway</span></a></li>
+          </ul>
+          <button type="button" class="btn-open"></button>
+        </div>
+        <button type="button" class="btn-search">검색</button>
+        <button type="button" class="btn-menu">메뉴</button>
+      </div>
+    </header>
+    <!-- //메인 헤더 -->
+
+  </div>
 </template>
 
 <script>

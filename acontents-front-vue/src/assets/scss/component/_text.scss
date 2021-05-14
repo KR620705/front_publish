@@ -3,15 +3,13 @@
     position: relative;
 
     .h2-title {
-        line-height: 1.2;
-        color: #fff;
-        font-size: 1.692rem;
+        color: $white-color;
+        font-size: 1.8rem;
         font-weight: 600;
+        line-height: 1.2;
     }
     .h3-title {
-        margin-top: 9px;
-        padding-left: 10px;
-        line-height: 17px;
-        font-size: 13px;
+        color: $white-color;
+        font-size: 1.5rem;
     }
 }

@@ -19,11 +19,12 @@
 @import "base/sidemenu";
 
 /*-------------------- 요소 Elements --------------------*/
-//@import "component/modal";
+@import "component/modal";
 //@import "component/table";
 //@import "component/pagination";
 @import "component/button";
 @import "component/text";
+@import "component/tag";
 @import "component/thumblist";
 
 /*-------------------- page --------------------*/
@@ -34,6 +35,8 @@
 //@import "views/check-category"; // 선호 카테고리 선택
 //@import "views/dashboard"; // home
 @import "views/main"; //메인
+@import "views/details"; //상세
+@import "views/menu"; //메뉴
 
 /*-------------------- spacing --------------------*/
 // @import 'config/spacing';

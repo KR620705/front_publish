@@ -1,3 +1,7 @@
+.ov-hidden {
+  overflow: hidden;
+}
+
 .clfix {
   clear: both;
   content: ".";
@@ -6,12 +10,12 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 .hide {
-    position: absolute !important;
-    left: -9999px;
+  position: absolute !important;
+  left: -9999px;
 }
 
 .no-pd {
@@ -24,65 +28,6 @@
   padding: 0 1rem;
   word-break: keep-all;
   @include ellipsis();
-}
-
-textarea:focus,
-input:focus {
-  border-color: #c66;
-}
-
-//== element
-.js-menu-opener {
-  min-width: inherit !important;
-  width: 40px !important;
-  height: 40px !important;
-  border: 0 !important;
-
-  .menu-opener {
-    position: relative;
-    width: 22px;
-  }
-
-  span {
-    position: relative;
-    top: 0;
-    display: block;
-    height: 3px;
-    margin-bottom: 3px;
-    opacity: 1;
-    background-color: #333333;
-    transform: rotate(0deg);
-    transition: all .1s ease;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &:hover span {
-    background-color: $danger-color;
-  }
-}
-
-//== sidemenu open
-.aside-open .js-menu-opener {
-  span {
-    &:first-child {
-      position: absolute;
-      top: 2px;
-      width: 26px;
-      transform: rotate(-45deg);
-    }
-    &:last-child {
-      position: absolute;
-      top: 2px;
-      width: 26px;
-      transform: rotate(45deg);
-    }
-    &:nth-child(2) {
-      opacity: 0;
-    }
-  }
 }
 
 
@@ -228,4 +173,58 @@ textarea {
   padding: 10px;
   border: 1px solid #e6e6e6;
   resize: none;
+}
+
+//== element
+.js-menu-opener {
+  min-width: inherit !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 0 !important;
+
+  .menu-opener {
+    position: relative;
+    width: 22px;
+  }
+
+  span {
+    position: relative;
+    top: 0;
+    display: block;
+    height: 3px;
+    margin-bottom: 3px;
+    opacity: 1;
+    background-color: #333333;
+    transform: rotate(0deg);
+    transition: all .1s ease;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover span {
+    background-color: $red-color;
+  }
+}
+
+//== sidemenu open
+.aside-open .js-menu-opener {
+  span {
+    &:first-child {
+      position: absolute;
+      top: 2px;
+      width: 26px;
+      transform: rotate(-45deg);
+    }
+    &:last-child {
+      position: absolute;
+      top: 2px;
+      width: 26px;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  }
 }

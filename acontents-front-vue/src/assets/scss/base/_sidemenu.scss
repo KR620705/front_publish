@@ -1,38 +1,215 @@
 // side menu
-
-$aside-width: 250px;
 .sidemenu {
   position: fixed;
-  left: -$aside-width;  top:0; bottom: 0;
-  z-index: $header-index - 1;
-  transition: left .3s ease;
+  right: -100%;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  z-index: $header-index + 1;
+  transition: right .3s ease;
 
-  .mask {
-    display: none;
-    position: fixed;
-    left: 0; right: 0; top:0; bottom: 0;
-    background-color: rgba(0,0,0,.2);
-  }
-
-  &-body {
+  &-inner {
     position: relative;
     box-sizing: border-box;
-    padding-top: $header-mb-height;
-    width: $aside-width;
+    width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: #111;
     overflow-x: hidden;
     overflow-y: auto;
 
-    @include scrollbars(5px, #999, #eee);
+    //@include scrollbars(5px, #999, #eee);
+  }
+  &-header {
+    height: 5rem;
+    
+    button {
+      position: absolute;
+      height: 3rem;
+      text-indent: -9999px;
+
+      &.btn-home {
+          top: 0.8rem;
+          right: 59px;
+          width: 3rem;
+          height: 3rem;
+          background: url("../images/common/sidemenu_home.png") no-repeat 50% 50% /100%;
+      }
+      &.btn-close {
+          top: 0.8rem;
+          right: 13px;
+          width: 3rem;
+          height: 3rem;
+          background: url("../images/common/sidemenu_close.png") no-repeat 50% 50% /100%;
+      }
+    }
+  }
+  &-userinfo {
+    padding: 0 20px;
+
+    .user {
+      line-height: 1;
+
+      h2 {
+        display: inline-block;
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+      p {
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 200;
+        vertical-align: bottom;
+      }
+    }
+    .btn.roundarrow {
+      width: auto;
+      height: 2rem;
+      margin-top: 1rem;
+      padding: 0.2rem 2rem 0.2rem 1rem;
+      background: transparent url("../images/common/btn_arrow_blue.png") no-repeat 87% 50% /0.6rem;
+      color: #58B1FF;
+      font-size: 1rem;
+      font-weight: 200;
+      border: 1px solid #58B1FF;
+      border-radius: 1.3rem;
+      line-height: 1.2;
+    }
+    .sublink {
+      margin: 2rem -20px 0 -20px;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5rem;
+        background: $dark-color;
+      }
+      li {
+
+        a {
+          display: block;
+          min-width: 4rem;
+          padding-top: 4.8rem;
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+          background-size: 100%;
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        &.video a {
+          background-image: url("../images/common/sidemenu_video.png");
+        }
+        &.bookmark a {
+          background-image: url("../images/common/sidemenu_bookmark.png");
+        }
+        &.like a {
+          background-image: url("../images/common/sidemenu_like.png");
+        }
+      }
+    }
+  }
+  &-accordion {
+    margin-top: 2rem;
+    border-top: 1px solid #363636;
+
+    > ul {
+      padding-top: 1rem; 
+
+      > li {
+
+        button {
+          width: 100%;
+          padding: 1rem 2rem;
+          text-align: left;
+          
+          h3 {
+            position: relative;
+            color: $white-color;
+            font-size: 1.5rem;
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 1rem;
+              height: 1rem;
+              margin-top: -0.5rem;
+              background: url("../images/common/sidemenu_accordion.png") no-repeat 100% 50% /100%;
+              transition: all .3s;
+            }
+          }
+          &.open h3:after {
+            transform:rotate(-180deg);
+          }
+          &.open ~ .depth2 {
+            display: block;
+          }
+        }
+        .depth2 {
+          display: none;
+          background: $dark-color;
+
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1.2rem 2rem;
+
+            li {
+              width: 50%;
+  
+              a {
+                display: block;
+                padding: 1rem 0;
+                color: $white-color;
+                font-size: 1.3rem;
+                font-weight: 200;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    position: sticky;
+    top: 100%;
+    left: 0;
+    margin-top: 4rem;
+
+    .btn-wrap {
+      border-top: 1px solid #373737;
+
+      .btn {
+        background: $dark-color;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          margin-right: 1rem;
+          vertical-align: middle;
+        }
+        & + .btn {
+          border-left: 1px solid #373737;
+        }
+        &.faq:before {
+          width: 2rem;
+          height: 1.9rem;
+          background: url("../images/common/sidemenu_faq.png") no-repeat 0 0 /100%;
+        }
+        &.logout:before {
+          width: 2.2rem;
+          height: 1.6rem;
+          background: url("../images/common/sidemenu_logout.png") no-repeat 0 0 /100%;
+        }
+      }
+    }
   }
 }
 
 //== sidemenu open
-.aside-open .sidemenu {
-  left: 0; right: 0; top:0; bottom: 0;
-
-  .mask {
-    display: block;
-  }
+.sidemenu.aside-open {
+  right: 0;
+  
 }

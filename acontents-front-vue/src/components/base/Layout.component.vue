@@ -10,11 +10,9 @@
 
     <div class="container">
       <Sidemenu />
-      <div class="content">
-        <transition name="slide-fade">
-        <router-view :key="$route.fullPath"/>
-        </transition>
-      </div>
+      <transition name="slide-fade">
+      <router-view :key="$route.fullPath"/>
+      </transition>
     </div>
 
     <Footer />

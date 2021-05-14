@@ -8,6 +8,17 @@ const routes = [
     path: '/',
     name: 'Landing',
     component: () => import('../views/landing'),
+    meta: {
+      isIndex: false,
+    },
+  },
+  {// 가이드페이지
+    path: '/guide',
+    name: 'Guide',
+    component: () => import('../views/landing/guide'),
+    meta: {
+      isIndex: false,
+    },
   },
   {// 로그인
     path: '/login',
@@ -41,15 +52,39 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 마이페이지
+    path: '/recommendlist',
+    name: 'Recommendlist',
+    component: () => import('../views/menu/recommendlist.vue'),
+    meta: {
+      isIndex: true,
+    },
+  },
   {// 대쉬보드
     path: '/home',
     name: 'Home',
     component: () => import('../views/dashboard')
   },
-  {// 임시
+  {// main
     path: '/main',
     name: 'main',
-    component: () => import('../views/main.vue'),
+    component: () => import('../views/main'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 상세
+    path: '/detail',
+    name: 'detail',
+    component: () => import('../views/details/detail'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 공유하기 팝업
+    path: '/modalshare',
+    name: 'Modalshare',
+    component: () => import('../views/details/modalshare'),
     meta: {
       isIndex: true,
     },

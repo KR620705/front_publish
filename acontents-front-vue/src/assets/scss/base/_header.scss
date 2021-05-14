@@ -1,126 +1,107 @@
 // header
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  min-height: 3.462rem;
-  transition: all .3s ease-in-out;
-  z-index: 30;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    transition: all .3s ease-in-out;
+    z-index: $header-index;
   
-  &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(0deg, #22222200 0%, #222222 100%) 0% 0%;
-      opacity: 0.4;
-  }
-  &.fixed {
-      background: #222;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #22222200 0%, #222222 100%) 0% 0%;
+        opacity: 0.4;
+    }
+    &.fixed {
+        background: #222;
       
-      .logo-list li.acontent a {
-          background-image: url("../images/common/logo_red.png");
-      }
-  }
-  //header type-main
-  &.type-main ~ .container {
-      padding-top: 0;
-  }
-  h1 {
-      position: relative;
-      line-height: 59px;
-      color: #101010;
-      font-size: 16px;
-      font-weight: 600;
-      text-align: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      z-index: 0;
-  }
-  button {
-      position:absolute;
-      height:59px;
-      text-align:left;
-      text-indent:-9999px;
-      z-index:1;
+        .logo-list li.acontent a {
+            background-image: url("../images/common/logo_red.png");
+        }
+    }
+    //header type-main
+    &.type-main ~ .container {
+        padding-top: 0;
+    }
+    h1 {
+        position: relative;
+    }
+    button {
+        position: absolute;
+        height: 4.5rem;
+        text-align: left;
+        text-indent: -9999px;
   
-      &:after {
-          content:"";
-          position:absolute;
-          top:50%;
-          left:50%;
-          transform:translate(-50%, -50%);
-      }
-      &.btn-search {
-          top:0;
-          right:48px;
-          width:2.462rem;
-          height:3.462rem;
-          background:url("../images/common/header_search.png") no-repeat 50% 50% /1.308rem;
-      }
-      &.btn-menu {
-          top:0;
-          right:13px;
-          width:2.462rem;
-          height:3.462rem;
-          background:url("../images/common/header_menu.png") no-repeat 50% 50% /1.154rem;
-      }
-      &.btn-prev {
-          top:0;
-          left:0;
-          width:50px;
-          height:59px;
-      }
-      &.btn-prev:after {
-          top:50%;
-          left:15px;
-          transform:translateY(-50%);
-          width:11px;
-          height:21px;
-          //background:url("../images/common/header-prev.png") no-repeat -75px 0;
-          background-size:250px;
-      }
-  }
-  .logo-list {
-      position:absolute;
-      top:16px;
-      left:20px;
-      padding-right: 1.923rem;
-      
-      &:after {
-          content:"";
-          position:absolute;
-          top:0;
-          right:0;
-          width:1.154rem;
-          height:1.154rem;
-          background:url("../images/common/bg_logolist.png") no-repeat 100% 50% /1.154rem;
-          transition:all .3s;
-      }
-      &.open:after {
-          transform:rotate(-180deg);
-      }
-      &.open li {
-          display:block;
-      }
-      li {
-          display:none;
-      }
-      li:first-child {
-          display:block;
-      }
-      li a {
-          display:block;
-          width:6rem;
-          height:1.6rem;
-      }
-      li.acontent a {
-          background:url("../images/common/logo_white.png") no-repeat 0 0 /5.923rem;
-      }
-      li.amway a {
-          height:3rem;
-          background:url("../images/common/logo_amway.png") no-repeat 0 0 /5.923rem;
-      }
-  }
+        &.btn-search {
+            top: 0;
+            right: 48px;
+            width: 3.2rem;
+            background: url("../images/common/header_search.png") no-repeat 50% 50% /1.7rem;
+        }
+        &.btn-menu {
+            top: 0;
+            right: 13px;
+            width: 3.2rem;
+            background: url("../images/common/header_menu.png") no-repeat 50% 50% /1.5rem;
+        }
+        &.btn-prev {
+            top: 0;
+            left: 13px;
+            width: 3.2rem;
+            background:url("../images/common/header_prev.png") no-repeat 50% 50% /1.7rem;
+        }
+    }
+    .logo-list {
+        position:absolute;
+        top: 0.6rem;
+        left: 4px;
+        padding: 9px 18px 7px 16px;
+
+        &.open {
+            background: #393939;
+            border-radius: 6px;
+
+            li {
+                display: block;
+                
+                &.acontent a {
+                    background-image: url("../images/common/logo_red.png");
+                }
+            }
+            .btn-open {
+                display: none;
+            }
+        }
+        li {
+            display: none;
+            margin-top: 1.2rem;
+          
+            &:first-child {
+                display: block;
+                margin-top: 0;
+            }
+            &.acontent a {
+                background: url("../images/common/logo_white.png") no-repeat 50% 0 /7.7rem;
+            }
+            &.amway a {
+                background: url("../images/common/logo_amway.png") no-repeat 50% 0 /5.3rem;
+            }
+            a {
+                display: block;
+                width: 8rem;
+                height: 1.8rem;
+            }
+        }
+        .btn-open {
+            position: absolute;
+            top: 0.8rem;
+            right: -0.8rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url("../images/common/header_logolist.png") no-repeat 100% 50% /1.5rem;
+        }
+    }
 }

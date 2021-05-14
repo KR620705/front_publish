@@ -34,21 +34,21 @@ textarea:focus,
 select:focuse,
 input:focus{outline:none;}
 */
-html {font-size: 13px;}
+html {font-size: 10px;}
 body {position: relative;margin: 0;padding: 0;background: #000;font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";font-weight: 500;line-height: 1.2;color: #fff;letter-spacing: -0.05em;word-break: keep-all;word-wrap: break-word;-webkit-text-size-adjust: none;-webkit-overflow-scrolling: touch;}
 h1,h2,h3,h4,h5,h6 {margin: 0;font-weight: 500;}
 ul, ol {list-style: none;margin: 0;padding: 0;}
 fieldset {margin: 0;padding: 0;border: none;}
-textarea {resize: none;outline: none;padding: 7px 20px;line-height: 20px;color: #454545;font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";font-size: 14px;border: 1px solid #ccc;-webkit-border-radius: 0;}
+textarea {resize: none;outline: none;padding: 7px 20px;line-height: 20px;color: #454545;font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";font-size: 14px;border: 1px solid #ccc;border-radius: 0;}
 button {font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";cursor: pointer;padding: 0;border: none;letter-spacing: -0.05em;font-weight: 500;}
-a {text-decoration: none;color: #000;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: transparent;}
+a {text-decoration: none;color: #fff;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: transparent;}
 i, p, div, span, li {margin: 0;}
 em {display: inline-block;font-style: normal;letter-spacing: -0.03em;}
 strong {font-weight: 600;}
 table {table-layout: fixed;width: 100%;border-collapse: collapse;border-spacing: 0;}
 table caption {display: none;}
 th, td {padding: 0;}
-input, select {padding: 0;-webkit-border-radius: 0;}
+input, select {padding: 0;border-radius: 0;}
 input:focus {outline: none;}
 dl, dd {margin: 0;}
 figure {margin: 0;}
@@ -57,19 +57,22 @@ img[usemap], map area {outline: none;}
 hr {display: none;}
 address {font-style: normal;}
 /* form */
-input,select,label,button,textarea{border-radius: 0;-webkit-border-radius: 0;background-color: transparent;color: #454545;font-size: 13px;line-height: normal;font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";vertical-align: middle;}
+input,select,label,button,textarea{border-radius: 0;border-radius: 0;background-color: transparent;color: #454545;font-size: 13px;line-height: normal;font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";vertical-align: middle;}
 input, textarea, select, tt, code, kbd, samp, pre {font-family: "RixSinHeadPro", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";}
 button {background-color: transparent;outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: transparent;}
-button:disabled {color: #aea7a2 !important;border: 1px solid #e7e7e7 !important;background-color: #e7e7e7 !important;}
 [type=file] {cursor: pointer;}
 * {box-sizing: border-box;}
 
-/* width:768px */
-@media screen and (min-width:768px){
-  html{font-size:15px;}
-}
 
+/* width:768 */
+@media screen and (min-width:768px){
+  html{font-size:11px;}
+}
 /* width:1000 */
 @media screen and (min-width:1000px){
-  html{font-size:17px;}
+  html{font-size:12px;}
+}
+/* width:1300 */
+@media screen and (min-width:1300px){
+  html{font-size:13px;}
 }

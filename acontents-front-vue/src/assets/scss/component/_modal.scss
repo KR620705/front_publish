@@ -1,55 +1,172 @@
 //== modal
-.modal {}
-.modal__mask {}
-
 .modal {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $modal-index;
 
-  .modal__mask {
+  &-mask {
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: rgba(0,0,0,.4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
   }
 
   //This is modal layer
-  &__dialog{
+  &-dialog{
     position: relative;
     width: 620px;
+    margin: 0 30px;
     background-color: #fff;
+    color: $black-color;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    
+    .modal-close {
+      width: 100%;
+      height: 4rem;
+      font-size: 1.3rem;
+      text-align: center;
+      border-top: 1px solid #E9E9E9;
+      line-height: 4rem;
+    }
   }
 
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 15px 15px 30px;
-    color: #fff;
-    background-color: #333;
+  &-header {
+    position: relative;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px rgb(235,235,235);
 
     h1 {
+      padding: 0 3rem;
       font-size: 18px;
-      color: #fff;
+      text-align: center;
     }
 
-    .js-modal-close {
-      font-size: 24px;
-      color: #fff;
+    &-close {
+      position: absolute;
+      top: 0.9rem;
+      right: 12px;
+      width: 3rem;
+      height: 3rem;
+      background: url("../images/common/modal_close.png") no-repeat 0 0 /100%;
+      color: $black-color;
     }
   }
-  &__body {
-    padding: 30px;
+  &-body {
     max-height: 70vh;
     overflow: auto;
 
     @include scrollbars(5px, #999, #eee);
+  }
+
+  //공유하기 팝업
+  .modal-share {
+
+    .link {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2rem 20px;
+      background: #F6F6F6;
+
+      li {
+        width: 33.333%;
+        text-align: center;
+
+        a {
+          display: block;
+          padding-top: 5.5rem;
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+          background-size: 5rem;
+          color: $black-color;
+          font-size: 1.2rem;
+        }
+        &:nth-child(n + 4) {
+          margin-top: 3rem;
+        }
+        &.kakaotalk {
+          a {
+            background-image: url("../images/common/icon_link_kakaotalk.png");
+          }
+        }
+        &.kakaostory {
+          a {
+            background-image: url("../images/common/icon_link_kakaostory.png");
+          }
+        }
+        &.facebook {
+          a {
+            background-image: url("../images/common/icon_link_facebook.png");
+          }
+        }
+        &.instagram {
+          a {
+            background-image: url("../images/common/icon_link_instagram.png");
+          }
+        }
+        &.band {
+          a {
+            background-image: url("../images/common/icon_link_band.png");
+          }
+        }
+        &.url {
+          a {
+            background-image: url("../images/common/icon_link_url.png");
+          }
+        }
+      }
+    }
+    .toggle {
+      padding: 2rem 20px 3rem 20px;
+
+      .toggle-btn {
+        color: $black-color;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-left: 1rem;
+          background: url("../images/common/btn_toggle.png") no-repeat 0 50%/1.2rem;
+          vertical-align: middle;
+          transition: all .3s;
+        }
+      }
+      .toggle-cont {
+        display: none;
+        margin-top: 1rem;
+
+        p {
+          font-size: 1.2rem;
+          line-height: 1.7;
+        }
+      }
+      &.active {
+        .toggle-btn {
+          &:after {
+            transform: rotate(-180deg);
+          }
+        }
+
+        .toggle-cont {
+          display: block;
+        }
+      }
+    }
   }
 
   .basic-btn02 {
@@ -85,7 +202,7 @@
           top: 10px;
           width: 3px;
           height: 3px;
-          background-color: #000;
+          background-color: $black-color;
           display: block;
           content: "";
         }
@@ -155,9 +272,7 @@
 
 @include mq('md', 'max') {
   .modal {
-    &__dialog {
-      min-width: 320px;
-      width: auto;
+    &-dialog {
     }
   }
 }

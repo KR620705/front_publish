@@ -19,7 +19,6 @@
 						<img src="@/assets/images/temp/temp_390X390_2.png">
 						<div class="title">
 							<strong>2222강렬한 레드 상하이를 만나다</strong>
-							<p>"꿈꾸고 배우느라 하루하루가 설렙니다"<br>두근대는 미래를 그려가는 최인덕 리더의 암웨이 비즈니스</p>
 							<a href="javascript:;" class="btn round">자세히보기</a>
 						</div>
 					</li>
@@ -91,7 +90,7 @@
 		<!-- thumb-list// -->
 		<section class="thumb-list">
 			<div class="titlearea">
-				<h2 class="h2-title">여름 인스타<br>감성 사진 모음</h2>
+				<h2 class="h2-title">여름 인스타 감성 사진 모음</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
 			<div class="swiper-container thumbswiper">
@@ -245,7 +244,7 @@
 		<!-- thumb-list// -->
 		<section class="thumb-list">
 			<div class="titlearea">
-				<h2 class="h2-title">매력 터짐!<br>30대 제품 포트폴리오</h2>
+				<h2 class="h2-title">매력 터짐! 30대 제품 포트폴리오</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
 			<div class="swiper-container thumbswiper">
@@ -263,7 +262,7 @@
 									<span class="icon image"><span class="hide">image</span></span>
 									<span class="icon column"><span class="hide">column</span></span>
 								-->
-								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
 								<!-- //콘텐츠 유형 -->
 							</div>
 
@@ -340,7 +339,7 @@
 									<span class="icon image"><span class="hide">image</span></span>
 									<span class="icon column"><span class="hide">column</span></span>
 								-->
-								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
 								<!-- //콘텐츠 유형 -->
 							</div>
 
@@ -412,7 +411,7 @@
 			<div class="titlearea">
 				<h2 class="h2-title">최근 HOT한 태그 #</h2>
 			</div>
-			<ul class="tag">
+			<ul class="tag type-circle">
 				<li><a href="javascript:;">#감성</a></li>
 				<li><a href="javascript:;">#노력</a></li>
 				<li><a href="javascript:;">#암웨이</a></li>
@@ -427,18 +426,18 @@
 		</section>
 		<!-- //tag-list -->
 
-		<!-- banner// -->
-		<section class="banner">
+		<!-- main-banner// -->
+		<section class="main-banner">
 			<div class="inner">
 				<a href="javascript:;"><img src="@/assets/images/temp/main_banner.png" alt=""></a>
 			</div>
 		</section>
-		<!-- //banner -->
+		<!-- //main-banner -->
 
 		<!-- thumb-list// -->
 		<section class="thumb-list">
 			<div class="titlearea">
-				<h2 class="h2-title">우리를 강하게 하는<br>암웨이의 생각들</h2>
+				<h2 class="h2-title">우리를 강하게 하는 암웨이의 생각들</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
 			<div class="swiper-container thumbswiper">
@@ -456,7 +455,7 @@
 									<span class="icon image"><span class="hide">image</span></span>
 									<span class="icon column"><span class="hide">column</span></span>
 								-->
-								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
 								<!-- //콘텐츠 유형 -->
 							</div>
 
@@ -512,7 +511,7 @@
 		</section>
 		<!-- //thumb-list -->
 
-		<!-- thumb-list : 추천 콘텐츠 영역// -->
+		<!-- thumb-list type-one : 추천 콘텐츠 영역// -->
 		<section class="thumb-list type-one">
 			<div class="titlearea">
 				<h2 class="h2-title">자신있게 추천드립니다</h2>
@@ -558,7 +557,7 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</section>
-		<!-- //thumb-list : 추천 콘텐츠 영역 -->
+		<!-- //thumb-list type-one : 추천 콘텐츠 영역 -->
 
 		<!-- thumb-list type-column// -->
 		<section class="thumb-list type-column">
@@ -581,7 +580,7 @@
 									<span class="icon image"><span class="hide">image</span></span>
 									<span class="icon column"><span class="hide">column</span></span>
 								-->
-								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
 								<!-- //콘텐츠 유형 -->
 							</div>
 
@@ -630,7 +629,6 @@
 		<section class="thumb-list type-column">
 			<div class="titlearea">
 				<h2 class="h2-title">새로운 소식을 만나보세요</h2>
-				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
 			<div class="columnarea">
 				<ul class="column">
@@ -647,7 +645,7 @@
 									<span class="icon image"><span class="hide">image</span></span>
 									<span class="icon column"><span class="hide">column</span></span>
 								-->
-								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
 								<!-- //콘텐츠 유형 -->
 							</div>
 
@@ -697,9 +695,6 @@
 </template>
 
 <script>
-  // Import Swiper styles
-  import 'swiper/swiper.scss';
-
 export default {
   name: 'Main',
   data: function () {
