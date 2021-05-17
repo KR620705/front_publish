@@ -20,6 +20,44 @@ const routes = [
       isIndex: false,
     },
   },
+  {// 메뉴 > 맞춤추천리스트
+    path: '/recomlist',
+    name: 'Recomlist',
+    component: () => import('../views/menu/recomlist.vue'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// main
+    path: '/main',
+    name: 'main',
+    component: () => import('../views/main'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 상세
+    path: '/detail',
+    name: 'detail',
+    component: () => import('../views/details/detail'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 공유하기 팝업
+    path: '/modalshare',
+    name: 'Modalshare',
+    component: () => import('../views/details/modalshare'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  /*
+  {// 대쉬보드
+    path: '/home',
+    name: 'Home',
+    component: () => import('../views/dashboard')
+  },
   {// 로그인
     path: '/login',
     name: 'Login',
@@ -52,43 +90,7 @@ const routes = [
       isIndex: true,
     },
   },
-  {// 마이페이지
-    path: '/recommendlist',
-    name: 'Recommendlist',
-    component: () => import('../views/menu/recommendlist.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 대쉬보드
-    path: '/home',
-    name: 'Home',
-    component: () => import('../views/dashboard')
-  },
-  {// main
-    path: '/main',
-    name: 'main',
-    component: () => import('../views/main'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 상세
-    path: '/detail',
-    name: 'detail',
-    component: () => import('../views/details/detail'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 공유하기 팝업
-    path: '/modalshare',
-    name: 'Modalshare',
-    component: () => import('../views/details/modalshare'),
-    meta: {
-      isIndex: true,
-    },
-  },
+  */
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',
