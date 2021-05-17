@@ -28,9 +28,17 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 메뉴 > 맞춤추천리스트 nodata
+    path: '/recomlistnodata',
+    name: 'Recomlistnodata',
+    component: () => import('../views/menu/recomlistnodata.vue'),
+    meta: {
+      isIndex: true,
+    },
+  },
   {// main
     path: '/main',
-    name: 'main',
+    name: 'Main',
     component: () => import('../views/main'),
     meta: {
       isIndex: true,
@@ -38,7 +46,7 @@ const routes = [
   },
   {// 상세
     path: '/detail',
-    name: 'detail',
+    name: 'Detail',
     component: () => import('../views/details/detail'),
     meta: {
       isIndex: true,

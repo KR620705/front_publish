@@ -1,6 +1,6 @@
 <template>
 
-	<div class="details">
+	<div>
 
 		<!-- modal : 모달 -->
 		<app-modal title="샘플 모달"
@@ -57,7 +57,7 @@
 <script>
 
 export default {
-  name: 'Detail',
+  name: 'Modalshare',
   data: function () {
     return {
 

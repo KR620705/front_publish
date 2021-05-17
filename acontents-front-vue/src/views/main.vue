@@ -429,7 +429,7 @@
 		<!-- main-banner// -->
 		<section class="main-banner">
 			<div class="inner">
-				<a href="javascript:;"><img src="@/assets/images/temp/main_banner.png" alt=""></a>
+				<a href="javascript:;"><img src="@/assets/images/views/main_banner.png" alt=""></a>
 			</div>
 		</section>
 		<!-- //main-banner -->
