@@ -69,20 +69,6 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="num">※</th>
-            <td class="alL">퍼블리싱 가이드</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="alL red"></td>
-            <td class="alL">
-              <router-link to="/guide">
-                guide
-              </router-link>
-            </td>
-          </tr>
-          <tr>
             <th scope="row" class="num">1</th>
             <td class="alL">메인</td>
             <td class="alL">default</td>
@@ -142,6 +128,20 @@
             <td class="alL">
               <router-link to="/modalshare">
                 modalshare
+              </router-link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num">※</th>
+            <td class="alL">퍼블리싱 가이드</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <router-link to="/guide">
+                guide
               </router-link>
             </td>
           </tr>
