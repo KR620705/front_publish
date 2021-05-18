@@ -112,8 +112,8 @@
         <button type="button" class="btn round">처음부터</button>
       </div>
         <div class="btn-wrap">
-					<a href="javaqscript:;" class="btn gray faq">FAQ</a>
-					<a href="javaqscript:;" class="btn gray logout">로그아웃</a>
+					<a href="javaqscript:;" class="btn">FAQ</a>
+					<a href="javaqscript:;" class="btn">로그아웃</a>
         </div>
       <!-- //btn-wrap -->
     </div>
@@ -466,8 +466,8 @@ export default {
 </script>
 <style>
   .landing{padding:50px 20px;background:#fff;color:#000;font-family:sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";}
-  .landing .guideh1{font-size:26px;font-weight:600;text-align:center;}
-  .landing .guideh2{margin-top:50px;font-size:20px;font-weight:600;}
+  .landing .guideh1{margin-bottom:30px;font-size:26px;font-weight:600;text-align:center;}
+  .landing .guideh2{margin-top:40px;font-size:20px;font-weight:600;}
   .landing .guideh3{margin-top:30px;padding-left:10px;font-size:16px;font-weight:600;border-left:4px solid #399aed;}
   .landing .guidetxt{margin-top:10px;font-size:14px;line-height:1.6;}
   .landing .guidetxt .guideindent{margin-left:15px;}
