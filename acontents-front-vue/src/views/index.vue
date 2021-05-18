@@ -348,11 +348,11 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/search">
+                search
+              </router-link>
             </td>
           </tr>
           <tr>
