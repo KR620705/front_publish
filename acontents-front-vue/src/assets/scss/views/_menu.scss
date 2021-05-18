@@ -3,7 +3,23 @@
 
     //thumb-list
     .thumb-list {
-        margin-top: 0;
+        margin-top: 1rem;
+    }
+    .nodata {
+        margin-top: 1.5rem;
+        text-align: center;
+
+        strong {
+            font-size: 1.8rem;
+        }
+        p {
+            margin-top: 0.5rem;
+            padding: 0 5.5rem;
+            color: $lightgray-color;
+            font-size: 1.2rem;
+            font-weight: 200;
+            line-height: 1.5;
+        }
     }
 }
 
