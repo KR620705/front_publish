@@ -239,9 +239,9 @@
             <td></td>
             <td class="alL red"></td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/mylist">
+                mylist
+              </router-link>
             </td>
           </tr>
           <tr>
@@ -251,9 +251,9 @@
             <td></td>
             <td class="alL red"></td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/mylistedit">
+                mylistedit
+              </router-link>
             </td>
           </tr>
           <tr>
@@ -263,9 +263,9 @@
             <td></td>
             <td class="alL red"></td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/mylistnodata">
+                mylistnodata
+              </router-link>
             </td>
           </tr>
           <tr>
