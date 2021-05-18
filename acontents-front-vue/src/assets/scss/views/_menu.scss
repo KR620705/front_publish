@@ -1,7 +1,7 @@
 //== 메뉴화면
 .menu {
 
-    //thumb-list
+    //component thumb-list
     .thumb-list {
         margin-top: 1rem;
     }
@@ -19,6 +19,38 @@
             font-size: 1.2rem;
             font-weight: 200;
             line-height: 1.5;
+        }
+    }
+    //menu mylist
+    &.mylist {
+
+        .thumb-list {
+
+            .titlearea {
+
+                .h2-title {
+                    float: left;
+                    width: 80%;
+                    padding-right: 0;
+                }
+            }
+            .column {
+                input[type="checkbox"] + span {
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0.5rem;
+                }
+                input[type="checkbox"] + span:before {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    background-image: url("../images/common/form_chk_circle.png");
+                    background-position-y: 0;
+                    background-size: 3.2rem;
+                }
+                input[type="checkbox"]:checked + span:before {
+                    background-position-y: -4rem;
+                }
+            }
         }
     }
 }

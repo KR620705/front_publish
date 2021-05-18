@@ -2,6 +2,9 @@
 .titlearea {
     position: relative;
 
+    &:after {
+        @include floatclear();
+    }
     .h2-title {
         color: $white-color;
         font-size: 1.8rem;

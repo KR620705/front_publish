@@ -26,6 +26,7 @@
 @import "component/text";
 @import "component/tag";
 @import "component/thumblist";
+@import "plugin/swiper";
 
 /*-------------------- page --------------------*/
 //@import "views/auth"; // 로그인
@@ -34,7 +35,7 @@
 @import "views/details"; //상세
 @import "views/menu"; //메뉴
 //@import "views/mypage"; // 마이페이지
-@import "views/search"; // 검색
+//@import "views/search"; // 검색
 //@import "views/popup"; // 팝업
 //@import "views/etc"; // 기타
 

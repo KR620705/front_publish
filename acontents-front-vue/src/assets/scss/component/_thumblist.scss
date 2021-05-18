@@ -48,7 +48,6 @@
             @include ellipsis2();
         }
     }
-    
     .badge {
         position: absolute;
         top: 5px;
@@ -254,6 +253,16 @@
                 margin-right: 0;
             }
             & > a {
+                display: block;
+                position: relative;
+                color: #fff;
+            }
+            & > button {
+                display: block;
+                position: relative;
+                color: #fff;
+            }
+            & > label {
                 display: block;
                 position: relative;
                 color: #fff;

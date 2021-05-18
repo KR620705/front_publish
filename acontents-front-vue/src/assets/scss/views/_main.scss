@@ -18,21 +18,21 @@
     overflow: hidden;
     
     .swiper-slide {
-        &.slide-1 {
-        background-image:url('../images/temp/temp_960X1170.png');
-        }
-        &.slide-2 {
-        background-image:url('../images/temp/temp_390X390_2.png');
-        }
-        &.slide-3 {
-        background-image:url('../images/temp/temp_390X390_3.png');
-        }
-        &.slide-4 {
-        background-image:url('../images/temp/temp_390X390_4.png');
-        }
-        &.slide-5 {
-        background-image:url('../images/temp/temp_390X390_5.png');
-        }
+        //&.slide-1 {
+        //background-image:url('../images/temp/temp_960X1170.png');
+        //}
+        //&.slide-2 {
+        //background-image:url('../images/temp/temp_390X390_2.png');
+        //}
+        //&.slide-3 {
+        //background-image:url('../images/temp/temp_390X390_3.png');
+        //}
+        //&.slide-4 {
+        //background-image:url('../images/temp/temp_390X390_4.png');
+        //}
+        //&.slide-5 {
+        //background-image:url('../images/temp/temp_390X390_5.png');
+        //}
     }
 }
 
@@ -122,8 +122,9 @@
         width: 25%;
         height: 100%;
         opacity: 0.4;
+        transition: opacity .2s ease;
     
-        &.swiper-slide-thumb-active {
+        &.swiper-slide-active {
             opacity: 1;
         }
         img {

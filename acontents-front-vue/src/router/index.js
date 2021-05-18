@@ -36,6 +36,14 @@ const routes = [
       isIndex: true,
     },
   },
+  {// main
+    path: '/main2',
+    name: 'Main2',
+    component: () => import('../views/main/main2'),
+    meta: {
+      isIndex: true,
+    },
+  },
   // {// 랜딩
   //   path: '/landing',
   //   name: 'Landing',
@@ -60,7 +68,7 @@ const routes = [
       isIndex: true,
     },
   },
-  {// 메뉴 > 맞춤추천리스트
+  {// 메뉴 > 맞춤추천 목록
     path: '/recomlist',
     name: 'Recomlist',
     component: () => import('../views/menu/recomlist'),
@@ -68,10 +76,34 @@ const routes = [
       isIndex: true,
     },
   },
-  {// 메뉴 > 맞춤추천리스트 nodata
+  {// 메뉴 > 맞춤추천 목록 nodata
     path: '/recomlistnodata',
     name: 'Recomlistnodata',
     component: () => import('../views/menu/recomlistnodata'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 메뉴 > 마이 목록
+    path: '/mylist',
+    name: 'Mylist',
+    component: () => import('../views/menu/mylist'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 메뉴 > 마이 목록 편집
+    path: '/mylistedit',
+    name: 'Mylistedit',
+    component: () => import('../views/menu/mylistedit'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 메뉴 > 마이 목록 nodata
+    path: '/mylistnodata',
+    name: 'Mylistnodata',
+    component: () => import('../views/menu/mylistnodata'),
     meta: {
       isIndex: true,
     },
@@ -92,37 +124,6 @@ const routes = [
       isIndex: true,
     },
   },
-  /*
-  {// 대쉬보드
-    path: '/home',
-    name: 'Home',
-    component: () => import('../views/dashboard')
-  },
-  {// 회원가입
-    path: '/agree',
-    name: 'Agree',
-    component: () => import('../views/membership/agree.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 사용자 선택
-    path: '/checkuser',
-    name: 'Checkuser',
-    component: () => import('../views/membership/checkuser.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 선호카테고리 선택
-    path: '/checkcategory',
-    name: 'Checkcategory',
-    component: () => import('../views/membership/checkcategory.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  */
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',
