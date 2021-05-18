@@ -13,20 +13,42 @@
 //main-visual
 .main-visual {
     position: relative;
+    height: 480px;
     padding-bottom: 3.7rem;
     overflow: hidden;
+    
+    .swiper-slide {
+        &.slide-1 {
+        background-image:url('../images/temp/temp_960X1170.png');
+        }
+        &.slide-2 {
+        background-image:url('../images/temp/temp_390X390_2.png');
+        }
+        &.slide-3 {
+        background-image:url('../images/temp/temp_390X390_3.png');
+        }
+        &.slide-4 {
+        background-image:url('../images/temp/temp_390X390_4.png');
+        }
+        &.slide-5 {
+        background-image:url('../images/temp/temp_390X390_5.png');
+        }
+    }
 }
 
 //mainswiper
 .mainswiper {
     position: static;
-    height: 39rem;
-    overflow: visible;
+    width: 100%;
+    height: 390px;
+    //overflow: visible;
 
     .swiper-wrapper {
-        overflow: hidden;
+        //overflow: hidden;
     }
     .swiper-slide {
+        background-size: cover;
+        background-position: center;
 
         .title {
             position: absolute;
@@ -84,15 +106,22 @@
 
 //mainthumbswiper
 .mainthumbswiper {
-    margin: 0 12px;
+    //margin: 0 12px;
+
+    height: 54px;
 
     .swiper-slide {
-        width: 5.4rem;
-        height: 5.4rem;
-        margin-right: 0.6rem;
-        border-radius: 5px;
-        opacity: 0.5;
-        overflow: hidden;
+
+        // width: 20%;
+        // height: 54px;
+        // margin-right: 0.6rem;
+        // border-radius: 5px;
+        // opacity: 0.5;
+        //overflow: hidden;
+
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
     
         &.swiper-slide-thumb-active {
             opacity: 1;

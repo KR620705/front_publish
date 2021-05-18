@@ -6,6 +6,12 @@
     width: 50%;
     border-radius: 0;
   }
+  .btn ~ .btn {
+    border-left: 1px solid #292929;
+  }
+  .btn.round ~ .btn.round {
+    margin-left: 1.5rem;
+  }
 }
 .btn {
   display: inline-block;

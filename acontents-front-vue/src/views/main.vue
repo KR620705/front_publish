@@ -4,8 +4,68 @@
 
 		<!-- main-visual// -->
 		<section class="main-visual">
+			
+			<!-- mainswiper// -->
+			<swiper class="swiper mainswiper" :options="swiperOptionTop" ref="swiperTop">
+			<swiper-slide class="slide-1">
+				<!-- <img src="@/assets/images/temp/temp_960X1170.png"> -->
+				<div class="title">
+					<strong>강렬한 레드 상하이를 만나다</strong>
+					<a href="javascript:;" class="btn round">자세히보기</a>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="slide-2">
+				<!-- <img src="@/assets/images/temp/temp_390X390_2.png"> -->
+				<div class="title">
+					<strong>2222강렬한 레드 상하이를 만나다</strong>
+					<a href="javascript:;" class="btn round">자세히보기</a>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="slide-3">
+				<!-- <img src="@/assets/images/temp/temp_390X390_3.png"> -->
+				<div class="title">
+					<strong>3333강렬한 레드 상하이를 만나다</strong>
+					<a href="javascript:;" class="btn round">자세히보기</a>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="slide-4">
+				<!-- <img src="@/assets/images/temp/temp_390X390_4.png"> -->
+				<div class="title">
+					<strong>4444강렬한 레드 상하이를 만나다</strong>
+					<a href="javascript:;" class="btn round">자세히보기</a>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="slide-5">
+				<!-- <img src="@/assets/images/temp/temp_390X390_5.png"> -->
+				<div class="title">
+					<strong>5555강렬한 레드 상하이를 만나다</strong>
+					<a href="javascript:;" class="btn round">자세히보기</a>
+				</div>
+			</swiper-slide>
+			</swiper>
+			<!-- //mainswiper -->
+
+			<!-- swiper2 Thumbs -->
+			<swiper class="swiper mainthumbswiper" :options="swiperOptionThumbs" ref="swiperThumbs">
+			<swiper-slide class="slide-1">
+				<!-- <img src="@/assets/images/temp/temp_960X1170.png"> -->
+			</swiper-slide>
+			<swiper-slide class="slide-2">
+				<!-- <img src="@/assets/images/temp/temp_390X390_2.png"> -->
+			</swiper-slide>
+			<swiper-slide class="slide-3">
+				<!-- <img src="@/assets/images/temp/temp_390X390_3.png"> -->
+			</swiper-slide>
+			<swiper-slide class="slide-4">
+				<!-- <img src="@/assets/images/temp/temp_390X390_4.png"> -->
+			</swiper-slide>
+			<swiper-slide class="slide-5">
+				<!-- <img src="@/assets/images/temp/temp_390X390_5.png"> -->
+			</swiper-slide>
+			</swiper>
 
 			<!-- mainswiper// -->
+			<!--
 			<div class="swiper-container mainswiper">
 				<ul class="swiper-wrapper">
 					<li class="swiper-slide">
@@ -58,13 +118,15 @@
 					<a href="javascript:;" class="btn plus">전체보기</a>
 				</div>
 			</div>
+			-->
 			<!-- //mainswiper -->
 
 			<!-- mainthumbswiper// -->
+			<!--
 			<div class="swiper-container mainthumbswiper">
 				<ul class="swiper-wrapper">
-					<li class="swiper-slide swiper-slide-thumb-active"><!-- 활성화 : swiper-slide-thumb-active 클래스 선언 -->
-						<img src="@/assets/images/temp/temp_960X1170.png"><!-- mainswiper의 동일한 이미지로 순서 동일하게 넣어주시면 됩니다. -->
+					<li class="swiper-slide swiper-slide-thumb-active">
+						<img src="@/assets/images/temp/temp_960X1170.png">
 					</li>
 					<li class="swiper-slide">
 						<img src="@/assets/images/temp/temp_390X390_2.png">
@@ -83,6 +145,7 @@
 					</li>
 				</ul>
 			</div>
+			-->
 			<!-- //mainthumbswiper -->
 		</section>
 		<!-- //main-visual -->
@@ -93,6 +156,73 @@
 				<h2 class="h2-title">여름 인스타 감성 사진 모음</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
+			<swiper class="swiper thumbswiper" :options="thumbswiper">
+				<swiper-slide>
+					<a href="javascript:;">
+						<div class="title">
+							<span>집 안에 초록을 담다</span>
+						</div>
+						<div class="badge">
+							<!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출// -->
+							<!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
+								<span class="icon video"><span class="hide">video</span></span>
+								<span class="icon file"><span class="hide">file</span></span>
+								<span class="icon image"><span class="hide">image</span></span>
+								<span class="icon column"><span class="hide">column</span></span>
+							-->
+							<span class="icon video"><span class="hide">video</span></span>
+							<!-- //콘텐츠 유형 -->
+						</div>
+
+						<img src="@/assets/images/temp/temp_390X390.png">
+					</a>
+				</swiper-slide>
+				<swiper-slide>
+					<a href="javascript:;">
+						<div class="title">
+							<span>이스프링 비하인드 스토리 “Why?” 3편</span>
+						</div>
+						<div class="badge">
+							<span class="icon image"><span class="hide">image</span></span>
+						</div>
+						<img src="@/assets/images/temp/temp_390X390_2.png">
+					</a>
+				</swiper-slide>
+				<swiper-slide>
+					<a href="javascript:;">
+						<div class="title">
+							<span>이스프링 비하인드 스토리 “Why?” 3편</span>
+						</div>
+						<div class="badge">
+							<span class="icon image"><span class="hide">image</span></span>
+						</div>
+						<img src="@/assets/images/temp/temp_390X390_3.png">
+					</a>
+				</swiper-slide>
+				<swiper-slide>
+					<a href="javascript:;">
+						<div class="title">
+							<span>이스프링 비하인드 스토리 “Why?” 3편</span>
+						</div>
+						<div class="badge">
+							<span class="icon image"><span class="hide">image</span></span>
+						</div>
+						<img src="@/assets/images/temp/temp_390X390_4.png">
+					</a>
+				</swiper-slide>
+				<swiper-slide>
+					<a href="javascript:;">
+						<div class="title">
+							<span>이스프링 비하인드 스토리 “Why?” 3편</span>
+						</div>
+						<div class="badge">
+							<span class="icon image"><span class="hide">image</span></span>
+						</div>
+						<img src="@/assets/images/temp/temp_390X390_5.png">
+					</a>
+				</swiper-slide>
+			</swiper>
+			<!--
 			<div class="swiper-container thumbswiper">
 				<ul class="swiper-wrapper">
 					<li class="swiper-slide">
@@ -101,17 +231,8 @@
 								<span>집 안에 초록을 담다</span>
 							</div>
 							<div class="badge">
-								<!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출// -->
-								<!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
-									<span class="icon video"><span class="hide">video</span></span>
-									<span class="icon file"><span class="hide">file</span></span>
-									<span class="icon image"><span class="hide">image</span></span>
-									<span class="icon column"><span class="hide">column</span></span>
-								-->
 								<span class="icon video"><span class="hide">video</span></span>
-								<!-- //콘텐츠 유형 -->
 							</div>
-
 							<img src="@/assets/images/temp/temp_390X390.png">
 						</a>
 					</li>
@@ -161,6 +282,7 @@
 					</li>
 				</ul>
 			</div>
+			-->
 		</section>
 		<!-- //thumb-list -->
 
@@ -697,19 +819,32 @@
 <script>
 export default {
   name: 'Main',
+  
   data: function () {
     return {
-
+		swiperOptionTop: {
+        },
+        swiperOptionThumbs: {
+          spaceBetween: 10,
+          slidesPerView: 'auto',
+          touchRatio: 0.2,
+          slideToClickedSlide: true
+        },
+		thumbswiper: {
+          slidesPerView: 'auto',
+        }
     }
   },
   mounted() {
     // page start !!
-    this.AAA();
+    this.$nextTick(() => {
+        const swiperTop = this.$refs.swiperTop.$swiper
+        const swiperThumbs = this.$refs.swiperThumbs.$swiper
+        swiperTop.controller.control = swiperThumbs
+        swiperThumbs.controller.control = swiperTop
+      })
   },
-  methods:{
-    AAA() {
-      console.log('aaaa');
-    }
+  methods: {
 
   },
 }
