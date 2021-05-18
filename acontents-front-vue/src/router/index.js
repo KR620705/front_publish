@@ -20,26 +20,18 @@ const routes = [
       isIndex: false,
     },
   },
-  {// 메뉴 > 맞춤추천리스트
-    path: '/recomlist',
-    name: 'Recomlist',
-    component: () => import('../views/menu/recomlist.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 메뉴 > 맞춤추천리스트 nodata
-    path: '/recomlistnodata',
-    name: 'Recomlistnodata',
-    component: () => import('../views/menu/recomlistnodata.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
   {// main
     path: '/main',
     name: 'Main',
     component: () => import('../views/main'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// test
+    path: '/test',
+    name: 'Test',
+    component: () => import('../views/test'),
     meta: {
       isIndex: true,
     },
@@ -56,6 +48,22 @@ const routes = [
     path: '/modalshare',
     name: 'Modalshare',
     component: () => import('../views/details/modalshare'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 메뉴 > 맞춤추천리스트
+    path: '/recomlist',
+    name: 'Recomlist',
+    component: () => import('../views/menu/recomlist.vue'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 메뉴 > 맞춤추천리스트 nodata
+    path: '/recomlistnodata',
+    name: 'Recomlistnodata',
+    component: () => import('../views/menu/recomlistnodata.vue'),
     meta: {
       isIndex: true,
     },
