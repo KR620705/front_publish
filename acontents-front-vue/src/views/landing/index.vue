@@ -147,7 +147,7 @@
             <th scope="row" class="num">7</th>
             <td class="alL">검색</td>
             <td class="alL">search</td>
-            <td class="alL">/views</td>
+            <td class="alL">/views/search</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
