@@ -36,6 +36,14 @@ const routes = [
       isIndex: true,
     },
   },
+  {// main
+    path: '/main2',
+    name: 'Main2',
+    component: () => import('../views/main/main2'),
+    meta: {
+      isIndex: true,
+    },
+  },
   // {// 랜딩
   //   path: '/landing',
   //   name: 'Landing',
