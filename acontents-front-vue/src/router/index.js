@@ -4,10 +4,10 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {// 랜딩페이지 default
+  {// index default
     path: '/',
-    name: 'Landing',
-    component: () => import('../views/landing'),
+    name: 'Index',
+    component: () => import('../views/index'),
     meta: {
       isIndex: false,
     },
@@ -15,7 +15,7 @@ const routes = [
   {// 가이드페이지
     path: '/guide',
     name: 'Guide',
-    component: () => import('../views/landing/guide'),
+    component: () => import('../views/guide'),
     meta: {
       isIndex: false,
     },
@@ -28,14 +28,14 @@ const routes = [
       isIndex: true,
     },
   },
-  // {// test
-  //   path: '/test',
-  //   name: 'Test',
-  //   component: () => import('../views/test'),
-  //   meta: {
-  //     isIndex: true,
-  //   },
-  // },
+  {// test
+    path: '/test',
+    name: 'Test',
+    component: () => import('../views/test'),
+    meta: {
+      isIndex: true,
+    },
+  },
   {// 상세
     path: '/detail',
     name: 'Detail',
@@ -55,7 +55,7 @@ const routes = [
   {// 메뉴 > 맞춤추천리스트
     path: '/recomlist',
     name: 'Recomlist',
-    component: () => import('../views/menu/recomlist.vue'),
+    component: () => import('../views/menu/recomlist'),
     meta: {
       isIndex: true,
     },
@@ -63,9 +63,17 @@ const routes = [
   {// 메뉴 > 맞춤추천리스트 nodata
     path: '/recomlistnodata',
     name: 'Recomlistnodata',
-    component: () => import('../views/menu/recomlistnodata.vue'),
+    component: () => import('../views/menu/recomlistnodata'),
     meta: {
       isIndex: true,
+    },
+  },
+  {// 랜딩
+    path: '/landing',
+    name: 'Landing',
+    component: () => import('../views/main'),
+    meta: {
+      isIndex: false,
     },
   },
   /*
@@ -111,15 +119,7 @@ const routes = [
     path: '*',
     name: '404',
     component: () => import('../views/404.vue'),
-  },
-  {// 검샋
-    path: '/search',
-    name: 'Search',
-    component: () => import('../views/search/search.vue'),
-    meta: {
-      isIndex: true,
-    },
-  },
+  }
 ]
 
 const router = new VueRouter({
