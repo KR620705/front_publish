@@ -53,6 +53,7 @@
           <col width="10%" />
           <col width="10%" />
           <col width="*" />
+          <col width="6%" />
           <col width="15%" />
         </colgroup>
         <thead>
@@ -64,6 +65,7 @@
             <th scope="col">완료</th>
             <th scope="col">수정일자</th>
             <th scope="col">비고</th>
+            <th scope="col">작업자</th>
             <th scope="col">파일명&amp;Link</th>
           </tr>
         </thead>
@@ -76,6 +78,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
           </tr>
           <tr>
@@ -86,6 +89,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -98,6 +102,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -110,6 +115,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -122,6 +128,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -136,6 +143,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/main">
                 main
@@ -148,6 +156,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/landing">
                 landing
@@ -162,6 +171,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -174,6 +184,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -186,6 +197,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -200,6 +212,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/detail">
                 detail
@@ -214,6 +227,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/recomlist">
                 recomlist
@@ -226,6 +240,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/recomlistnodata">
                 recomlistnodata
@@ -238,6 +253,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/mylist">
                 mylist
@@ -250,6 +266,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/mylistedit">
                 mylistedit
@@ -262,6 +279,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/mylistnodata">
                 mylistnodata
@@ -274,6 +292,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -288,6 +307,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -300,6 +320,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -312,6 +333,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -326,6 +348,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -338,6 +361,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -350,6 +374,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -364,6 +389,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -376,6 +402,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td class="alL">
               <router-link to="/modalshare">
                 modalshare
@@ -390,6 +417,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -402,6 +430,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -414,6 +443,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -426,6 +456,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -438,6 +469,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td></td>
             <td class="alL">
               <!-- <router-link to="/">
                 
@@ -452,6 +484,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>공용</td>
             <td class="alL">
               <router-link to="/guide">
                 guide
