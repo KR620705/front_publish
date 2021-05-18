@@ -48,8 +48,8 @@
         <colgroup>
           <col width="4%" />
           <col width="10%" />
-          <col width="12%" />
           <col width="15%" />
+          <col width="12%" />
           <col width="10%" />
           <col width="10%" />
           <col width="*" />
@@ -69,10 +69,70 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="num">1</th>
+            <th scope="row" class="num"></th>
+            <td class="alL">공통</td>
+            <td class="alL">gnb</td>
+            <td class="alL">/components/base</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="4">로그인</td>
+            <td class="alL">로그인</td>
+            <td class="alL" rowspan="4">/views/auth</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">약관동의</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">주/부사업자 선택</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">선호 카테고리 선택</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="2">메인</td>
             <td class="alL">메인</td>
-            <td class="alL">default</td>
-            <td class="alL">/views</td>
+            <td class="alL" rowspan="2">/views/main</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -83,10 +143,60 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num">2</th>
-            <td class="alL" rowspan="2">상세</td>
-            <td class="alL">default</td>
-            <td class="alL" rowspan="2">/views/details</td>
+            <th scope="row" class="num"></th>
+            <td class="alL">비회원/비로그인 사전 렌딩</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/landing">
+                landing
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="3">리스트</td>
+            <td class="alL">비주얼 빅배너 목록</td>
+            <td class="alL" rowspan="3">/views/list</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">카테고리 콘텐츠 목록</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">큐레이션 콘텐츠 목록</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">상세</td>
+            <td class="alL">상세</td>
+            <td class="alL">/views/details</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -97,7 +207,171 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num">3</th>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="6">메뉴</td>
+            <td class="alL">맞춤추천 목록</td>
+            <td class="alL" rowspan="6">/views/menu</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <router-link to="/recomlist">
+                recomlist
+              </router-link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">맞춤추천 목록 nodata</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <router-link to="/recomlistnodata">
+                recomlistnodata
+              </router-link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">마이 목록</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">마이 목록 편집</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">마이 목록 nodata</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">FAQ</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="3">마이페이지</td>
+            <td class="alL">마이페이지 메인</td>
+            <td class="alL" rowspan="3">/views/mypage</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">주/부 사업자 변경</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">선호 카테고리 변경</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="3">검색</td>
+            <td class="alL">검색</td>
+            <td class="alL" rowspan="3">/views/search</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">검색결과</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">검색결과 nodata</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="2">팝업</td>
+            <td class="alL">이미지 팝업</td>
+            <td class="alL" rowspan="2">/views/popup</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
             <td></td>
             <td></td>
@@ -109,38 +383,65 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num">4</th>
-            <td class="alL" rowspan="3">메뉴</td>
-            <td class="alL">gnb</td>
-            <td class="alL">sidemenu.component</td>
-            <td></td>
-            <td></td>
-            <td class="alL red"></td>
-            <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
-          </tr>
-          <tr>
-            <th scope="row" class="num">5</th>
-            <td class="alL">맞춤추천 목록</td>
-            <td class="alL" rowspan="2">/views/menu</td>
+            <th scope="row" class="num"></th>
+            <td class="alL" rowspan="5">기타</td>
+            <td class="alL">이용약관</td>
+            <td class="alL" rowspan="5">/views/etc</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
             <td class="alL">
-              <router-link to="/recomlist">
-                recomlist
-              </router-link>
+              <!-- <router-link to="/">
+                
+              </router-link> -->
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num">6</th>
-            <td class="alL">맞춤추천 목록, 마이 목록 : nodata</td>
+            <th scope="row" class="num"></th>
+            <td class="alL">개인정보처리방침</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
             <td class="alL">
-              <router-link to="/recomlistnodata">
-                recomlistnodata
-              </router-link>
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">로딩페이지</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">오류페이지</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">콘텐츠 외부 접근 페이지</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
             </td>
           </tr>
           <tr>
@@ -157,20 +458,6 @@
               </router-link>
             </td>
           </tr>
-          <!-- <tr>
-            <th scope="row" class="num"></th>
-            <td class="alL">로그인</td>
-            <td class="alL"></td>
-            <td class="alL">login.html</td>
-            <td></td>
-            <td></td>
-            <td class="alL red"></td>
-            <td class="alL">
-              <router-link to="/login">
-                페이지 이동
-              </router-link>
-            </td>
-          </tr> -->
         </tbody>
       </table>
     </div>

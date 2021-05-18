@@ -12,7 +12,7 @@ const routes = [
       isIndex: false,
     },
   },
-  {// 가이드페이지
+  {// guide default
     path: '/guide',
     name: 'Guide',
     component: () => import('../views/guide'),
@@ -20,14 +20,30 @@ const routes = [
       isIndex: false,
     },
   },
-  {// main
-    path: '/main',
-    name: 'Main',
-    component: () => import('../views/main'),
+  {// 로그인
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/auth'),
     meta: {
       isIndex: true,
     },
   },
+  {// main
+    path: '/main',
+    name: 'Main',
+    component: () => import('../views/main/main'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  // {// 랜딩
+  //   path: '/landing',
+  //   name: 'Landing',
+  //   component: () => import('../views/main/landing'),
+  //   meta: {
+  //     isIndex: false,
+  //   },
+  // },
   {// test
     path: '/test',
     name: 'Test',
@@ -40,14 +56,6 @@ const routes = [
     path: '/detail',
     name: 'Detail',
     component: () => import('../views/details/detail'),
-    meta: {
-      isIndex: true,
-    },
-  },
-  {// 공유하기 팝업
-    path: '/modalshare',
-    name: 'Modalshare',
-    component: () => import('../views/details/modalshare'),
     meta: {
       isIndex: true,
     },
@@ -68,12 +76,12 @@ const routes = [
       isIndex: true,
     },
   },
-  {// 랜딩
-    path: '/landing',
-    name: 'Landing',
-    component: () => import('../views/main'),
+  {// 팝업 > 공유하기
+    path: '/modalshare',
+    name: 'Modalshare',
+    component: () => import('../views/popup/modalshare'),
     meta: {
-      isIndex: false,
+      isIndex: true,
     },
   },
   /*
@@ -81,14 +89,6 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: () => import('../views/dashboard')
-  },
-  {// 로그인
-    path: '/login',
-    name: 'Login',
-    component: () => import('../views/auth'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 회원가입
     path: '/agree',

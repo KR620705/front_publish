@@ -28,15 +28,15 @@
 @import "component/thumblist";
 
 /*-------------------- page --------------------*/
-//@import "views/landing"; //시작페이지
 //@import "views/auth"; // 로그인
-//@import "views/agree"; // 회원가입
-//@import "views/check-user"; // 사용자선택
-//@import "views/check-category"; // 선호 카테고리 선택
-//@import "views/dashboard"; // home
 @import "views/main"; //메인
+@import "views/list"; //리스트
 @import "views/details"; //상세
 @import "views/menu"; //메뉴
+//@import "views/mypage"; // 마이페이지
+//@import "views/search"; // 검색
+//@import "views/popup"; // 팝업
+//@import "views/etc"; // 기타
 
 /*-------------------- spacing --------------------*/
 // @import 'config/spacing';
