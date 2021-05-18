@@ -76,6 +76,14 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 검색
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/search/search'),
+    meta: {
+      isIndex: false,
+    },
+  },
   {// 팝업 > 공유하기
     path: '/modalshare',
     name: 'Modalshare',

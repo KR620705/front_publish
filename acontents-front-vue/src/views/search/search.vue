@@ -1,6 +1,9 @@
 <template>
   <div class="search search">
-검색 페이지
+    <div class="input_wrap">
+      <button type="button" class="btn-search-close">닫기</button>
+      <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+    </div>
   </div>
 </template>
 
