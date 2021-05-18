@@ -80,6 +80,16 @@
     
     <h2 class="guideh2">※ 공통 마크업 (추가되면 업데이트할 것.)</h2>
 
+    <h3 class="guideh3">checkbox</h3>
+    <div class="guidewrap">
+      <!-- checkbox// -->
+      <label>
+        <input type="checkbox">
+        <span>체크박스 default</span>
+      </label>
+      <!-- //checkbox -->
+    </div>
+
     <h3 class="guideh3">titlearea</h3>
     <div class="guidewrap">
       <!-- titlearea// -->
