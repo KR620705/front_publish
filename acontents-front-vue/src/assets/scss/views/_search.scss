@@ -1,7 +1,9 @@
 //search
 
-$h-3rem: 4rem;  // height:3rem
-$gray_color1: #B3B3B3;
+$rem4: 4rem;  // height:3rem
+$gray-color1: #B3B3B3; // 회색1
+$gray-color2: #999;  // 회색2
+$gray-color3: #292929;  // 회색3
 
 .search {
     width:calc(100% - 2rem);
@@ -11,32 +13,30 @@ $gray_color1: #B3B3B3;
     }
     .wrap_input{
         
-        height:#{$h-3rem};
+        height:#{$rem4};
 
         .search-input{
             width:calc(100% - 4rem);
-            height:#{$h-3rem};
+            height:#{$rem4};
             margin:0 auto;
             border-radius: 2rem;
-            background:#292929 url("../images/common/icon_search.svg") no-repeat 1.5rem 50% / 1.5rem;
-            padding: 0.8rem 1.15rem ;
+            background:$gray-color3 url("../images/common/icon_search.svg") no-repeat 1.5rem 50% / 1.5rem;
+            padding: 0.8rem 4rem ;
             border:none;
             text-align:left;
             float:left;
-            color:#999;
-            padding:0 0 0 3.8rem;
+            color:$gray-color2;
 
             &::placeholder{
-                padding-left:34spx;
-                color:#999;
+                color:$gray-color2;
             }   
         }
         .btn-search-close{
             width:3.5rem;
-            height:#{$h-3rem};
+            height:#{$rem4};
             border:none;
             background-color:transparent;
-            color:#fff;
+            color:$white-color;
             float:right;
         }
     }
@@ -45,10 +45,28 @@ $gray_color1: #B3B3B3;
     .tag-list{
         margin:1.9rem auto 0 auto;
         width:calc(100% - 3rem);
+    }
+    .tag-list.recommand{
+        border-top:1px solid #363636;
+        padding-top:25px;
+    }
 
+    .recommand-word{
         ul{
+            padding: 15px 0 0 0;
+
+            li{
+                width:50%;
+                text-align:left;
+                display:inline-block;
+                line-height:30px;
+                font: {
+                    size:1.3rem;
+                }
+            }
+
             a{
-                color:$gray_color1;
+                color:$gray-color1;
             }
         }
     }
