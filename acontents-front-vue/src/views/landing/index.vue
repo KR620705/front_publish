@@ -144,6 +144,20 @@
             </td>
           </tr>
           <tr>
+            <th scope="row" class="num">7</th>
+            <td class="alL">검색</td>
+            <td class="alL">search</td>
+            <td class="alL">/views</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td class="alL">
+              <router-link to="/search">
+                search
+              </router-link>
+            </td>
+          </tr>
+          <tr>
             <th scope="row" class="num">※</th>
             <td class="alL">퍼블리싱 가이드</td>
             <td></td>

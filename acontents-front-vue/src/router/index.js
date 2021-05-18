@@ -28,14 +28,14 @@ const routes = [
       isIndex: true,
     },
   },
-  {// test
-    path: '/test',
-    name: 'Test',
-    component: () => import('../views/test'),
-    meta: {
-      isIndex: true,
-    },
-  },
+  // {// test
+  //   path: '/test',
+  //   name: 'Test',
+  //   component: () => import('../views/test'),
+  //   meta: {
+  //     isIndex: true,
+  //   },
+  // },
   {// 상세
     path: '/detail',
     name: 'Detail',
@@ -111,7 +111,15 @@ const routes = [
     path: '*',
     name: '404',
     component: () => import('../views/404.vue'),
-  }
+  },
+  {// 검샋
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/search/search.vue'),
+    meta: {
+      isIndex: true,
+    },
+  },
 ]
 
 const router = new VueRouter({
