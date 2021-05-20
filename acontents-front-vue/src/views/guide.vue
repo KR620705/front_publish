@@ -81,6 +81,8 @@
         /config : setting &amp; util<br>
         /base : 기본 layout<br>
         /component : 요소 Elements<br>
+        /views : 각 페이지<br>
+        /views/_popup.scss : 각 팝업별 css
       </div>
     </div>
 

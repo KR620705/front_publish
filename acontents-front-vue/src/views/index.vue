@@ -42,18 +42,18 @@
       </table>
     </div>
 
-    <h2 class="guideh2">페이지</h2>
+    <h2 class="guideh2">페이지 <span class="guide-desc">(개발에 공유할 경우, 완료날짜에 공유한 날짜를 기입한다.)</span></h2>
     <div class="guide-tbl">
       <table>
         <colgroup>
-          <col width="4%" />
+          <col width="3%" />
+          <col width="9%" />
+          <col width="14%" />
           <col width="10%" />
-          <col width="15%" />
-          <col width="12%" />
           <col width="5%" />
           <col width="5%" />
-          <col width="7%" />
-          <col width="10%" />
+          <col width="9%" />
+          <col width="9%" />
           <col width="*" />
           <col width="6%" />
           <col width="15%" />
@@ -65,15 +65,15 @@
             <th scope="col" rowspan="2">2Depth</th>
             <th scope="col" rowspan="2">경로</th>
             <th scope="col" colspan="3">완료여부</th>
-            <th scope="col" rowspan="2">수정일자</th>
+            <th scope="col" rowspan="2">수정일</th>
             <th scope="col" rowspan="2">비고</th>
             <th scope="col" rowspan="2">작업자</th>
             <th scope="col" rowspan="2">파일명&amp;Link</th>
           </tr>
           <tr>
-            <th scope="col">모바일</th>
+            <th scope="col">MO</th>
             <th scope="col">PC</th>
-            <th scope="col">완료일자</th>
+            <th scope="col">개발공유일</th>
           </tr>
         </thead>
         <tbody>
@@ -82,7 +82,7 @@
             <td class="alL">공통</td>
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -157,7 +157,7 @@
             <td class="alL" rowspan="2">메인</td>
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -236,7 +236,7 @@
             <td class="alL">상세</td>
             <td class="alL">상세</td>
             <td class="alL">/views/details</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -253,7 +253,7 @@
             <td class="alL" rowspan="6">메뉴</td>
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="6">/views/menu</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -268,7 +268,7 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">맞춤추천 목록 nodata</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -283,7 +283,7 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -298,7 +298,7 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 편집</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -313,7 +313,7 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 nodata</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -439,7 +439,7 @@
             <td class="alL" rowspan="2">팝업</td>
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -454,7 +454,7 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
-            <td></td>
+            <td>완료</td>
             <td>미완료</td>
             <td></td>
             <td></td>
@@ -573,8 +573,8 @@
   .guideindex .guide-tbl table thead tr:first-child > th,
   .guideindex .guide-tbl table tbody tr:first-child > th,
   .guideindex .guide-tbl table tbody tr:first-child > td {border-top:none;}
-  .guideindex .guide-tbl table thead tr > th {background:#eee; font-size:13px;}
-  .guideindex .guide-tbl table tbody tr > th {background:#f9f9f9;}
+  .guideindex .guide-tbl table thead tr > th {background:#eee; font-size:13px;vertical-align:middle;}
+  .guideindex .guide-tbl table tbody tr > td {vertical-align:top;}
   .guideindex .guide-tbl table thead tr > th {color:#000; font-weight:bold;}
   .guideindex .guide-tbl table tbody {font-size:13px; border-bottom:1px #ccc solid; border-top:1px #ccc solid;}
   .guideindex .guide-tbl .alC {text-align:center !important;}
@@ -592,6 +592,7 @@
   .guideindex .guide-tbl .red{color:#f00 !important;}
   .guideindex .guide-tbl .complete{background-color:#ccc;}
   .guideindex .guide-tbl .remove{background-color:#fdeaea;}
+  .guideindex .guide-desc{margin-left:10px;font-size:13px;}
 </style>
 
 <script>
