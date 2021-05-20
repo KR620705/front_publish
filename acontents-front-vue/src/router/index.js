@@ -17,7 +17,7 @@ const routes = [
     name: 'Guide',
     component: () => import('../views/guide'),
     meta: {
-      isIndex: false,
+      isIndex: true,
     },
   },
   {// 로그인
@@ -44,14 +44,6 @@ const routes = [
       isMainHeader: true,
     },
   },
-  // {// 랜딩
-  //   path: '/landing',
-  //   name: 'Landing',
-  //   component: () => import('../views/main/landing'),
-  //   meta: {
-  //     isIndex: false,
-  //   },
-  // },
   {// 상세
     path: '/detail',
     name: 'Detail',
