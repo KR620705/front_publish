@@ -69,9 +69,9 @@ const routes = [
     },
   },
   {// 메뉴 > 맞춤추천 목록 nodata
-    path: '/recomlistnodata',
-    name: 'Recomlistnodata',
-    component: () => import('../views/menu/recomlistnodata'),
+    path: '/recomlist_nodata',
+    name: 'Recomlist_nodata',
+    component: () => import('../views/menu/recomlist_nodata'),
     meta: {
       isIndex: true,
     },
@@ -85,17 +85,17 @@ const routes = [
     },
   },
   {// 메뉴 > 마이 목록 편집
-    path: '/mylistedit',
-    name: 'Mylistedit',
-    component: () => import('../views/menu/mylistedit'),
+    path: '/mylist_edit',
+    name: 'Mylist_edit',
+    component: () => import('../views/menu/mylist_edit'),
     meta: {
       isIndex: true,
     },
   },
   {// 메뉴 > 마이 목록 nodata
-    path: '/mylistnodata',
-    name: 'Mylistnodata',
-    component: () => import('../views/menu/mylistnodata'),
+    path: '/mylist_nodata',
+    name: 'Mylist_nodata',
+    component: () => import('../views/menu/mylist_nodata'),
     meta: {
       isIndex: true,
     },

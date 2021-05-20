@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Recomlistnodata',
+  name: 'Recomlist_nodata',
   data: function () {
     return {
 

@@ -2,7 +2,7 @@
   <div class="guideindex">
     <h1 class="guideh1">A Content Front INDEX</h1>
     <h2 class="guideh2">폴더구조</h2>
-    <div class="wrap_tbl">
+    <div class="guide-tbl">
       <table class="guideTbl01">
         <colgroup>
           <col width="33%" />
@@ -43,14 +43,16 @@
     </div>
 
     <h2 class="guideh2">페이지</h2>
-    <div class="wrap_tbl">
+    <div class="guide-tbl">
       <table>
         <colgroup>
           <col width="4%" />
           <col width="10%" />
           <col width="15%" />
           <col width="12%" />
-          <col width="10%" />
+          <col width="5%" />
+          <col width="5%" />
+          <col width="7%" />
           <col width="10%" />
           <col width="*" />
           <col width="6%" />
@@ -58,15 +60,20 @@
         </colgroup>
         <thead>
           <tr>
-            <th scope="col">번호</th>
-            <th scope="col">1Depth</th>
-            <th scope="col">2Depth</th>
-            <th scope="col">경로</th>
-            <th scope="col">완료</th>
-            <th scope="col">수정일자</th>
-            <th scope="col">비고</th>
-            <th scope="col">작업자</th>
-            <th scope="col">파일명&amp;Link</th>
+            <th scope="col" rowspan="2">번호</th>
+            <th scope="col" rowspan="2">1Depth</th>
+            <th scope="col" rowspan="2">2Depth</th>
+            <th scope="col" rowspan="2">경로</th>
+            <th scope="col" colspan="3">완료여부</th>
+            <th scope="col" rowspan="2">수정일자</th>
+            <th scope="col" rowspan="2">비고</th>
+            <th scope="col" rowspan="2">작업자</th>
+            <th scope="col" rowspan="2">파일명&amp;Link</th>
+          </tr>
+          <tr>
+            <th scope="col">모바일</th>
+            <th scope="col">PC</th>
+            <th scope="col">완료일자</th>
           </tr>
         </thead>
         <tbody>
@@ -75,6 +82,8 @@
             <td class="alL">공통</td>
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
+            <td></td>
+            <td>미완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -86,6 +95,8 @@
             <td class="alL" rowspan="4">로그인</td>
             <td class="alL">로그인</td>
             <td class="alL" rowspan="4">/views/auth</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -101,6 +112,8 @@
             <td class="alL">약관동의</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -114,6 +127,8 @@
             <td class="alL">주/부사업자 선택</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -125,6 +140,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 선택</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -141,6 +158,8 @@
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -153,6 +172,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">비회원/비로그인 사전 렌딩</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -170,6 +191,8 @@
             <td class="alL" rowspan="3">/views/list</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -183,6 +206,8 @@
             <td class="alL">카테고리 콘텐츠 목록</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -194,6 +219,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">큐레이션 콘텐츠 목록</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -210,6 +237,8 @@
             <td class="alL">상세</td>
             <td class="alL">/views/details</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -225,6 +254,8 @@
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="6">/views/menu</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -238,18 +269,22 @@
             <th scope="row" class="num"></th>
             <td class="alL">맞춤추천 목록 nodata</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
             <td class="alL">
-              <router-link to="/recomlistnodata">
-                recomlistnodata
+              <router-link to="/recomlist_nodata">
+                recomlist_nodata
               </router-link>
             </td>
           </tr>
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록</td>
+            <td></td>
+            <td>미완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -264,12 +299,14 @@
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 편집</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
             <td class="alL">
-              <router-link to="/mylistedit">
-                mylistedit
+              <router-link to="/mylist_edit">
+                mylist_edit
               </router-link>
             </td>
           </tr>
@@ -277,18 +314,22 @@
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 nodata</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
             <td class="alL">
-              <router-link to="/mylistnodata">
-                mylistnodata
+              <router-link to="/mylist_nodata">
+                mylist_nodata
               </router-link>
             </td>
           </tr>
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">FAQ</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -306,6 +347,8 @@
             <td class="alL" rowspan="3">/views/mypage</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -319,6 +362,8 @@
             <td class="alL">주/부 사업자 변경</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -330,6 +375,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 변경</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -346,6 +393,8 @@
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
             <td></td>
+            <td>미완료</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -360,6 +409,8 @@
             <td class="alL">검색결과</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -371,6 +422,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">검색결과 nodata</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -388,6 +441,8 @@
             <td class="alL" rowspan="2">/views/popup</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -399,6 +454,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
+            <td></td>
+            <td>미완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -416,6 +473,8 @@
             <td class="alL" rowspan="5">/views/etc</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -427,6 +486,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">개인정보처리방침</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -442,6 +503,8 @@
             <td class="alL">로딩페이지</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -453,6 +516,8 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">오류페이지</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -468,6 +533,8 @@
             <td class="alL">콘텐츠 외부 접근 페이지</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
@@ -478,13 +545,7 @@
           </tr>
           <tr>
             <th scope="row" class="num">※</th>
-            <td class="alL">퍼블리싱 가이드</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>공용</td>
+            <td class="alL" colspan="9">퍼블리싱 가이드</td>
             <td class="alL">
               <router-link to="/guide">
                 guide
@@ -503,33 +564,34 @@
   .guideindex{padding:50px 10px;background:#fff;color:#000;}
   .guideindex .guideh1{margin-bottom:30px;font-size:26px;font-weight:600;text-align:center;}
   .guideindex .guideh2{margin-top:40px;font-size:16px;font-weight:600;}
-  .wrap_tbl table {width:100%; border-collapse:collapse;}
-  .wrap_tbl table {margin-top:10px;text-align:center;border-top:2px #326dc2 solid;}
-  .wrap_tbl table tr > th,
-  .wrap_tbl table tr > td {padding:10px; border-left:1px #dedede solid; border-top:1px #dedede solid;vertical-align:top;}
-  .wrap_tbl table tr > th:first-child,
-  .wrap_tbl table tr > td:first-child{border-left:none;}
-  .wrap_tbl table thead tr:first-child > th,
-  .wrap_tbl table tbody tr:first-child > th,
-  .wrap_tbl table tbody tr:first-child > td {border-top:none;}
-  .wrap_tbl table thead tr > th {background:#eee; font-size:13px;}
-  .wrap_tbl table tbody tr > th {background:#f9f9f9;}
-  .wrap_tbl table thead tr > th {color:#000; font-weight:bold;}
-  .wrap_tbl table tbody {font-size:13px; border-bottom:1px #ccc solid; border-top:1px #ccc solid;}
-  .wrap_tbl .alC {text-align:center !important;}
-  .wrap_tbl .alL {text-align:left !important;}
-  .wrap_tbl .alR {text-align:right !important;}
-  .wrap_tbl .vertical_t {vertical-align:top !important;}
-  .wrap_tbl{min-width:980px;margin:0 auto;box-sizing: border-box;}
-  .wrap_tbl a{color:#666;}
-  .wrap_tbl a:hover{color:#326dc2;}
-  .wrap_tbl .chk th,
-  .wrap_tbl .chk td{color: blue !important;}
-  .wrap_tbl tbody.add th,
-  .wrap_tbl tbody.add td{color:#00a383 !important;}
-  .wrap_tbl tbody.add2 th,
-  .wrap_tbl tbody.add2 td{color:#a38300 !important;}
-  .wrap_tbl .red{color:#f00 !important;}
+  .guideindex .guide-tbl table {width:100%; border-collapse:collapse;}
+  .guideindex .guide-tbl table {margin-top:10px;text-align:center;border-top:2px #326dc2 solid;}
+  .guideindex .guide-tbl table tr > th,
+  .guideindex .guide-tbl table tr > td {padding:10px; border-left:1px #dedede solid; border-top:1px #dedede solid;vertical-align:top;}
+  .guideindex .guide-tbl table tr > th:first-child,
+  .guideindex .guide-tbl table tr > td:first-child{border-left:none;}
+  .guideindex .guide-tbl table thead tr:first-child > th,
+  .guideindex .guide-tbl table tbody tr:first-child > th,
+  .guideindex .guide-tbl table tbody tr:first-child > td {border-top:none;}
+  .guideindex .guide-tbl table thead tr > th {background:#eee; font-size:13px;}
+  .guideindex .guide-tbl table tbody tr > th {background:#f9f9f9;}
+  .guideindex .guide-tbl table thead tr > th {color:#000; font-weight:bold;}
+  .guideindex .guide-tbl table tbody {font-size:13px; border-bottom:1px #ccc solid; border-top:1px #ccc solid;}
+  .guideindex .guide-tbl .alC {text-align:center !important;}
+  .guideindex .guide-tbl .alL {text-align:left !important;}
+  .guideindex .guide-tbl .alR {text-align:right !important;}
+  .guideindex .guide-tbl{min-width:980px;margin:0 auto;box-sizing: border-box;}
+  .guideindex .guide-tbl a{color:#666;}
+  .guideindex .guide-tbl a:hover{color:#326dc2;}
+  .guideindex .guide-tbl .chk th,
+  .guideindex .guide-tbl .chk td{color: blue !important;}
+  .guideindex .guide-tbl tbody.add th,
+  .guideindex .guide-tbl tbody.add td{color:#00a383 !important;}
+  .guideindex .guide-tbl tbody.add2 th,
+  .guideindex .guide-tbl tbody.add2 td{color:#a38300 !important;}
+  .guideindex .guide-tbl .red{color:#f00 !important;}
+  .guideindex .guide-tbl .complete{background-color:#ccc;}
+  .guideindex .guide-tbl .remove{background-color:#fdeaea;}
 </style>
 
 <script>

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Mylistnodata',
+  name: 'Mylist_nodata',
   data: function () {
     return {
 
