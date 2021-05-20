@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: 'Search_result',
+  name: 'Search_result_nodata',
   data: function () {
     return {
 

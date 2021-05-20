@@ -108,6 +108,14 @@ const routes = [
       isIndex: false,
     },
   },
+  {// 검색 결과(nodata)
+    path: '/search_result_nodata',
+    name: 'Searc_result_nodata',
+    component: () => import('../views/search/search_result_nodata'),
+    meta: {
+      isIndex: false,
+    },
+  },
   {// 팝업 > 공유하기
     path: '/modal_share',
     name: 'Modal_share',
