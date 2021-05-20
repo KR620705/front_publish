@@ -393,7 +393,7 @@
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
             <td></td>
-            <td>미완료</td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -423,15 +423,15 @@
             <th scope="row" class="num"></th>
             <td class="alL">검색결과 nodata</td>
             <td></td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/search_result_nodata">
+                search_result_nodata
+              </router-link>
             </td>
           </tr>
           <tr>

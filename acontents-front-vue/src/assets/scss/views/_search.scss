@@ -6,8 +6,7 @@ $gray-color2: #999;  // 회색2
 $gray-color3: #292929;  // 회색3
 
 .search {
-    width:calc(100% - 2rem);
-    margin:0 auto;
+    margin:0 2rem;
     font: {
         size:1.08rem;
     }
@@ -52,6 +51,7 @@ $gray-color3: #292929;  // 회색3
     }
 
     .recommand-word{
+
         ul{
             padding: 15px 0 0 0;
 
@@ -67,6 +67,32 @@ $gray-color3: #292929;  // 회색3
 
             a{
                 color:$gray-color1;
+            }
+        }
+    }
+
+    &-result{
+        margin:1.9rem auto 0 auto;
+        min-height:186px;
+        text-align:center;
+        position:relative;
+
+        &-text{
+           
+            position:absolute;
+            top:35%;
+            width:100%;
+
+            h3{
+                font: {
+                    size:1.5rem;
+                }
+            }
+
+            p{
+                padding-top:1rem;
+                color:#c9c9c9;
+                line-height:1.8rem;
             }
         }
     }
