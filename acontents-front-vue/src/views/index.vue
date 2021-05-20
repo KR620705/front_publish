@@ -408,21 +408,6 @@
             <th scope="row" class="num"></th>
             <td class="alL">검색결과</td>
             <td></td>
-            <td>완료</td>
-            <td></td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>이재이</td>
-            <td class="alL">
-              <router-link to="/search_result_nodata">
-                search_result_nodata
-              </router-link>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="num"></th>
-            <td class="alL">검색결과 nodata</td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -432,6 +417,21 @@
               <!-- <router-link to="/">
                 
               </router-link> -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">검색결과 nodata</td>
+            <td></td>
+            <td>완료</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>이재이</td>
+            <td class="alL">
+              <router-link to="/search_result_nodata">
+                search_result_nodata
+              </router-link>
             </td>
           </tr>
           <tr>
