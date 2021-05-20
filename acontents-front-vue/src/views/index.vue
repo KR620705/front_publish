@@ -42,7 +42,7 @@
       </table>
     </div>
 
-    <h2 class="guideh2">페이지 <span class="guide-desc">(개발에 공유할 경우, 완료날짜에 공유한 날짜를 기입한다.)</span></h2>
+    <h2 class="guideh2">페이지 <span class="guide-desc">(개발에 공유할 경우, 개발공유일에 공유한 날짜를 기입한다.)</span></h2>
     <div class="guide-tbl">
       <table>
         <colgroup>
@@ -83,7 +83,7 @@
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -158,7 +158,7 @@
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -237,7 +237,7 @@
             <td class="alL">상세</td>
             <td class="alL">/views/details</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -254,7 +254,7 @@
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="6">/views/menu</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -269,7 +269,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">맞춤추천 목록 nodata</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -284,7 +284,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -299,7 +299,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 편집</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -314,7 +314,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">마이 목록 nodata</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -394,7 +394,7 @@
             <td class="alL" rowspan="3">/views/search</td>
             <td>완료</td>
             <td></td>
-            <td>05-20</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -424,7 +424,7 @@
             <td class="alL">검색결과 nodata</td>
             <td>완료</td>
             <td></td>
-            <td>05-20</td>
+            <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -440,7 +440,7 @@
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -455,7 +455,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
             <td>완료</td>
-            <td>미완료</td>
+            <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
