@@ -404,8 +404,8 @@
             <td class="alL red"></td>
             <td>조우빈</td>
             <td class="alL">
-              <router-link to="/modalshare">
-                modalshare
+              <router-link to="/modal_share">
+                modal_share
               </router-link>
             </td>
           </tr>

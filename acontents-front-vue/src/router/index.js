@@ -52,14 +52,6 @@ const routes = [
   //     isIndex: false,
   //   },
   // },
-  {// test
-    path: '/test',
-    name: 'Test',
-    component: () => import('../views/test'),
-    meta: {
-      isIndex: true,
-    },
-  },
   {// 상세
     path: '/detail',
     name: 'Detail',
@@ -117,9 +109,17 @@ const routes = [
     },
   },
   {// 팝업 > 공유하기
-    path: '/modalshare',
-    name: 'Modalshare',
-    component: () => import('../views/popup/modalshare'),
+    path: '/modal_share',
+    name: 'Modal_share',
+    component: () => import('../views/popup/modal_share'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 팝업 > 이미지
+    path: '/modal_image',
+    name: 'Modal_image',
+    component: () => import('../views/popup/modal_image'),
     meta: {
       isIndex: true,
     },

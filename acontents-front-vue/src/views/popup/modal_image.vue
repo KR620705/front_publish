@@ -57,7 +57,7 @@
 <script>
 
 export default {
-  name: 'Modalshare',
+  name: 'Modal_image',
   data: function () {
     return {
 
