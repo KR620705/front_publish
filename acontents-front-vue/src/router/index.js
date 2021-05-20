@@ -114,7 +114,7 @@ const routes = [
     component: () => import('../views/popup/modal_share'),
     meta: {
       isIndex: true,
-    },
+    },   
   },
   {// 팝업 > 이미지
     path: '/modal_image',
