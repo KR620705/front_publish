@@ -40,10 +40,13 @@
 								모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
 							</div>
 						</div>
+					
+						<div class="modal-btn">
+							<button type="button" class="modal-body-close">닫기</button>
+						</div>
 					</div>
 					<!-- //modal-share : 공유하기 팝업 -->
 
-					<button type="button" class="modal-close">닫기</button>
 				</div>
 			</div>
 		</div>

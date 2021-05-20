@@ -5,19 +5,38 @@
 
     <h2 class="guideh2">※ Page</h2>
 
-    <h3 class="guideh3">페이지 작업</h3>
+    <h3 class="guideh3">바닥 페이지 작업</h3>
     <div class="guidetxt">
-      1. 폴더구조에 적합하도록 파일을 생성한다.<br>
-      2. 만들어진 vue파일 내에서 template 바로 아래에 있는 div에 폴더명과 해당페이지명 클래스를 선언해준다.<br>
+      - 폴더구조에 적합하도록 파일을 생성한다.<br>
+      - 만들어진 vue파일 내에서 <span class="red">template 바로 아래에 있는 div에 폴더명과 해당페이지명 클래스를 선언해준다.</span><br>
+      - <span class="red">단, 같은 의미를 갖고 있는 페이지가 여러개라면</span>(mylist, mylist_edit, mylist_nodata 데이터가 있을경우, 없을경우 등) <span class="red">같은 클래스를 선언한다.</span><br>
+      &nbsp; &nbsp; &nbsp; ex)<br>
         &lt;template&gt;<br>
           <div class="guideindent">
-          &lt;div class="폴더명 해당페이지명"&gt;<br>
+          &lt;div <span class="red">class="menu mylist"</span>&gt;<br>
           &lt;/div&gt;<br>
         </div>
         &lt;/template&gt;
     </div>
 
-    <h3 class="guideh3">네이밍</h3>
+    <h3 class="guideh3">팝업 페이지 작업</h3>
+    <div class="guidetxt">
+      - modal-body 클래스 바로 아래에 <span class="red">"div.modal-해당 페이지명" 로 감싸서 작업한다. (유연하게 대처하기 위해 추가한다.)</span><br>
+      &nbsp; &nbsp; &nbsp; ex)<br>
+      &lt;div class="modal-body"&gt;<br>
+        <div class="guideindent">
+          &lt;div <span class="red">class="modal-share"</span>&gt;<br>
+
+          <div class="guideindent">
+            각 팝업별 content<br>
+          </div>
+
+          &lt;/div&gt;
+        </div>
+      &lt;/div&gt;
+    </div>
+
+    <h3 class="guideh3">파일명 네이밍</h3>
     <div class="guidetxt">
       - 소문자만 사용하며, 대문자는 사용하지 않는다.<br>
       - 네이밍이 길경우에는 언더바("_")를 사용한다.<br>
@@ -36,7 +55,7 @@
       </div>
     </div>
 
-    <h3 class="guideh3">네이밍</h3>
+    <h3 class="guideh3">파일명 네이밍</h3>
     <div class="guidetxt">
       - 소문자만 사용하며, 대문자는 사용하지 않는다.<br>
       - 네이밍이 길경우에는 언더바("_")를 사용한다.<br>
@@ -81,7 +100,7 @@
         3. 요소 Elements<br>
         4. page
       </div>
-      - 작업중 사용하지 않는 파일은 주석처리로 한다.(페이지 90%이상 나올때쯤에 다시한번 정리한다.)
+      - 작업중 사용하지 않는 파일은 주석처리로 한다.(페이지 90%이상 됐을때 불필요한 파일 삭제한다.)
     </div>
     
     <h2 class="guideh2">※ 공통 마크업 (추가되면 업데이트할 것.)</h2>
@@ -475,4 +494,5 @@ export default {
   .guideindex .guidetxt{margin-top:10px;font-size:14px;line-height:1.6;}
   .guideindex .guidetxt .guideindent{margin-left:15px;}
   .guideindex .guidewrap {margin-top:10px;max-width:1300px;background:#000;padding:20px;}
+  .guideindex .red{color:#f00 !important;}
 </style>

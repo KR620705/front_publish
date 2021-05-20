@@ -440,15 +440,15 @@
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
             <td></td>
-            <td></td>
+            <td>미완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>조우빈</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/modal_image">
+                modal_image
+              </router-link>
             </td>
           </tr>
           <tr>
