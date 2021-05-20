@@ -1,12 +1,13 @@
 <template>
   <div :class="`body ${($store.state.isAsideOpen) ? 'aside-open' : ''}`">
-    <div v-if="isHeader">
-      <!-- header 있음 -->
+    <div v-if="$route.meta.isMainHeader">
+      <!-- Main header -->
+      <Header />
     </div>
     <div v-else>
-      <!-- header 없음 -->
+      <!-- Sub header -->
+      <SubHeader />
     </div>
-    <Header />
 
     <div class="container">
       <Sidemenu />
@@ -22,18 +23,19 @@
 <script>
 import Sidemenu from '@/components/base/Sidemenu.component.vue';
 import Header from "./Header.component";
+import SubHeader from "./Header.sub.component";
 import Footer from "./Footer.component";
 
 export default {
   components: {
     Header,
+    SubHeader,
     Footer,
     Sidemenu
   },
   data: function () {
     return {
       username: '',
-      isHeader: true,
     }
   },
   mounted() {

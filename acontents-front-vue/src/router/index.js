@@ -9,7 +9,7 @@ const routes = [
     name: 'Index',
     component: () => import('../views/index'),
     meta: {
-      isIndex: false,
+      isIndex: true,
     },
   },
   {// guide default
@@ -33,7 +33,7 @@ const routes = [
     name: 'Main',
     component: () => import('../views/main/main'),
     meta: {
-      isIndex: true,
+      isMainHeader: true,
     },
   },
   {// main
@@ -41,7 +41,7 @@ const routes = [
     name: 'Main2',
     component: () => import('../views/main/main2'),
     meta: {
-      isIndex: true,
+      isMainHeader: true,
     },
   },
   // {// 랜딩
@@ -56,73 +56,46 @@ const routes = [
     path: '/detail',
     name: 'Detail',
     component: () => import('../views/details/detail'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 메뉴 > 맞춤추천 목록
     path: '/recomlist',
     name: 'Recomlist',
     component: () => import('../views/menu/recomlist'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 메뉴 > 맞춤추천 목록 nodata
     path: '/recomlist_nodata',
     name: 'Recomlist_nodata',
     component: () => import('../views/menu/recomlist_nodata'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 메뉴 > 마이 목록
     path: '/mylist',
     name: 'Mylist',
     component: () => import('../views/menu/mylist'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 메뉴 > 마이 목록 편집
     path: '/mylist_edit',
     name: 'Mylist_edit',
     component: () => import('../views/menu/mylist_edit'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 메뉴 > 마이 목록 nodata
     path: '/mylist_nodata',
     name: 'Mylist_nodata',
     component: () => import('../views/menu/mylist_nodata'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 검색
     path: '/search',
     name: 'Search',
     component: () => import('../views/search/search'),
-    meta: {
-      isIndex: false,
-    },
   },
   {// 팝업 > 공유하기
     path: '/modal_share',
     name: 'Modal_share',
     component: () => import('../views/popup/modal_share'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 팝업 > 이미지
     path: '/modal_image',
     name: 'Modal_image',
     component: () => import('../views/popup/modal_image'),
-    meta: {
-      isIndex: true,
-    },
   },
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',

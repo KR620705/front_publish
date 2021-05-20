@@ -1,17 +1,12 @@
 <template>
   <div id="App" class="app">
-    <!-- <template v-if="$route.meta.isIndex">
-      <div class="logo">
-        <router-link to="/">
-          <span>로고</span>
-        </router-link>
-      </div>
-
+    <template v-if="$route.meta.isIndex">
       <router-view/>
     </template>
     <template v-else>
-    </template> -->
       <Layout />
+    </template>
+
   </div>
 </template>
 <script>
