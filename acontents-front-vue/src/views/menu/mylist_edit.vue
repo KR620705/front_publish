@@ -2,9 +2,8 @@
   <div class="menu mylist-edit">
 
 	<form>
-		<legend></legend>
-
 		<fieldset>
+			<legend>마이 목록</legend>
 
 			<!-- thumb-list type-column// -->
 			<section class="thumb-list type-column">

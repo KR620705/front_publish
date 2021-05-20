@@ -74,6 +74,11 @@ const routes = [
     name: 'Mylist_nodata',
     component: () => import('../views/menu/mylist_nodata'),
   },
+  {// faq
+    path: '/faq',
+    name: 'Faq',
+    component: () => import('../views/menu/faq'),
+  },
   {// 검색
     path: '/search',
     name: 'Search',
