@@ -392,9 +392,9 @@
             <td class="alL" rowspan="3">검색</td>
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
-            <td></td>
             <td>완료</td>
             <td></td>
+            <td>05-20</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -422,9 +422,9 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">검색결과 nodata</td>
-            <td></td>
             <td>완료</td>
             <td></td>
+            <td>05-20</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
