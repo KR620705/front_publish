@@ -414,9 +414,9 @@
             <td class="alL red"></td>
             <td></td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/search_result">
+                search_result
+              </router-link>
             </td>
           </tr>
           <tr>

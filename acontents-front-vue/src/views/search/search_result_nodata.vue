@@ -7,6 +7,7 @@
     </section>
 
     <section class="search-result">
+
       <div class="search-result-text">
         <h3 class="h3-title">검색 결과가 없습니다.</h3>
         <p>
@@ -34,7 +35,6 @@
 				<li><a href="javascript:;">#다이어트</a></li>
 			</ul>
 		</section>
-
 
   </div>
 </template>

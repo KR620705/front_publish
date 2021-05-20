@@ -79,6 +79,11 @@ const routes = [
     name: 'Search',
     component: () => import('../views/search/search'),
   },
+  {// 검색 결과
+    path: '/search_result',
+    name: 'Searc_result',
+    component: () => import('../views/search/search_result'),
+  },
   {// 검색 결과(nodata)
     path: '/search_result_nodata',
     name: 'Searc_result_nodata',
