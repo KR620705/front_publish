@@ -1,5 +1,5 @@
 <template>
-  <div class="menu mylist">
+  <div class="menu mylist-edit">
 
 	<form>
 		<legend></legend>

@@ -1,5 +1,5 @@
 <template>
-  <div class="menu recomlist">
+  <div class="menu recomlist-nodata">
 
 	<!-- 맞춤추천 nodata// -->
 	<section class="nodata">

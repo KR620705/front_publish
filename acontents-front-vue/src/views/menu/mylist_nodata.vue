@@ -1,5 +1,5 @@
 <template>
-  <div class="menu mylist">
+  <div class="menu mylist-nodata">
 
 	<!-- 즐겨찾기 nodata// -->
 	<section class="nodata">

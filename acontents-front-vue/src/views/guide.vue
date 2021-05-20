@@ -9,11 +9,10 @@
     <div class="guidetxt">
       - 폴더구조에 적합하도록 파일을 생성한다.<br>
       - 만들어진 vue파일 내에서 <span class="red">template 바로 아래에 있는 div에 폴더명과 해당페이지명 클래스를 선언해준다.</span><br>
-      - <span class="red">단, 같은 의미를 갖고 있는 페이지가 여러개라면</span>(mylist, mylist_edit, mylist_nodata 데이터가 있을경우, 없을경우 등) <span class="red">같은 클래스를 선언한다.</span><br>
       &nbsp; &nbsp; &nbsp; ex)<br>
         &lt;template&gt;<br>
           <div class="guideindent">
-          &lt;div <span class="red">class="menu mylist"</span>&gt;<br>
+          &lt;div <span class="red">class="menu mylist-nodata"</span>&gt;<br>
           &lt;/div&gt;<br>
         </div>
         &lt;/template&gt;

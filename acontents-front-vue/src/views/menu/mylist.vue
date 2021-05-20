@@ -4,7 +4,7 @@
 	<!-- thumb-list type-column// -->
 	<section class="thumb-list type-column">
 		<div class="titlearea">
-			<h2 class="h2-title">맞춤추천</h2>
+			<h2 class="h2-title">마이 목록</h2>
 			<div class="fr">
 				<button type="button" class="btn round">편집</button>
 			</div>
