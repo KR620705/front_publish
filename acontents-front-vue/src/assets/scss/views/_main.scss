@@ -114,6 +114,26 @@
 
 /* width:768~ */
 @include mq('md') {
+    .main {
+
+        .thumb-list.type-one {
+            max-width: none;
+            padding: 60px 0;
+            
+            .titlearea {
+                max-width: 1300px;
+                margin: 0 auto;
+                text-align: center;
+    
+                .h2-title {
+                    padding: 0;
+                }
+            }
+            .badge {
+                display: none;
+            }
+        }
+    }
 }
 
 /* width:1000~ */
@@ -122,6 +142,35 @@
 
 /* width:1300~ */
 @include mq('xl') {
+    .main {
+        .main-visual {
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .thumb-list {
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            &.type-one {
+                max-width: none;
+                padding: 60px 0;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
+        .tag-list {
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main-banner {
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     //mainthumbswiper
     .mainthumbswiper {
         height: 80px;

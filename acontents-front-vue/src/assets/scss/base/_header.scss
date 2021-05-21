@@ -125,6 +125,14 @@
     .header {
         height: 60px;
 
+        & ~ .container {
+            padding-top: 60px;
+        }
+        //header type-main
+        &.type-main ~ .container {
+            max-width: none;
+            padding-top: 60px;
+        }
         .logo-list {
             top: 13px;
             left: 0;

@@ -264,6 +264,7 @@
 				<h2 class="h2-title">자신있게 추천드립니다</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
+			<div class="thumboneswiper-wrap">
 			<swiper ref="thumbList1"
               :options="thumboneswiper"
               @ready="swiperReady"
@@ -296,6 +297,7 @@
 				<div class="swiper-button-prev" slot="button-prev"></div>
 				<div class="swiper-button-next" slot="button-next"></div>
 			</swiper>
+			</div>
 		</section>
 		<!-- //thumb-list type-one : 추천 콘텐츠 영역 -->
 
