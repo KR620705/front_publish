@@ -23,7 +23,15 @@ const routes = [
   {// 로그인
     path: '/login',
     name: 'Login',
-    component: () => import('../views/auth'),
+    component: () => import('../views/auth/login'),
+    meta: {
+      isIndex: true,
+    },
+  },
+  {// 로그인 > 주/부사업자 선택
+    path: '/select_user',
+    name: 'Select_user',
+    component: () => import('../views/auth/select_user'),
     meta: {
       isIndex: true,
     },
