@@ -95,16 +95,16 @@
             <td class="alL" rowspan="4">로그인</td>
             <td class="alL">로그인</td>
             <td class="alL" rowspan="4">/views/auth</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="login">
+                login
+              </router-link>
             </td>
           </tr>
           <tr>

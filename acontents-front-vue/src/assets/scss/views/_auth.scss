@@ -1,4 +1,80 @@
 //== 로그인화면
 .auth {
 
+    margin:0 2rem;
+
+    .wrap-login{
+
+        .logo-small{
+            height:4.5rem;
+            background: url("../images/common/logo_white.png") no-repeat left center / 7.7rem;
+        }
+        .logo{
+            height:4.5rem;
+            padding:4rem;
+            background: url("../images/common/logo_amway.png") no-repeat center center / 11.3rem;
+        }
+        .wrap-input{
+            input{
+                height:4rem;
+                color:$black-color;
+                border-radius:2px;
+            }
+            input + input{
+                margin-top:1rem;
+            }
+        }
+        .wrap-checkbox{
+            padding: 1rem 0 2rem 0;
+            span{
+                color: $gray-color;
+            }
+            label + label{
+                margin-left:2rem;
+            }
+        }
+        .other-auth-link{
+            ul{
+                margin:1.5rem 0 7rem 0;
+                text-align:center;
+                li{
+                    display:inline;
+                    position:relative;
+                    & ::after{
+                        content:'';
+                        position:absolute;
+                        background-color: $gray-color;
+                        top:0;
+                        right:-14px;
+                        width:1px;
+                        height:12px;
+                    }
+                    &:last-child{
+                        & ::after{
+                            background-color:transparent;
+                        }
+                    }
+                }
+                li + li{
+                    margin-left:2.5rem;
+                }
+            }
+            a{
+                color: $gray-color;
+                width:auto;
+                height:auto;
+                padding:0;
+            }
+        }
+    }
+
+    .wrap-caution{
+        p{
+            padding-left:3rem;
+            min-height:2rem;
+            font-size:1.4rem;
+            line-height:1.5;
+            background: url("../images/common/icon_caution_login.svg") no-repeat top left / 2rem;
+        }
+    }
 }
