@@ -8,11 +8,19 @@
   padding-top: $header-height;
 }
 
-
-/* width:768px */
-@media screen and (min-width:768px){
+/* width:768~ */
+@include mq('md') {
 }
 
-/* width:1000 */
-@media screen and (min-width:1000px){
+/* width:1000~ */
+@include mq('lg') {
 }
+
+/* width:1300~ */
+@include mq('xl') {
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
+

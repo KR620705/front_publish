@@ -52,6 +52,7 @@ input, select {padding: 0;border-radius: 0;}
 input:focus {outline: none;}
 dl, dd {margin: 0;}
 figure {margin: 0;}
+legend {position: absolute !important;left: -9999px;}
 img {width: 100%;vertical-align: top;}
 img[usemap], map area {outline: none;}
 hr {display: none;}
@@ -63,16 +64,15 @@ button {background-color: transparent;outline: none;-webkit-tap-highlight-color:
 [type=file] {cursor: pointer;}
 * {box-sizing: border-box;}
 
-
-/* width:768 */
-@media screen and (min-width:768px){
+/* width:768~ */
+@include mq('md') {
   html{font-size:11px;}
 }
-/* width:1000 */
-@media screen and (min-width:1000px){
+/* width:1000~ */
+@include mq('lg') {
   html{font-size:12px;}
 }
-/* width:1300 */
-@media screen and (min-width:1300px){
+/* width:1300~ */
+@include mq('xl') {
   html{font-size:13px;}
 }

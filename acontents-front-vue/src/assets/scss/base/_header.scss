@@ -4,7 +4,6 @@
     top: 0;
     width: 100%;
     height: 4.5rem;
-    transition: all .3s ease-in-out;
     z-index: $header-index;
   
     &:before {
@@ -21,10 +20,6 @@
         .logo-list li.acontent a {
             background-image: url("../images/common/logo_red.png");
         }
-    }
-    //header type-main
-    &.type-main ~ .container {
-        padding-top: 0;
     }
     h1 {
         position: relative;
@@ -104,4 +99,73 @@
             background: url("../images/common/header_logolist.png") no-repeat 100% 50% /1.5rem;
         }
     }
+    //header type-main
+    &.type-main ~ .container {
+        padding-top: 0;
+    }
+    //header type-sub
+    &.type-sub {
+
+        .h1-title {
+            position: absolute;
+            text-indent: -9999px;
+        }
+        .logo-list {
+            display: none;
+        }
+    }
 }
+
+/* width:768~ */
+@include mq('md') {
+}
+
+/* width:1000~ */
+@include mq('lg') {
+}
+
+/* width:1300~ */
+@include mq('xl') {
+    .header {
+        left: 50%;
+        max-width: 1300px;
+        height: 60px;
+        margin-left: -650px;
+
+        .logo-list {
+            top: 13px;
+            left: -17px;
+        }
+        button {
+      
+            &.btn-search {
+                top: 25px;
+                right: 60px;
+                width: 16px;
+                height: 17px;
+                background-size: 100% 100%;
+            }
+            &.btn-menu {
+                top: 26px;
+                right: 0;
+                width: 25px;
+                height: 16px;
+                background-size: 100% 100%;
+            }
+        }
+        //header type-sub
+        &.type-sub {
+
+            .h1-title {
+                display: none;
+            }
+            .logo-list {
+                display: block;
+            }
+            .btn-prev {
+                display: none;
+            }
+        }
+    }
+}
+

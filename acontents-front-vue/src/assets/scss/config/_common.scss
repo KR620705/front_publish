@@ -63,6 +63,11 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
   }
 }
 
+//input[type="password"] : RixSinHeadPro font issue
+input[type="password"] {
+  font-family: sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";
+}
+
 //checkbox & radio
 input[type="radio"], input[type="checkbox"] {
   position: absolute;

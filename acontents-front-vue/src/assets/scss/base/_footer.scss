@@ -24,3 +24,23 @@
         }
     }
 }
+
+/* width:768~ */
+@include mq('md') {
+}
+
+/* width:1000~ */
+@include mq('lg') {
+}
+
+/* width:1300~ */
+@include mq('xl') {
+  .footer {
+    
+    .inner {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+  }
+}
+

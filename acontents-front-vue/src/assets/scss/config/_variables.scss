@@ -2,6 +2,7 @@
 //layout height
 $header-height: 4.5rem;
 $footer-height: 23.5rem;
+
 //footer margin
 $footer-mb2: 2rem;
 $footer-mb4: 4rem;
@@ -25,20 +26,19 @@ $cate-library-color : #37AC88 !default;
 
 
 $breakpoints: (
-	xs: 480px,
-	sm: 576px,
+	//xs: 480px,
+	//sm: 576px,
 	md: 768px,
-	lg: 992px,
-	xl: 1000px,
-	xxl: 1600px,
-	xlst: 1920px
+	lg: 1000px,
+	xl: 1300px,
+	//xxl: 1600px
 );
 
 $max-breakpoints: (
-	xs: 479px,
-	sm: 575px,
-	md: 767px,
-	lg: 991px,
-	xl: 1000px,
-	xxl: 1599px
+	//xs: 479px,
+	//sm: 575px,
+	//md: 767px,
+	//lg: 1000px,
+	//xl: 1400px,
+	//xxl: 1599px
 );

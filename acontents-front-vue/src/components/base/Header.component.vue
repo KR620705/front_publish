@@ -10,6 +10,7 @@
         </ul>
         <button type="button" class="btn-open"></button>
       </div>
+
       <button type="button" class="btn-search">검색</button>
       <button type="button" class="btn-menu">메뉴</button>
     </div>

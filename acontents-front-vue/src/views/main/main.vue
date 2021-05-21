@@ -490,6 +490,31 @@ export default {
           type: "image",
           img: "/assets/images/temp/temp_390X390_5.png",
         },
+        {
+          title: "이스프링 비하인드 스토리 “Why?” 5편",
+          type: "image",
+          img: "/assets/images/temp/temp_390X390_5.png",
+        },
+        {
+          title: "이스프링 비하인드 스토리 “Why?” 5편",
+          type: "image",
+          img: "/assets/images/temp/temp_390X390_5.png",
+        },
+        {
+          title: "이스프링 비하인드 스토리 “Why?” 5편",
+          type: "image",
+          img: "/assets/images/temp/temp_390X390_5.png",
+        },
+        {
+          title: "이스프링 비하인드 스토리 “Why?” 5편",
+          type: "image",
+          img: "/assets/images/temp/temp_390X390_5.png",
+        },
+        {
+          title: "이스프링 비하인드 스토리 “Why?” 5편",
+          type: "image",
+          img: "/assets/images/temp/temp_390X390_5.png",
+        },
 		],
 
 		// swiper options
@@ -510,12 +535,22 @@ export default {
 			slidesPerView: 'auto',
 			slidesPerColumn: 2,
 			spaceBetween: 10,
+
+			breakpoints: {
+				// 1024: {
+				// slidesPerView: 4,
+				// spaceBetween: 40
+				// },
+				768: {
+					slidesPerColumn: 1,
+					spaceBetween: 0,
+				}
+			}
 		},
 		thumboneswiper: {
 			loop: true,
 			slidesPerView: 'auto',
 			centeredSlides: true,
-			//spaceBetween: 10,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
