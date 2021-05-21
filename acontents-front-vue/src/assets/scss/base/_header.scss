@@ -122,32 +122,25 @@
 
 /* width:1000~ */
 @include mq('lg') {
-}
-
-/* width:1300~ */
-@include mq('xl') {
     .header {
-        left: 50%;
-        max-width: 1300px;
         height: 60px;
-        margin-left: -650px;
 
         .logo-list {
             top: 13px;
-            left: -17px;
+            left: 0;
         }
         button {
       
             &.btn-search {
                 top: 25px;
-                right: 60px;
+                right: 70px;
                 width: 16px;
                 height: 17px;
                 background-size: 100% 100%;
             }
             &.btn-menu {
                 top: 26px;
-                right: 0;
+                right: 10px;
                 width: 25px;
                 height: 16px;
                 background-size: 100% 100%;
@@ -167,5 +160,28 @@
             }
         }
     }
+}
+
+/* width:1340~ */
+@include mq('xxl') {
+    .header {
+        left: 50%;
+        max-width: 1300px;
+        margin-left: -650px;
+
+        .logo-list {
+            left: -17px;
+        }
+        button {
+      
+            &.btn-search {
+                right: 60px;
+            }
+            &.btn-menu {
+                right: 0;
+            }
+        }
+    }
+
 }
 

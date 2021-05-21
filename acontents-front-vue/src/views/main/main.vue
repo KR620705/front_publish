@@ -522,7 +522,6 @@ export default {
 			spaceBetween: 0,
         },
         swiperOptionThumbs: {
-			spaceBetween: 6,
 			centeredSlides: true,
 			slidesPerView: 'auto',
 			touchRatio: 0.2,
@@ -537,10 +536,6 @@ export default {
 			spaceBetween: 10,
 
 			breakpoints: {
-				// 1024: {
-				// slidesPerView: 4,
-				// spaceBetween: 40
-				// },
 				768: {
 					slidesPerColumn: 1,
 					spaceBetween: 0,

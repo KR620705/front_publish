@@ -328,16 +328,16 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">FAQ</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>조우빈</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/faq">
+                faq
+              </router-link>
             </td>
           </tr>
           <tr>

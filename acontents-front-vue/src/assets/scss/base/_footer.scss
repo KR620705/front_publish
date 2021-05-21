@@ -5,16 +5,23 @@
     .inner {
         padding: 3rem 20px 4.6rem;
 
-        .info a {
-            display: inline-block;
-            padding: 0 1.1rem;
-            color: #fff;
-            font-size: 1.3rem;
-            border-left:  1px solid #727272;
-        }
-        .info a:first-child {
-            padding-left: 0;
-            border-left: none;
+        .info {
+
+            a {
+                display: inline-block;
+                padding: 0 1.1rem;
+                color: #fff;
+                font-size: 1.3rem;
+                border-left:  1px solid #727272;
+
+                &:first-child {
+                    padding-left: 0;
+                    border-left: none;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
         }
         .copyright {
             margin-top: 2.4rem;
@@ -33,13 +40,26 @@
 @include mq('lg') {
 }
 
-/* width:1300~ */
-@include mq('xl') {
+/* width:1340~ */
+@include mq('xxl') {
   .footer {
     
     .inner {
         max-width: 1300px;
         margin: 0 auto;
+        padding: 24px 0 26px 0;
+        
+        .info {
+            text-align: right;
+
+            a {
+                font-size: 13px;
+            }
+        }
+        .copyright {
+            margin-top: 0;
+            font-size: 12px;
+        }
     }
   }
 }

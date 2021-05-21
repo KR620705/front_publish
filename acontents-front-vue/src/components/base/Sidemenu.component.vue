@@ -33,74 +33,34 @@
         <div class="titlearea">
           <h3 class="h3-title">시청목록</h3>
         </div>
-        <div class="swiper-container thumbswiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a href="javascript:;">
-                <div class="title">
-                  <span>집 안에 초록을 담다</span>
-                </div>
-                <div class="badge">
-                  <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출// -->
-                  <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
-                    <span class="icon video"><span class="hide">video</span></span>
-                    <span class="icon file"><span class="hide">file</span></span>
-                    <span class="icon image"><span class="hide">image</span></span>
-                    <span class="icon column"><span class="hide">column</span></span>
-                  -->
-                  <span class="icon image"><span class="hide">image</span></span>
-                  <!-- //콘텐츠 유형 -->
-                </div>
+        <swiper ref="thumbList1"
+          :options="thumbswiper"
+          @ready="swiperReady"
+          class="swiper thumbswiper">
+        <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출 -->
+        <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
+          <span class="icon video"><span class="hide">video</span></span>
+          <span class="icon file"><span class="hide">file</span></span>
+          <span class="icon image"><span class="hide">image</span></span>
+          <span class="icon column"><span class="hide">column</span></span>
+        -->
+          <swiper-slide v-for="(item, key) in tthumbList1Ary"
+              class="slide-1"
+              :key="key">
+            <a href="javascript:;">
+              <div class="title">
+                <span>{{item.title}}</span>
+              </div>
+              <div class="badge">
+                <span :class="`icon ${item.type}`">
+                  <span class="hide">{{item.type}}</span>
+                </span>
+              </div>
 
-                <img src="@/assets/images/temp/temp_390X390.png">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="javascript:;">
-                <div class="title">
-                  <span>이스프링 비하인드 스토리 “Why?” 3편</span>
-                </div>
-                <div class="badge">
-                  <span class="icon image"><span class="hide">image</span></span>
-                </div>
-                <img src="@/assets/images/temp/temp_390X390_2.png">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="javascript:;">
-                <div class="title">
-                  <span>이스프링 비하인드 스토리 “Why?” 3편</span>
-                </div>
-                <div class="badge">
-                  <span class="icon image"><span class="hide">image</span></span>
-                </div>
-                <img src="@/assets/images/temp/temp_390X390_3.png">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="javascript:;">
-                <div class="title">
-                  <span>이스프링 비하인드 스토리 “Why?” 3편</span>
-                </div>
-                <div class="badge">
-                  <span class="icon image"><span class="hide">image</span></span>
-                </div>
-                <img src="@/assets/images/temp/temp_390X390_4.png">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a href="javascript:;">
-                <div class="title">
-                  <span>이스프링 비하인드 스토리 “Why?” 3편</span>
-                </div>
-                <div class="badge">
-                  <span class="icon image"><span class="hide">image</span></span>
-                </div>
-                <img src="@/assets/images/temp/temp_390X390_5.png">
-              </a>
-            </li>
-          </ul>
-        </div>
+              <img alt="" :src="item.img" />
+            </a>
+          </swiper-slide>
+        </swiper>
       </section>
       <!-- //thumb-list type-small -->
 
@@ -205,12 +165,58 @@ export default {
   data: function () {
     return {
 
+      //tthumb List 1 Ary
+      tthumbList1Ary: [
+      {
+        title: "집 안에 초록을 담다",
+        type: "video",
+        img: "/assets/images/temp/temp_390X390.png",
+      },
+      {
+        title: "이스프링 비하인드 스토리 “Why?” 2편",
+        type: "image",
+        img: "/assets/images/temp/temp_390X390_2.png",
+      },
+      {
+        title: "이스프링 비하인드 스토리 “Why?” 3편",
+        type: "file",
+        img: "/assets/images/temp/temp_390X390_3.png",
+      },
+      {
+        title: "이스프링 비하인드 스토리 “Why?” 4편",
+        type: "column",
+        img: "/assets/images/temp/temp_390X390_4.png",
+      },
+      {
+        title: "이스프링 비하인드 스토리 “Why?” 5편",
+        type: "image",
+        img: "/assets/images/temp/temp_390X390_5.png",
+      },
+      ],
+      
+      thumbswiper: {
+        slidesPerView: 'auto'
+      }
+
     }
   },
   mounted() {
+    // page start !!
+    this.$nextTick(() => {
+        const swiperTop = this.$refs.swiperTop.$swiper
+        const swiperThumbs = this.$refs.swiperThumbs.$swiper
+        swiperTop.controller.control = swiperThumbs
+        swiperThumbs.controller.control = swiperTop
+      })
 
   },
   methods:{
+    swiperReady(swiper) {
+      setTimeout(() => {
+        swiper.update();
+      }, 500)
+    },
+
     asideClose() {
       this.$store.dispatch('commitIsAsideOpen', {value: false});
     }

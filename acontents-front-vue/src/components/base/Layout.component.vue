@@ -1,13 +1,14 @@
 <template>
   <div :class="`body ${($store.state.isAsideOpen) ? 'aside-open' : ''}`">
-    <div v-if="$route.meta.isMainHeader">
+    <header class="header type-main" v-if="$route.meta.isMainHeader"><!-- scroll시 fixed 클래스 추가 -->
       <!-- Main header -->
       <Header />
-    </div>
-    <div v-else>
+    </header>
+    
+    <header class="header type-sub" v-else><!-- scroll시 fixed 클래스 추가 -->
       <!-- Sub header -->
       <SubHeader />
-    </div>
+    </header>
 
     <div class="container">
       <Sidemenu />

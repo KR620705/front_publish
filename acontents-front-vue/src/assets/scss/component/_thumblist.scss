@@ -1,5 +1,5 @@
 //thumb-list
-.thumb-list{
+.thumb-list {
     margin-top: 4rem;
     padding: 0 10px;
 
@@ -275,7 +275,7 @@
 /* width:768~ */
 @include mq('md') {
     //thumb-list
-    .thumb-list{
+    .thumb-list {
         
         .swiper-container {
     
@@ -332,7 +332,8 @@
 /* width:1300~ */
 @include mq('xl') {
     //thumb-list
-    .thumb-list{
+    .thumb-list {
+        padding: 0;
         
         .swiper-container {
     

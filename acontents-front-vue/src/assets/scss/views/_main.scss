@@ -89,14 +89,12 @@
 
 //mainthumbswiper
 .mainthumbswiper {
-    left: 0;
-    //left: 50%;
-    //transform: translateX(-50%);
     height: 54px;
 
     .swiper-slide {
         width: 54px;
         height: 100%;
+        margin-right: 6px;
         background-size: cover;
         background-position: center;
         border-radius: 4px;
@@ -130,6 +128,8 @@
     
         .swiper-slide {
             width: 80px;
+            margin-right: 20px;
+            
         }
     }
 }
