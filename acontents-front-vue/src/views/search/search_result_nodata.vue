@@ -1,14 +1,13 @@
 <template>
-  <div class="search search_result_nodata">
+  <div class="search search-result-nodata">
     
-    <section class="wrap_input">
-        <button type="button" class="btn-search-close">닫기</button>
+    <section class="wrap-input">
         <input type="text" class="search-input" placeholder="검색어를 입력하세요">
     </section>
 
     <section class="search-result">
 
-      <div class="search-result-text">
+      <div class="search-result-text nodata">
         <h3 class="h3-title">검색 결과가 없습니다.</h3>
         <p>
           하단의 추천 해시태그를 통해서<br>
@@ -41,7 +40,7 @@
 
 <script>
 export default {
-  name: 'Search_result_nodata',
+  name: 'Search-result-nodata',
   data: function () {
     return {
 
