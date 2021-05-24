@@ -77,4 +77,104 @@
             background: url("../images/common/icon_caution_login.svg") no-repeat top left / 2rem;
         }
     }
+
 }
+
+.select-user{
+
+        .wrap-select-user{
+            h2, p{
+                text-align:center;
+            }
+            h2{
+                margin:2rem 0 1rem 0;
+            }
+            p{
+                font-size:1.2rem;
+                color: $gray-color;
+
+            }
+        }
+
+        .wrap-checkbox-user{
+            margin :2rem 0 6rem 0;
+            text-align:center;
+
+            input[type="radio"]
+            &:focus,
+            &:active{
+                padding:0;
+            }
+
+            span{
+                display:block;
+                padding: 0 0 0 0;
+                width: 110px;
+                height:110px;
+                position:relative;
+                font-size:1.6rem;
+            }
+            label{
+                display:inline-block;
+            }
+            label + label{
+                margin-left:2rem;
+            }
+            .female{
+                input[type="radio"] + span:before {
+                    content: "";
+                    position:relative;
+                    display: inline-block;
+                    width: 110px;
+                    height:110px;
+                    background: url("../images/common/select_user.png") no-repeat right top/200%;
+                    margin-bottom:1rem;
+                  }
+                  input[type="radio"] + span{
+                    color:$white-color;
+                  }
+                  input[type="radio"]:checked + span:before {
+                    background: url("../images/common/select_user.png") no-repeat right bottom/200%;
+                  }
+                  input[type="radio"]:checked + span{
+                    color:$red-color;
+                  }
+                }
+            .male{
+                input[type="radio"] + span:before {
+                    content: "";
+                    position:relative;
+                    display: inline-block;
+                    width: 110px;
+                    height:110px;
+                    background: url("../images/common/select_user.png") no-repeat left top/200%;
+                    margin-bottom:1rem;
+                  }
+                  input[type="radio"] + span{
+                    color:$white-color;
+                  }
+                  input[type="radio"]:checked + span:before {
+                    background: url("../images/common/select_user.png") no-repeat left bottom/200%;
+                  }
+                  input[type="radio"]:checked + span{
+                    color:#2CC5D1;
+                  }
+                }
+        }
+        .guide-select-user{
+            text-align:center;
+            font-size:1.2rem;
+            color:$gray-color;
+        }
+        
+        button{
+            width:92%;
+            left: 50%;
+            transform: translateX( -50% );
+            margin:0 auto;
+            position:fixed;
+            bottom:2rem;
+        }
+}
+
+// .select-category{}
