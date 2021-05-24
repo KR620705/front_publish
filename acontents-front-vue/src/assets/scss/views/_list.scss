@@ -1,1 +1,152 @@
 //== 리스트화면
+//bigbanner-list
+.list.bigbanner-list {
+    margin-bottom: 1rem;
+
+    .banner-list {
+
+        li {
+            position: relative;
+            margin-top: 1rem;
+
+            &:first-child {
+                margin-top: 0;
+            }
+            .title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 0 6rem 2.5rem 12px;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 15rem;
+                    background: linear-gradient(to bottom, rgba(34, 34, 34, 0), rgba(0, 0, 0, 0.6));
+                }
+                strong {
+                    position: relative;
+                    display: block;
+                    color: #fff;
+                    font-size: 3rem;
+                    z-index: 1;
+
+                }
+                .btn.round {
+                    position: relative;
+                    margin-top: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    z-index: 1;
+
+                }
+            }
+        }
+    }
+}
+//category-list
+.list.category-list {
+    margin-bottom: 1rem;
+
+    .lnb {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 2;
+    }
+    
+    .lnb:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #dbd9d6;
+    }
+    
+    .lnb .lnbswiper {
+        padding: 0;
+        height: 50px;
+    }
+    
+    .lnb .lnbswiper .swiper-slide {
+        width: auto;
+        height: 50px;
+        padding: 0 20px;
+        line-height: 48px;
+        color: #aea7a2;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .lnb .lnbswiper .swiper-slide span {
+        border-bottom: 2px solid transparent;
+    }
+    
+    .lnb .lnbswiper .swiper-slide.active {
+        color: #ff6913;
+    }
+    
+    .lnb .lnbswiper .swiper-slide span {
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .lnb .lnbswiper .swiper-slide.active span {
+        border-bottom: 2px solid #ff6913;
+    }
+
+    .banner-list {
+
+        li {
+            position: relative;
+            margin-top: 1rem;
+
+            &:first-child {
+                margin-top: 0;
+            }
+            .title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 0 6rem 2.5rem 12px;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 15rem;
+                    background: linear-gradient(to bottom, rgba(34, 34, 34, 0), rgba(0, 0, 0, 0.6));
+                }
+                strong {
+                    position: relative;
+                    display: block;
+                    color: #fff;
+                    font-size: 3rem;
+                    z-index: 1;
+
+                }
+                .btn.round {
+                    position: relative;
+                    margin-top: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    z-index: 1;
+
+                }
+            }
+        }
+    }
+}

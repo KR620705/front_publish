@@ -52,6 +52,16 @@ const routes = [
       isMainHeader: true,
     },
   },
+  {// 리스트 > 빅배너
+    path: '/bigbanner_list',
+    name: 'Bigbanner_list',
+    component: () => import('../views/list/bigbanner_list'),
+  },
+  {// 리스트 > 카테고리
+    path: '/category_list',
+    name: 'Category_list',
+    component: () => import('../views/list/category_list'),
+  },
   {// 상세
     path: '/detail',
     name: 'Detail',
