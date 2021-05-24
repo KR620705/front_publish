@@ -55,7 +55,7 @@
     background:  url("../images/common/btn_arrow_gray.png") no-repeat 100% 50% /0.4rem;
     color: $gray-color;
     font-size: 1.1rem;
-    border-radius: none;
+    border-radius: 0;
   }
   &.plus {
     width: auto;
@@ -64,7 +64,7 @@
     background:  url("../images/common/btn_plus.png") no-repeat 100% 50% /1rem;
     font-size: 1.3rem;
     font-weight: 600;
-    border-radius: none;
+    border-radius: 0;
   }
   &.more {
     display: block;
@@ -75,7 +75,7 @@
     background:  url("../images/common/btn_more.png") no-repeat 50% 50% /2.3rem;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: none;
+    border-radius: 0;
     text-indent: -9999px;
   }
   &.gray {

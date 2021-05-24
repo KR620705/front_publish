@@ -64,6 +64,7 @@
         아이콘 : icon_<br>
         버튼 : btn_<br>
         뱃지 : badge_<br>
+        리스트필터 : filter_<br>
         플러그인 : 플러그인명_<br>
         공통 헤더에 있는 이미지 : header_<br>
         공통 메뉴에 있는 이미지 : sidemenu_<br>
@@ -185,6 +186,38 @@
       <!-- //tag -->
     </div>
 
+    <h3 class="guideh3">list-filter</h3>
+    <div class="guidewrap">
+      <!-- list-filter// -->
+      <section class="list-filter">
+        <div class="select"><!-- 활성화 : open 클래스 추가 -->
+          <button type="button">최신순</button>
+          <ul>
+            <li class="active"><a href="javascript:;">최신순</a></li><!-- 현재 선택값 : active 클래스 추가 -->
+            <li><a href="javascript:;">인기순</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- //list-filter -->
+
+      <!-- list-filter// -->
+      <section class="list-filter">
+        <div class="select-full"><!-- 활성화 : open 클래스 추가 -->
+          <button type="button">이달의 핀업 전략</button>
+          <ul>
+            <li><a href="javascript:;">우리를 강하게 하는 암웨이의 생각들</a></li>
+            <li><a href="javascript:;">운동으로 비즈니스 하기</a></li>
+            <li><a href="javascript:;">새로운 세대와 이야기 나누기</a></li>
+            <li><a href="javascript:;">매력 터짐! 30대 제품 포트폴리오</a></li>
+            <li><a href="javascript:;">정체기? 씹어먹기</a></li>
+            <li><a href="javascript:;">여름 인스타 감성 사진 모음</a></li>
+            <li><a href="javascript:;">#MyFirstAmway</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- //list-filter -->
+    </div>
+
     <h3 class="guideh3">thumb-list</h3>
     <div class="guidewrap">
       <!-- thumb-list// -->
@@ -205,7 +238,6 @@
             <span class="icon column"><span class="hide">column</span></span>
           -->
           <swiper-slide v-for="(item, key) in tthumbList1Ary"
-                        class="slide-1"
                         :key="key">
             <a href="javascript:;">
               <div class="title">
@@ -245,7 +277,6 @@
             <span class="icon column"><span class="hide">column</span></span>
           -->
           <swiper-slide v-for="(item, key) in tthumbList1Ary"
-                        class="slide-1"
                         :key="key">
             <a href="javascript:;">
               <div class="title">
@@ -285,7 +316,6 @@
             <span class="icon column"><span class="hide">column</span></span>
           -->
           <swiper-slide v-for="(item, key) in tthumbList1Ary"
-                        class="slide-1"
                         :key="key">
             <a href="javascript:;">
               <div class="badge">
@@ -385,88 +415,95 @@ export default {
   name: 'Guide',
   data: function () {
     return {
-		// data
-		mainSlideAry: [
-        {
-          title: '강렬한 레드 상하이를 만나다',
-          img: '/assets/images/temp/temp_960X1170.png'
-        },
-        {
-          title: '2강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_2.png'
-        },
-        {
-          title: '3강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_3.png'
-        },
-        {
-          title: '4강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_4.png'
-        },
-        {
-          title: '5강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_5.png'
-        },
-		],
+      // data
+      mainSlideAry: [
+          {
+            title: '강렬한 레드 상하이를 만나다',
+            img: '/assets/images/temp/temp_960X1170.png'
+          },
+          {
+            title: '2강렬한 레드 상하이를 만나다',
+            img: 'assets/images/temp/temp_390X390_2.png'
+          },
+          {
+            title: '3강렬한 레드 상하이를 만나다',
+            img: 'assets/images/temp/temp_390X390_3.png'
+          },
+          {
+            title: '4강렬한 레드 상하이를 만나다',
+            img: 'assets/images/temp/temp_390X390_4.png'
+          },
+          {
+            title: '5강렬한 레드 상하이를 만나다',
+            img: 'assets/images/temp/temp_390X390_5.png'
+          },
+      ],
 
-		//tthumb List 1 Ary
-		tthumbList1Ary: [
-        {
-          title: "집 안에 초록을 담다",
-          type: "video",
-          img: "/assets/images/temp/temp_390X390.png",
-        },
-        {
-          title: "이스프링 비하인드 스토리 “Why?” 2편",
-          type: "image",
-          img: "/assets/images/temp/temp_390X390_2.png",
-        },
-        {
-          title: "이스프링 비하인드 스토리 “Why?” 3편",
-          type: "file",
-          img: "/assets/images/temp/temp_390X390_3.png",
-        },
-        {
-          title: "이스프링 비하인드 스토리 “Why?” 4편",
-          type: "column",
-          img: "/assets/images/temp/temp_390X390_4.png",
-        },
-        {
-          title: "이스프링 비하인드 스토리 “Why?” 5편",
-          type: "image",
-          img: "/assets/images/temp/temp_390X390_5.png",
-        },
-		],
+      //tthumb List 1 Ary
+      tthumbList1Ary: [
+          {
+            title: "집 안에 초록을 담다",
+            type: "video",
+            img: "/assets/images/temp/temp_390X390.png",
+          },
+          {
+            title: "이스프링 비하인드 스토리 “Why?” 2편",
+            type: "image",
+            img: "/assets/images/temp/temp_390X390_2.png",
+          },
+          {
+            title: "이스프링 비하인드 스토리 “Why?” 3편",
+            type: "file",
+            img: "/assets/images/temp/temp_390X390_3.png",
+          },
+          {
+            title: "이스프링 비하인드 스토리 “Why?” 4편",
+            type: "column",
+            img: "/assets/images/temp/temp_390X390_4.png",
+          },
+          {
+            title: "이스프링 비하인드 스토리 “Why?” 5편",
+            type: "image",
+            img: "/assets/images/temp/temp_390X390_5.png",
+          },
+      ],
 
-		// swiper options
-		swiperOptionTop: {
-			spaceBetween: 0,
-        },
-        swiperOptionThumbs: {
-			spaceBetween: 6,
-			centeredSlides: true,
-			slidesPerView: 'auto',
-			touchRatio: 0.2,
-			slideToClickedSlide: true,
-        },
-		thumbswiper: {
-			slidesPerView: 'auto',
-        },
-		thumbmultiswiper: {
-			slidesPerView: 'auto',
-			slidesPerColumn: 2,
-			spaceBetween: 10,
-		},
-		thumboneswiper: {
-			loop: true,
-			slidesPerView: 'auto',
-			centeredSlides: true,
-			//spaceBetween: 10,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			}
-		}
+      // swiper options
+      swiperOptionTop: {
+        spaceBetween: 0,
+      },
+      swiperOptionThumbs: {
+        spaceBetween: 6,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+      },
+      thumbswiper: {
+        slidesPerView: 'auto',
+      },
+      thumbmultiswiper: {
+        slidesPerView: 'auto',
+        slidesPerColumn: 2,
+        spaceBetween: 10,
+
+        breakpoints: {
+          768: {
+            slidesPerColumn: 1,
+            spaceBetween: 0,
+          }
+        }
+      },
+      thumboneswiper: {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        //spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
     }
   },
   mounted() {
@@ -494,6 +531,6 @@ export default {
   .guideindex .guideh3{margin-top:30px;padding-left:10px;font-size:16px;font-weight:600;border-left:4px solid #399aed;}
   .guideindex .guidetxt{margin-top:10px;font-size:14px;line-height:1.6;}
   .guideindex .guidetxt .guideindent{margin-left:15px;}
-  .guideindex .guidewrap {margin-top:10px;max-width:1300px;background:#000;padding:20px;}
+  .guideindex .guidewrap {margin-top:10px;max-width:1500px;background:#000;padding:20px;overflow:hidden;}
   .guideindex .red{color:#f00 !important;}
 </style>

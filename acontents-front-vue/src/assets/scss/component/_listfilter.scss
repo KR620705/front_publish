@@ -1,0 +1,137 @@
+/* list-filter */
+.list-filter {
+  padding: 0 10px;
+
+  //select
+  .select {
+    display: inline-block;
+    position: relative;
+
+    button {
+      padding: 0.7rem 3rem 0.6rem 2rem;
+      background: url("../images/common/filter_select.png") no-repeat 0 50% /1.5rem;
+      color: $white-color;
+      font-size: 1.3rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        width: 1rem;
+        height: 100%;
+        background: url("../images/common/filter_select_btn.png") no-repeat 0 50% /1rem;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 3rem;
+      left: 0;
+      width: 100%;
+      background: #393939;
+      padding: 0.5rem 0;
+      border-radius: 6px;
+
+      li {
+
+        a {
+          display: block;
+          padding: 1rem 1.2rem;
+          font-size: 1.4rem;
+        }
+        &.active {
+
+          a {
+              background: #727272;
+          }
+        }
+      }
+    }
+    &.open {
+      z-index: 1;
+
+      button {
+        
+        &:after {
+            transform: rotate(-180deg);
+        }
+      }
+      ul {
+          display: block;
+      }
+    }
+  }
+
+  //select-full
+  .select-full {
+    position: relative;
+
+    button {
+      display: block;
+      width: 100%;
+      height: 4rem;
+      padding: 1.2rem 3rem 0.8rem 1rem;
+      background: $dark-color;
+      color: $white-color;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: left;
+      border-radius: 2px;
+
+      @include ellipsis();
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        width: 1rem;
+        height: 100%;
+        background: url("../images/common/filter_selectfull_btn.png") no-repeat 0 50% /1rem;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background: $dark-color;
+      padding: 0.5rem 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      li {
+
+        a {
+          display: block;
+          padding: 1.2rem 1rem;
+          color: #999;
+          font-size: 1.4rem;
+        }
+        &.active {
+
+          a {
+              background: #727272;
+          }
+        }
+      }
+    }
+    &.open {
+      z-index: 1;
+
+      button {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        
+        &:after {
+            transform: rotate(-180deg);
+        }
+      }
+      ul {
+          display: block;
+      }
+    }
+  }
+}

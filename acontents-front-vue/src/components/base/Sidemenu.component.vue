@@ -45,7 +45,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
           <swiper-slide v-for="(item, key) in tthumbList1Ary"
-              class="slide-1"
               :key="key">
             <a href="javascript:;">
               <div class="title">
@@ -202,12 +201,6 @@ export default {
   },
   mounted() {
     // page start !!
-    this.$nextTick(() => {
-        const swiperTop = this.$refs.swiperTop.$swiper
-        const swiperThumbs = this.$refs.swiperThumbs.$swiper
-        swiperTop.controller.control = swiperThumbs
-        swiperThumbs.controller.control = swiperTop
-      })
 
   },
   methods:{

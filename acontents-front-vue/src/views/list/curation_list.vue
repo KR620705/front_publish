@@ -1,39 +1,19 @@
 <template>
 
-	<div class="list category-list">
-
-		<!-- lnb// -->
-		<section class="lnb">
-			<swiper ref="lnbList1"
-              :options="lnbswiper"
-              @ready="swiperReady"
-              class="swiper lnbswiper">
-				<swiper-slide class="slide-1">
-					<a href="javascript:;" class="active">뉴트리라이트</a><!-- 현재 페이지 : active 클래스 추가 -->
-				</swiper-slide>
-				<swiper-slide class="slide-1">
-					<a href="javascript:;">아티스트리</a>
-				</swiper-slide>
-				<swiper-slide class="slide-1">
-					<a href="javascript:;">글리스터</a>
-				</swiper-slide>
-				<swiper-slide class="slide-1">
-					<a href="javascript:;">G&amp;H</a>
-				</swiper-slide>
-				<swiper-slide class="slide-1">
-					<a href="javascript:;">뉴트리라이트</a>
-				</swiper-slide>
-			</swiper>
-		</section>
-		<!-- //lnb -->
+	<div class="list curation-list">
 
 		<!-- list-filter// -->
 		<section class="list-filter">
-			<div class="select"><!-- 활성화 : open 클래스 추가 -->
-				<button type="button">최신순</button>
+			<div class="select-full"><!-- 활성화 : open 클래스 추가 -->
+				<button type="button">이달의 핀업 전략</button>
 				<ul>
-					<li class="active"><a href="javascript:;">최신순</a></li><!-- 현재 선택값 : active 클래스 추가 -->
-					<li><a href="javascript:;">인기순</a></li>
+					<li><a href="javascript:;">우리를 강하게 하는 암웨이의 생각들</a></li>
+					<li><a href="javascript:;">운동으로 비즈니스 하기</a></li>
+					<li><a href="javascript:;">새로운 세대와 이야기 나누기</a></li>
+					<li><a href="javascript:;">매력 터짐! 30대 제품 포트폴리오</a></li>
+					<li><a href="javascript:;">정체기? 씹어먹기</a></li>
+					<li><a href="javascript:;">여름 인스타 감성 사진 모음</a></li>
+					<li><a href="javascript:;">#MyFirstAmway</a></li>
 				</ul>
 			</div>
 		</section>

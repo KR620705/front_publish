@@ -5,7 +5,7 @@
       <Header />
     </header>
     
-    <header class="header type-sub" v-else><!-- scroll시 fixed 클래스 추가 -->
+    <header class="header type-sub" v-else>
       <!-- Sub header -->
       <SubHeader />
     </header>

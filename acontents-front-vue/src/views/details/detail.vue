@@ -231,7 +231,7 @@
 		<!-- //thumb-list type-column -->
         
 		<!-- thumb-list type-column : 관련 상품// -->
-		<section class="thumb-list type-column">
+		<section class="thumb-list type-column product">
 			<div class="titlearea">
 				<h2 class="h2-title">관련 상품</h2>
 			</div>
@@ -239,6 +239,9 @@
 				<ul class="column">
 					<li>
 						<a href="javascript:;">
+							<div class="imgbox">
+								<img src="@/assets/images/temp/temp_390X390.png">
+							</div>
 							<div class="title">
 								<span>집 안에 초록을 담다</span>
 							</div>
@@ -246,41 +249,45 @@
 								<!-- 상품 유형 : 장바구니 이미지 고정// -->
 								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
-
-							<img src="@/assets/images/temp/temp_390X390.png">
 						</a>
 					</li>
 					<li>
 						<a href="javascript:;">
+							<div class="imgbox">
+								<img src="@/assets/images/temp/temp_390X390_2.png">
+							</div>
 							<div class="title">
 								<span>이스프링 비하인드 스토리 “Why?” 3편</span>
 							</div>
 							<div class="badge">
 								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
-							<img src="@/assets/images/temp/temp_390X390_2.png">
 						</a>
 					</li>
 					<li>
 						<a href="javascript:;">
+							<div class="imgbox">
+								<img src="@/assets/images/temp/temp_390X390_3.png">
+							</div>
+							<div class="title">
+								<span>이스프링 비하인드 스토리 “Why?” 3편 이스프링 비하인드 스토리 “Why?” 3편</span>
+							</div>
+							<div class="badge">
+								<span class="icon cart"><span class="hide">cart</span></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="imgbox">
+								<img src="@/assets/images/temp/temp_390X390_4.png">
+							</div>
 							<div class="title">
 								<span>이스프링 비하인드 스토리 “Why?” 3편</span>
 							</div>
 							<div class="badge">
 								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
-							<img src="@/assets/images/temp/temp_390X390_3.png">
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="title">
-								<span>이스프링 비하인드 스토리 “Why?” 3편</span>
-							</div>
-							<div class="badge">
-								<span class="icon cart"><span class="hide">cart</span></span>
-							</div>
-							<img src="@/assets/images/temp/temp_390X390_4.png">
 						</a>
 					</li>
 				</ul>

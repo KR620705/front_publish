@@ -11,7 +11,6 @@
 				@ready="swiperReady"
 				class="swiper mainswiper">
         <swiper-slide v-for="(item, key) in mainSlideAry"
-                      class="slide-1"
                       :style="`background-image: url(${item.img})`"
                       :key="key">
           <div class="title">
@@ -29,7 +28,6 @@
 				class="swiper mainthumbswiper">
         <swiper-slide v-for="(item, key) in mainSlideAry"
                        :style="`background-image: url(${item.img})`"
-                       class="slide-1"
                        :key="key">
           &nbsp;
         </swiper-slide>
@@ -63,7 +61,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="title">
@@ -100,7 +97,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="title">
@@ -137,7 +133,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="title">
@@ -174,7 +169,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="title">
@@ -239,7 +233,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="title">
@@ -277,7 +270,6 @@
           <span class="icon column"><span class="hide">column</span></span>
         -->
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
-                      class="slide-1"
                       :key="key">
 					<a href="javascript:;">
 						<div class="badge">

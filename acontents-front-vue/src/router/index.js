@@ -62,6 +62,11 @@ const routes = [
     name: 'Category_list',
     component: () => import('../views/list/category_list'),
   },
+  {// 리스트 > 카테고리
+    path: '/curation_list',
+    name: 'Curation_list',
+    component: () => import('../views/list/curation_list'),
+  },
   {// 상세
     path: '/detail',
     name: 'Detail',
