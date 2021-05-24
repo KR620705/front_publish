@@ -22,9 +22,7 @@
               <span>로그인 상태 유지</span>
             </label>
           </div>
-          <div class="guidewrap">
-            <button type="button" class="btn red">로그인</button>
-          </div>
+          <button type="button" class="btn red">로그인</button>
           <div class="other-auth-link">
             <ul>
               <li>
