@@ -17,7 +17,7 @@
           </div> -->
           <!-- //최초 가입시에만 보이는 타이틀 -->
 
-          <div class="wrap-checkbox-user">
+          <div class="wrap-radio-group">
 
             <label class="male">
               <input type="radio" id="male" name="select_user" value="male">
