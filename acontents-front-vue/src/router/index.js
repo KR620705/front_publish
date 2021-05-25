@@ -44,6 +44,14 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 로그인 > 약관동의
+    path: '/terms',
+    name: 'Terms',
+    component: () => import('../views/auth/terms'),
+    meta: {
+      isIndex: true,
+    },
+  },
   {// main
     path: '/main',
     name: 'Main',

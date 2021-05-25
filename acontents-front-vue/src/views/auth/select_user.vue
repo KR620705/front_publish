@@ -2,7 +2,7 @@
   <div class="auth select-user">
     <form>
       <fieldset>
-        <legend>로그인</legend>
+        <legend>주/부사업자 선택</legend>
 
         <section class="wrap-login">
           <div class="logo-small"></div>
