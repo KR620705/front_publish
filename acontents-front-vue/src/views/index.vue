@@ -204,31 +204,31 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">카테고리 콘텐츠 목록</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>조우빈</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/category_list">
+                category_list
+              </router-link>
             </td>
           </tr>
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">큐레이션 콘텐츠 목록</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>조우빈</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/curation_list">
+                curation_list
+              </router-link>
             </td>
           </tr>
           <tr>
