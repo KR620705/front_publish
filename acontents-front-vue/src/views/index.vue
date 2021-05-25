@@ -210,7 +210,6 @@
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
-            <td>조우빈</td>
             <td class="alL">
               <router-link to="/category_list">
                 category_list
