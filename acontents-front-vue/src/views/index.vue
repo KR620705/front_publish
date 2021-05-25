@@ -140,16 +140,16 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 선택</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/select_category">
+                select_category
+              </router-link>
             </td>
           </tr>
           <tr>

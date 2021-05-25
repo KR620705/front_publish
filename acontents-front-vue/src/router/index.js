@@ -36,6 +36,14 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 로그인 > 카테고리 선택
+    path: '/select_category',
+    name: 'Select_category',
+    component: () => import('../views/auth/select_category'),
+    meta: {
+      isIndex: true,
+    },
+  },
   {// main
     path: '/main',
     name: 'Main',
