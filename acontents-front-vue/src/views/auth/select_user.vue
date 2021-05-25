@@ -33,7 +33,7 @@
             사용자는 마이페이지에서 변경이 가능하며,<br> 선택된 사용자에 따라 추천 콘텐츠 내용이 달라집니다.
           </p> -->
           <!-- // 최초 가입시에만 보이는 문구 -->
-          <button type="button" class="btn red">저장</button>
+          <button type="button" class="btn red">다음</button>
         </section>
 
       </fieldset>

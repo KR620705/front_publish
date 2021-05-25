@@ -110,16 +110,16 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">약관동의</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/terms">
+                terms
+              </router-link>
             </td>
           </tr>
           <tr>
@@ -209,6 +209,7 @@
             <td></td>
             <td></td>
             <td class="alL red"></td>
+            <td>조우빈</td>
             <td>조우빈</td>
             <td class="alL">
               <router-link to="/category_list">
@@ -407,12 +408,12 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">검색결과</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
               <router-link to="/search_result">
                 search_result

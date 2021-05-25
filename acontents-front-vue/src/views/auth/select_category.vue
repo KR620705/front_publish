@@ -52,7 +52,7 @@
           </div>
         </section>
         
-        <!-- 카테고리 선택 후 버튼의 클래스가 btn red -> btn red fh 로 변경이 되어야 함. -->
+        <!-- 카테고리 선택 후 버튼의 클래스가 btn red -> btn red 로 변경이 되어야 함. -->
         <button type="button" class="btn gray">저장</button>
 
       </fieldset>

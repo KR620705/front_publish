@@ -7,16 +7,37 @@
         <section class="wrap-login">
           <div class="logo-small"></div>
 
-          <div class="titlearea wrap-select-user">
-            <h2 class="h2-title">활동하실 사용자를 선택해 주세요</h2>
+          <div class="titlearea tit-terms">
+            <h2 class="h2-title">A-Content<br>서비스 약관에 동의해 주세요.</h2>
           </div>
 
+          <div class="wrap-terms">
+                  <div class="all-check">
+                    <label>
+                      <input type="checkbox" checked>
+                      <span>전체동의하기</span>
+                    </label>
+                  </div>
+                  <div class="each-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>[필수] 개인정보 제공 동의</span>
+                    </label>
+                    <textarea class="terms-text" readonly>약관내용</textarea>
+                  </div>
+                  <div class="each-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>[필수] 개인정보 제공 동의</span>
+                      <textarea class="terms-text" readonly>약관내용</textarea>
+                    </label>
+                  </div>
+          </div>
 
         </section>
-
-        
-        <!-- 카테고리 선택 후 버튼의 클래스가 btn red -> btn red fh 로 변경이 되어야 함. -->
-        <button type="button" class="btn gray">저장</button>
+    
+        <!-- 카테고리 선택 후 버튼의 클래스가 btn red ->  btn red 로 변경이 되어야 함. -->
+        <button type="button" class="btn gray">다음</button>
 
       </fieldset>
     </form>

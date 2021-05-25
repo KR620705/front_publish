@@ -269,9 +269,12 @@
         }
         .each-check{
             textarea{
-                margin:1rem 0 3rem 0;
-                padding:1rem;
-                
+                margin: 1rem 0 3rem 0;
+                padding: 1rem;
+                border-radius: $radius;
+                border:none;
+                background-color:#363636;
+                color:$lightgray-color;
             }
         }
     }
