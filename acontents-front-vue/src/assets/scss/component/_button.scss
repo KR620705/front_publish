@@ -25,7 +25,7 @@
   font-size: 1.4rem;
   text-align: center;
   vertical-align: top;
-  border-radius: 5px;
+  border-radius: $radius;
   
   & ~ & {
     margin-left: 0.8rem;
