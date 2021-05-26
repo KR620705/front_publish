@@ -345,16 +345,16 @@
             <td class="alL" rowspan="3">마이페이지</td>
             <td class="alL">마이페이지 메인</td>
             <td class="alL" rowspan="3">/views/mypage</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/mypage">
+                mypage
+              </router-link>
             </td>
           </tr>
           <tr>

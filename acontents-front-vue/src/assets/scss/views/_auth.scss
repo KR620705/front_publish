@@ -70,11 +70,7 @@
 
     .wrap-caution{
         p{
-            padding-left:3rem;
-            min-height:2rem;
-            font-size:1.4rem;
-            line-height:1.5;
-            background: url("../images/common/icon_caution_login.svg") no-repeat top left / 2rem;
+            @include caution
         }
     }
 
@@ -190,66 +186,68 @@
         }
 
     }
-    .check-group{
-        margin-top:4rem;
-        &:first-child{
-            margin-top:3rem;
-        }
-        h2{
-            margin:0 0 1rem 0;
-        }
-    }
-
+    
     button{
         @include btn-login
     }
+    
+    
+    
+}
 
-    .wrap-checkbox-array {
+.check-group{
+    margin-top:4rem;
+    &:first-child{
+        margin-top:3rem;
+    }
+    h2{
+        margin:0 0 1rem 0;
+    }
+}
+.wrap-checkbox-array {
 
-        .checkbox-array {
-            width:100%;
-                    
-            li{
+    .checkbox-array {
+        width:100%;
                 
-                display:inline-flex;
-                flex-direction: row;
-                justify-content:flex-start;
-                flex-wrap: wrap;
-                align-content: flex-start;
-                align-items:stretch;
-                width:31%;
-                margin:0 0.5rem 0.5rem 0 ;
-                
-                label{
-                    width:100%;
-                    min-height:58px;
-                    height:58px;
-                    text-align:center;
+        li{
+            
+            display:inline-flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items:stretch;
+            width:31%;
+            margin:0 0.5rem 0.5rem 0 ;
+            
+            label{
+                width:100%;
+                min-height:58px;
+                height:58px;
+                text-align:center;
 
-                    background-color: transparent;
-                    border: 1px solid #727272;
-                    color: #adadad;
-                    border-radius: $radius;
-                    -webkit-touch-callout: none;
-                    -webkit-tap-highlight-color: transparent;
-                    transition: all .2s;
-                    padding: 15px  10px;
-                    cursor: pointer;
-                }
-                input[type="checkbox"]{
-                    display: absolute;
-                    position: absolute;
-                    opacity: 0;
-                }
-                input[type="checkbox"]:checked + label{
-                    border: 1px solid #399AED;
-                    background-color: #399AED;
-                    color: #fff;
-                }
+                background-color: transparent;
+                border: 1px solid #727272;
+                color: #adadad;
+                border-radius: $radius;
+                -webkit-touch-callout: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: all .2s;
+                padding: 15px  10px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]{
+                display: absolute;
+                position: absolute;
+                opacity: 0;
+            }
+            input[type="checkbox"]:checked + label{
+                border: 1px solid #399AED;
+                background-color: #399AED;
+                color: #fff;
             }
         }
     }
- 
 }
 
 .terms{

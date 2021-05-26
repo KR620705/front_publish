@@ -36,7 +36,7 @@
 @import "views/list"; //리스트
 @import "views/details"; //상세
 @import "views/menu"; //메뉴
-//@import "views/mypage"; // 마이페이지
+@import "views/mypage"; // 마이페이지
 @import "views/search"; // 검색
 //@import "views/etc"; // 기타
 @import "views/popup"; // 팝업은 항상 마지막에 선언한다.

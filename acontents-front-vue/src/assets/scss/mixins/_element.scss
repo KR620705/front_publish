@@ -6,3 +6,21 @@
   position:fixed;
   bottom:2rem;
 }
+
+@mixin caution{
+  padding-left:3rem;
+  min-height:2rem;
+  font-size:1.4rem;
+  line-height:1.5;
+  background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
+}
+
+@mixin btn-small-type1{
+  display:inline-block;
+  background-color:$white-color;
+  color:$black-color;
+  padding:0.5rem 1rem 0.2rem 1rem;
+  border-radius:15px;
+  width:auto;
+  height:auto;
+}

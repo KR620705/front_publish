@@ -1,0 +1,90 @@
+
+.mypage {
+    margin:0 1rem;
+
+    .mypage-tb{
+        border-radius:5px;
+        overflow:hidden;
+        margin-top:1rem;
+
+        li + li{
+            border-top:1px solid #363636;
+        }
+        li{
+            padding:15px 0;
+            background-color: #1d1d1d;
+            text-align:left;
+            font-size:1.3rem;
+            display:table;
+            width:100%;
+
+            dt, dd{
+                display:table-cell;
+                vertical-align:middle;
+            }
+            dt{
+                color:$lightgray-color;
+                padding-left: 1rem;    
+                width:90px;    
+            }
+            dd{
+                color:$white-color;
+                dl{
+                    margin-top:8px
+                }
+                dt{
+                    padding:0 1rem 0 0;
+                    width:auto;
+                    color:$white-color;
+                }
+                i{
+                    color:#399ade;
+                }
+                .btn{
+                    &.small{
+                        @include btn-small-type1;
+                    }
+                }
+            }
+        }
+    }
+    .wrap-caution{
+        margin:5px 0 42px 0;
+        padding:8px 9px 8px 10px;
+        background-color:#1D1D1D;
+
+        p{
+            color:$gray-color;
+            @include caution;
+        }
+    }
+    .btn-wrap{
+        &-mypage{
+            padding:6rem 0 2rem 0;
+            .btn{
+                &.mypage{
+                    padding:6rem 0 2rem 0;
+                }
+            }
+        }
+    }
+    .check-group{
+        &.mypage{
+            margin:0;
+        }
+    }
+}
+
+.h2-title{
+    position:relative;
+    .btn{
+        &.small{
+            position:absolute;
+            top:-5px;
+            right:0;
+            @include btn-small-type1
+        }
+    }
+}
+
+   
