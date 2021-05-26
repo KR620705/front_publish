@@ -61,7 +61,7 @@
     width: auto;
     height: auto;
     padding: 0 2rem 0 0;
-    background:  url("../images/common/btn_plus.png") no-repeat 100% 50% /1rem;
+    background:  url("../images/common/btn_plus.png") no-repeat 100% 50% /10px;
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 0;
@@ -92,4 +92,30 @@
   @include prefix(transition, all 0.35s ease-out, webkit moz ms o);
 }
 
-
+/* width:1320~ */
+@include mq('xl') {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    
+    & ~ & {
+      margin-left: 20px;
+    }
+    &.round {
+    }
+    &.arrow {
+      padding: 0 22px 0 0;
+      font-size: 14px;
+      background-size: 6px 11px;
+    }
+    &.plus {
+      padding-right: 14px;
+      font-size: 16px;
+    }
+    &.more {
+      margin-top: 35px;
+      background-size: 30px 17px;
+    }
+  }
+}

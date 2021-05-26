@@ -40,14 +40,14 @@
 @include mq('lg') {
 }
 
-/* width:1340~ */
-@include mq('xxl') {
+/* width:1320~ */
+@include mq('xl') {
   .footer {
     
     .inner {
-        max-width: 1300px;
+        max-width: 1320px;
         margin: 0 auto;
-        padding: 24px 0 26px 0;
+        padding: 24px 10px 26px 10px;
         
         .info {
             text-align: right;

@@ -1,17 +1,19 @@
 //== 상세화면
-.details {
+.details.detail {
 
     // video-wrap
     .video-wrap {
         position: relative;
+        height: 19rem;
     
         .inner {
+            height: 100%;
     
             &:empty:after {
                 content: "동영상 영역";
                 display: block;
                 width: 100%;
-                height: 18rem;
+                height: 100%;
                 padding-top: 4rem;
                 background: #ccc;
                 color: $black-color;
@@ -154,6 +156,68 @@
                 font-weight: 200;
                 line-height: 1.4;
                 background: url("../images/common/icon_caution.png") no-repeat 0 50% /2.4rem;
+            }
+        }
+    }
+}
+
+/* width:768~ */
+@include mq('md') {
+    .details.detail {
+    
+        //video-wrap
+        .video-wrap {
+            height: 350px;
+        }
+    }
+}
+
+/* width:1000~ */
+@include mq('lg') {
+    .details.detail {
+    
+        //video-wrap
+        .video-wrap {
+            height: 450px;
+        }
+    }
+}
+
+/* width:1320~ */
+@include mq('xl') {
+    .details.detail {
+    
+        //video-wrap
+        .video-wrap {
+            max-width: 1300px;
+            height: 590px;
+            margin: 0 auto;
+        }
+    
+        //detail-visual
+        .detail-visual {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 30px 0 0;
+        }
+
+        //thumb-list
+        .thumb-list {
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        //thumb-list
+        .thumb-list.type-column.product {
+            max-width: 100%;
+
+            .titlearea {
+                max-width: 1300px;
+                margin: 0 auto;
+            }
+            .columnarea {
+                max-width: 1300px;
+                margin: 0 auto;
             }
         }
     }

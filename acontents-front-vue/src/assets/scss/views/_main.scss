@@ -136,13 +136,11 @@
     }
 }
 
-/* width:1000~ */
-@include mq('lg') {
-}
-
-/* width:1300~ */
+/* width:1320~ */
 @include mq('xl') {
     .main {
+        margin-bottom: 100px;
+        
         .main-visual {
             max-width: 1300px;
             margin-left: auto;
@@ -156,8 +154,8 @@
             &.type-one {
                 max-width: none;
                 padding: 60px 0;
-                margin-left: -10px;
-                margin-right: -10px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         .tag-list {

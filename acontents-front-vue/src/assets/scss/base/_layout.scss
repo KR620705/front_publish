@@ -16,12 +16,7 @@
 @include mq('lg') {
 }
 
-/* width:1300~ */
+/* width:1320~ */
 @include mq('xl') {
-  .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
 }
 

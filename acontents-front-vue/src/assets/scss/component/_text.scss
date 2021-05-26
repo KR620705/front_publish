@@ -16,3 +16,31 @@
         font-size: 1.5rem;
     }
 }
+
+/* width:1320~ */
+@include mq('xl') {
+  .btn {
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    
+    & ~ & {
+      margin-left: 20px;
+    }
+    &.round {
+    }
+    &.arrow {
+      padding: 0 22px 0 0;
+      font-size: 14px;
+      background-size: 6px 11px;
+    }
+    &.plus {
+      padding-right: 14px;
+      font-size: 16px;
+    }
+    &.more {
+      margin-top: 35px;
+      background-size: 30px 17px;
+    }
+  }
+}

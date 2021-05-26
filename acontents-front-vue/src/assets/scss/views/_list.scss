@@ -112,3 +112,11 @@
         margin-top: 0;
     }
 }
+
+/* width:1320~ */
+@include mq('xl') {
+    .list.bigbanner-list {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
