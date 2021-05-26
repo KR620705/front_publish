@@ -113,6 +113,11 @@ const routes = [
     name: 'Mylist_nodata',
     component: () => import('../views/menu/mylist_nodata'),
   },
+  {// 마이페이지 > 마이페이지 메인
+    path: '/mypage',
+    name: 'Mypage',
+    component: () => import('../views/mypage/mypage'),
+  },
   {// faq
     path: '/faq',
     name: 'Faq',
