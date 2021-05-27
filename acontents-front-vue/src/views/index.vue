@@ -360,31 +360,31 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">주/부 사업자 변경</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/change_user">
+                change_user
+              </router-link>
             </td>
           </tr>
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 변경</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/change_category">
+                change_category
+              </router-link>
             </td>
           </tr>
           <tr>

@@ -7,14 +7,14 @@
         <section class="wrap-login">
           <div class="logo-small"></div>
 
-          <div class="titlearea wrap-select-user">
-            <h2 class="h2-title">활동하실 사용자를 선택해 주세요</h2>
-          </div>
-          <!-- 최초 가입시에만 보이는 타이틀 -->
           <!-- <div class="titlearea wrap-select-user">
+            <h2 class="h2-title">활동하실 사용자를 선택해 주세요</h2>
+          </div> -->
+          <!-- 최초 가입시에만 보이는 타이틀 -->
+          <div class="titlearea wrap-select-user">
             <h2 class="h2-title">사용자 선택</h2>
             <p>활동하실 사용자를 선택해 주세요</p>
-          </div> -->
+          </div>
           <!-- //최초 가입시에만 보이는 타이틀 -->
 
           <div class="wrap-radio-group">

@@ -7,6 +7,12 @@
   bottom:2rem;
 }
 
+@mixin btn-bottom {
+  width:100%; 
+  margin:4rem 0 2rem 0;
+  position:relative;
+}
+
 @mixin caution{
   padding-left:3rem;
   min-height:2rem;

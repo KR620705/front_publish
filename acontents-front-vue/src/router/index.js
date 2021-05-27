@@ -118,10 +118,15 @@ const routes = [
     name: 'Mypage',
     component: () => import('../views/mypage/mypage'),
   },
-  {// 마이페이지 > 주\부사압자 변경
+  {// 마이페이지 > 주\부사업자 변경
     path: '/change_user',
     name: 'Change_user',
     component: () => import('../views/mypage/change_user'),
+  },
+  {// 마이페이지 > 선호 카테고리 변경
+    path: '/change_category',
+    name: 'Change_categorty',
+    component: () => import('../views/mypage/change_category'),
   },
   {// faq
     path: '/faq',

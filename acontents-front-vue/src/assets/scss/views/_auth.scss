@@ -164,7 +164,7 @@
         }
         
         button{
-            @include btn-login
+            @include btn-bottom
         }
 }
 
@@ -188,11 +188,9 @@
     }
     
     button{
-        @include btn-login
+        @include btn-bottom
     }
-    
-    
-    
+     
 }
 
 .check-group{

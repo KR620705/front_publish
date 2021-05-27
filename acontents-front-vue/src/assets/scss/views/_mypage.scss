@@ -1,11 +1,11 @@
 
 .mypage {
-    margin:0 1rem;
+    margin:0 2rem;
 
     .mypage-tb{
         border-radius:5px;
         overflow:hidden;
-        margin-top:1rem;
+        margin:1rem -1rem 0 -1rem;
 
         li + li{
             border-top:1px solid #363636;
@@ -49,9 +49,10 @@
         }
     }
     .wrap-caution{
-        margin:5px 0 42px 0;
+        margin:5px -1rem 42px -1rem;
         padding:8px 9px 8px 10px;
         background-color:#1D1D1D;
+        border-radius:5px;
 
         p{
             color:$gray-color;
@@ -87,4 +88,27 @@
     }
 }
 
-   
+.change-category{
+    .wrap-select-category-title{
+        h2, p{
+            text-align:center;
+        }
+        h2{
+            margin:2rem 0 1rem 0;
+        }
+        p{
+            font-size:1.2rem;
+            color: $gray-color;
+
+            b{
+                color: $white-color;
+            }
+        }
+
+    }
+    
+    button{
+        @include btn-bottom
+    }
+     
+}
