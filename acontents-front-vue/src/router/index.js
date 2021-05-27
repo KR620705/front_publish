@@ -118,6 +118,11 @@ const routes = [
     name: 'Mypage',
     component: () => import('../views/mypage/mypage'),
   },
+  {// 마이페이지 > 주\부사압자 변경
+    path: '/change_user',
+    name: 'Change_user',
+    component: () => import('../views/mypage/change_user'),
+  },
   {// faq
     path: '/faq',
     name: 'Faq',
