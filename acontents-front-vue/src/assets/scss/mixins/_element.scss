@@ -30,3 +30,28 @@
   width:auto;
   height:auto;
 }
+
+
+@mixin select-box {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  padding: 1.2rem 3rem 0.8rem 1rem;
+  background: $dark-color url("../images/common/filter_selectfull_btn.png") no-repeat calc(100% - 1rem) 50%  / 1rem;
+  color: $white-color;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  border-radius: 2px;
+  border:none;
+}
+
+
+@mixin select-position{
+  position:absolute; 
+  width: calc(100% - 2rem);
+  bottom:20px;
+}

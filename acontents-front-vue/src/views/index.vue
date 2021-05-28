@@ -471,31 +471,31 @@
             <td class="alL" rowspan="5">기타</td>
             <td class="alL">이용약관</td>
             <td class="alL" rowspan="5">/views/etc</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/etc_terms">
+                etc_terms
+              </router-link>
             </td>
           </tr>
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">개인정보처리방침</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/policy">
+                policy
+              </router-link>
             </td>
           </tr>
           <tr>

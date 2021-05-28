@@ -1,0 +1,22 @@
+
+.etc {
+    margin:0 1rem;
+
+    .wrap-title{
+        margin-top:1.5rem;
+    }
+    .text-box{
+        color:$gray-color;
+        font-size:1.3rem;
+        margin-top:5px;
+    }
+
+    .wrap-select-box{
+        select::-ms-expand { display: none; }
+        @include select-position;
+        .select-box{
+            @include select-box;
+            @include ellipsis;
+        }
+    }
+}

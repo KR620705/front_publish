@@ -158,6 +158,16 @@ const routes = [
     name: 'Modal_image',
     component: () => import('../views/popup/modal_image'),
   },
+  {// 기타 > 이용약관
+    path: '/etc_terms',
+    name: 'Etc_terms',
+    component: () => import('../views/etc/etc_terms'),
+  },
+  {// 기타 > 개인정보처리방법
+    path: '/policy',
+    name: 'Policy',
+    component: () => import('../views/etc/policy'),
+  },
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',
