@@ -237,7 +237,7 @@
             <td class="alL">상세</td>
             <td class="alL">/views/details</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -440,7 +440,7 @@
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

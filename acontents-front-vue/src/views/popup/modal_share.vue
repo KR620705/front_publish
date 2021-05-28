@@ -11,11 +11,11 @@
 
 				<div class="modal-header">
 					<h1>공유하기</h1>
-					<button type="button"
+					<!-- <button type="button"
 							class="modal-header-close"
 							@click="openPop">
 						<span class="hide">닫기</span>
-					</button>
+					</button> -->
 				</div>
 
 				<div class="modal-body">

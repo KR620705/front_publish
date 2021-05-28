@@ -1,3 +1,4 @@
+//== tag
 .tag {
     margin-top: 1rem;
 
@@ -12,7 +13,6 @@
     }
     &.type-circle {
         li {
-            height: 2.4rem;
             margin-top: 1rem;
             margin-right: 0.8rem;
             border: 1px solid #6D6D6D;
@@ -31,5 +31,36 @@
 
         }
 
+    }
+}
+
+/* width:1320~ */
+@include mq('xl') {
+    .tag {
+        margin-top: 20px;
+
+        li {
+            margin-top: 5px;
+            margin-right: 7px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+        &.type-circle {
+            li {
+                margin-top: 10px;
+                margin-right: 12px;
+                border-radius: 30px;
+
+                a {
+                    height: 40px;
+                    padding: 10px 15px;
+                    font-size: 18px;
+                }
+
+            }
+
+        }
     }
 }

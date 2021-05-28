@@ -210,7 +210,8 @@
 		<!-- main-banner// -->
 		<section class="main-banner">
 			<div class="inner">
-				<a href="javascript:;"><img src="@/assets/images/views/main_banner.png" alt=""></a>
+				<a href="javascript:;" class="mo"><img src="@/assets/images/views/main_banner.png" alt="시리즈 보러가기"></a>
+				<a href="javascript:;" class="pc"><img src="@/assets/images/views/main_banner_pc.png" alt="시리즈 보러가기"></a>
 			</div>
 		</section>
 		<!-- //main-banner -->
@@ -272,13 +273,14 @@
 				<swiper-slide v-for="(item, key) in tthumbList1Ary"
                       :key="key">
 					<a href="javascript:;">
-						<div class="badge">
-							<span :class="`icon ${item.type}`">
-								<span class="hide">{{item.type}}</span>
-							</span>
-						</div>
 						<span class="imgbox">
 							<img alt="" :src="item.img" />
+							
+							<div class="badge">
+								<span :class="`icon ${item.type}`">
+									<span class="hide">{{item.type}}</span>
+								</span>
+							</div>
 						</span>
 						<div class="contentbox">
 							<strong class="box-title">Amagram VOL.329 MARCH 2021</strong>

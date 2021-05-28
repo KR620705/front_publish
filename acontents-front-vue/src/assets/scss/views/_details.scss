@@ -36,8 +36,28 @@
                 width: 100%;
     
                 .btn {
-                    padding-left: 1.9rem;
-                    padding-right: 1.9rem;
+                    padding-left: 1.2rem;
+                    padding-right: 1.2rem;
+                    line-height: 1;
+
+                    &.playnext:before {
+                        content: "";
+                        display: inline-block;
+                        margin-right: 4px;
+                        width: 1.2rem;
+                        height: 1.5rem;
+                        background: url("../images/views/detail_icon_playnext.svg") no-repeat 0 0 /100%;
+                        vertical-align: middle;
+                    }
+                    &.first:before {
+                        content: "";
+                        display: inline-block;
+                        margin-right: 4px;
+                        width: 1.6rem;
+                        height: 1.2rem;
+                        background: url("../images/views/detail_icon_first.svg") no-repeat 0 0 /100%;
+                        vertical-align: middle;
+                    }
                 }
             }
         }
@@ -55,7 +75,7 @@
             }
         }
         .tag {
-            margin-top: 1.385rem;
+            margin-top: 2rem;
         }
         .year {
             margin-top: 1rem;
@@ -133,7 +153,7 @@
                     width: 2rem;
                     height: 2rem;
                     margin-left: 0;
-                    background: url("../images/common/breadcrumb_home.png") no-repeat 0 50% /2rem;
+                    background: url("../images/common/breadcrumb_home.svg") no-repeat 0 50% /2rem;
                     border-bottom: 0;
                     text-indent: -9999px;
     
@@ -145,14 +165,15 @@
         }
         .caution {
             margin-top: 1rem;
-            padding: 0.8rem 1.5rem 0.8rem 2rem;
+            padding: 0.6rem 1.5rem 0.6rem 2rem;
             background: #1D1D1D;
             font-size: 1.2rem;
             border-radius: $radius;
     
             p {
+                min-height: 2.4rem;
+                padding: 0.3rem 3.6rem;
                 color: $gray-color;
-                padding-left: 3.6rem;
                 font-weight: 200;
                 line-height: 1.4;
                 background: url("../images/common/icon_caution.png") no-repeat 0 50% /2.4rem;
@@ -192,15 +213,105 @@
             max-width: 1300px;
             height: 590px;
             margin: 0 auto;
-        }
+
+            .video-dim {
+        
+                .btn-wrap {
+                    bottom: 100px;
+        
+                    .btn {
+                        padding-left: 30px;
+                        padding-right: 30px;
     
+                        &.playnext:before {
+                            width: 14px;
+                            height: 16px;
+                            background-size: 14px 16px;
+                            vertical-align: top;
+                        }
+                        &.first:before {
+                            width: 16px;
+                            height: 14px;
+                            background-size: 16px 14px;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
         //detail-visual
         .detail-visual {
             max-width: 1300px;
             margin: 0 auto;
             padding: 30px 0 0;
-        }
 
+            .titlearea {
+                .h2-title {
+                    font-size: 36px;
+                }
+                .h3-title {
+                    margin-top: 20px;
+                }
+            }
+            .tag {
+                margin-top: 0;
+            }
+            .year {
+                margin-top: 4px;
+                font-size: 16px;
+            }
+            .btns {
+                margin-top: 30px;
+        
+                .btn {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 15px;
+                    background-size: 70px;
+                }
+            }
+            .desc {
+                margin-top: 30px;
+                padding-top: 30px;
+                font-size: 16px;
+                font-weight: 200;
+            }
+            .breadcrumb {
+                height: 35px;
+                margin-top: 80px;
+
+                a {
+                    margin-left: 14px;
+                    font-size: 13px;
+                    
+                    &:before {
+                        top: 0.5rem;
+                        left: -0.8rem;
+                        width: 6px;
+                        height: 6px;
+                        background-size: auto 6px;
+                    }
+                    &.home {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 8px;
+                        background-size: 20px;
+                        
+                    }
+                }
+            }
+            .caution {
+                margin-top: 20px;
+                padding: 13px 20px;
+                font-size: 13px;
+        
+                p {
+                    min-height: 24px;
+                    padding: 3px 36px;
+                    background-size: 24px;
+                }
+            }
+        }
         //thumb-list
         .thumb-list {
             max-width: 1300px;
@@ -210,7 +321,7 @@
         //thumb-list
         .thumb-list.type-column.product {
             max-width: 100%;
-
+            
             .titlearea {
                 max-width: 1300px;
                 margin: 0 auto;

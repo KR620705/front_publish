@@ -1,5 +1,6 @@
 .footer {
     position: relative;
+    height: $footer-height;
     background: #1D1D1D;
 
     .inner {
@@ -43,6 +44,7 @@
 /* width:1320~ */
 @include mq('xl') {
   .footer {
+    height: $footer-height-pc;
     
     .inner {
         max-width: 1320px;

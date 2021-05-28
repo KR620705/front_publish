@@ -51,9 +51,8 @@
     }
     .logo-list {
         position:absolute;
-        top: 0.6rem;
-        left: 4px;
-        padding: 9px 18px 7px 16px;
+        top: 0.3rem;
+        left: 8px;
 
         &.open {
             background: #393939;
@@ -67,36 +66,39 @@
                 }
             }
             .btn-open {
-                display: none;
+                transform: rotate(-180deg);
+                transition: all 0.5s;
             }
         }
         li {
             display: none;
-            margin-top: 1.2rem;
           
             &:first-child {
                 display: block;
-                margin-top: 0;
+            }
+            &:last-child {
+                border-top: 1px solid #727272;
             }
             &.acontent a {
-                background: url("../images/common/logo_white.png") no-repeat 50% 0 /7.7rem;
+                background: url("../images/common/logo_white.png") no-repeat 12px 50% /7.7rem;
             }
             &.amway a {
-                background: url("../images/common/logo_amway.png") no-repeat 50% 0 /5.3rem;
+                background: url("../images/common/logo_amway.png") no-repeat 50% 50% /5.3rem;
             }
             a {
                 display: block;
-                width: 8rem;
-                height: 1.8rem;
+                width: 12rem;
+                height: 4rem;
+                padding: 12px 30px 12px 12px;
             }
         }
         .btn-open {
             position: absolute;
-            top: 0.8rem;
-            right: -0.8rem;
+            top: 1.3rem;
+            right: 1rem;
             width: 1.5rem;
             height: 1.5rem;
-            background: url("../images/common/header_logolist.png") no-repeat 100% 50% /1.5rem;
+            background: url("../images/common/header_logolist.png") no-repeat 50% 50% /1.3rem;
         }
     }
     //header type-main
@@ -119,6 +121,19 @@
 
 /* width:768~ */
 @include mq('md') {
+    .header {
+        .logo-list {
+
+            &.open {
+                .btn-open {
+                    top: 1.2rem;
+                }
+            }
+            .btn-open {
+                top: 1.4rem;
+            }
+        }
+    }
 }
 
 /* width:1000~ */
@@ -132,10 +147,9 @@
         //header type-main
         &.type-main ~ .container {
             max-width: none;
-            padding-top: 60px;
         }
         .logo-list {
-            top: 13px;
+            top: 5px;
             left: -7px;
         }
         button {
@@ -179,7 +193,43 @@
         margin-left: -650px;
 
         .logo-list {
-            left: -16px;
+            left: -19px;
+
+            &.open {
+                top: 18px;
+                left: 0;
+
+                &.open {
+                    .btn-open {
+                        top: 18px;
+                    }
+                }
+            }
+            li {
+
+                &:last-child {
+                    border-width: 2px;
+                }
+                &.acontent a {
+                    background-position: 20px 50%;
+                    background-size: 108px;
+                }
+                &.amway a {
+                    background-size: 86px;
+                }
+                a {
+                    width: 180px;
+                    height: 50px;
+                    padding: 13px 30px 13px 20px;
+                }
+            }
+            .btn-open {
+                top: 18px;
+                right: 21px;
+                width: 13px;
+                height: 13px;
+                background-size: 13px;
+            }
         }
         button {
 

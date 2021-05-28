@@ -10,8 +10,8 @@
 			<!-- 비디오영역 내 레이어 : 비노출시 hide처리해주세요.// -->
 			<div class="video-dim">
 				<div class="btn-wrap">
-					<button type="button" class="btn round">이어보기</button>
-					<button type="button" class="btn round">처음부터</button>
+					<button type="button" class="btn round playnext">이어보기</button>
+					<button type="button" class="btn round first">처음부터</button>
 				</div>
 			</div>
 			<!-- //비디오영역 내 레이어 -->
@@ -241,13 +241,13 @@
 						<a href="javascript:;">
 							<div class="imgbox">
 								<img src="@/assets/images/temp/temp_390X390.png">
+								<div class="badge">
+									<!-- 상품 유형 : 장바구니 이미지 고정// -->
+									<span class="icon cart"><span class="hide">cart</span></span>
+								</div>
 							</div>
 							<div class="title">
 								<span>집 안에 초록을 담다</span>
-							</div>
-							<div class="badge">
-								<!-- 상품 유형 : 장바구니 이미지 고정// -->
-								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
 						</a>
 					</li>
@@ -255,12 +255,12 @@
 						<a href="javascript:;">
 							<div class="imgbox">
 								<img src="@/assets/images/temp/temp_390X390_2.png">
+								<div class="badge">
+									<span class="icon cart"><span class="hide">cart</span></span>
+								</div>
 							</div>
 							<div class="title">
 								<span>이스프링 비하인드 스토리 “Why?” 3편</span>
-							</div>
-							<div class="badge">
-								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
 						</a>
 					</li>
@@ -268,12 +268,12 @@
 						<a href="javascript:;">
 							<div class="imgbox">
 								<img src="@/assets/images/temp/temp_390X390_3.png">
+								<div class="badge">
+									<span class="icon cart"><span class="hide">cart</span></span>
+								</div>
 							</div>
 							<div class="title">
 								<span>이스프링 비하인드 스토리 “Why?” 3편 이스프링 비하인드 스토리 “Why?” 3편</span>
-							</div>
-							<div class="badge">
-								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
 						</a>
 					</li>
@@ -281,12 +281,12 @@
 						<a href="javascript:;">
 							<div class="imgbox">
 								<img src="@/assets/images/temp/temp_390X390_4.png">
+								<div class="badge">
+									<span class="icon cart"><span class="hide">cart</span></span>
+								</div>
 							</div>
 							<div class="title">
 								<span>이스프링 비하인드 스토리 “Why?” 3편</span>
-							</div>
-							<div class="badge">
-								<span class="icon cart"><span class="hide">cart</span></span>
 							</div>
 						</a>
 					</li>

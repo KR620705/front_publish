@@ -24,9 +24,13 @@
     .innercon {
         position: absolute;
         bottom: 1rem;
-        left: 0;
-        width: 100%;
-        padding: 0 14px;
+        //left: 0;
+        //width: 100%;
+        //padding: 0 14px;
+        left: 50%;
+        width: 300px;
+        margin-left: -150px;
+        z-index: 1;
         
         .swiper-pagination-tot {
             display: inline-block;
@@ -89,12 +93,13 @@
 
 //mainthumbswiper
 .mainthumbswiper {
+    max-width: 300px;
     height: 54px;
 
     .swiper-slide {
         width: 54px;
         height: 100%;
-        margin-right: 6px;
+        margin: 0 3px;
         background-size: cover;
         background-position: center;
         border-radius: 4px;
@@ -110,6 +115,13 @@
 //main-banner
 .main-banner {
     margin-top: 4rem;
+
+    .mo {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
 }
 
 /* width:768~ */
@@ -117,8 +129,7 @@
     .main {
 
         .thumb-list.type-one {
-            max-width: none;
-            padding: 60px 0;
+            padding: 60px 10px;
             
             .titlearea {
                 max-width: 1300px;
@@ -128,6 +139,9 @@
                 .h2-title {
                     padding: 0;
                 }
+                .btn.arrow {
+                    display: none;
+                }
             }
             .badge {
                 display: none;
@@ -136,16 +150,31 @@
     }
 }
 
+/* width:1000~ */
+@include mq('lg') {
+    //main-banner
+    .main-banner {
+        .mo {
+            display: none;
+        }
+        .pc {
+            display: block;
+        }
+    }
+}
+
 /* width:1320~ */
 @include mq('xl') {
     .main {
         margin-bottom: 100px;
-        
-        .main-visual {
+
+        //tag-list
+        .tag-list {
             max-width: 1300px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 80px auto 0;
+            padding: 45px 0;
         }
+        //thumb-list
         .thumb-list {
             max-width: 1300px;
             margin-left: auto;
@@ -154,29 +183,69 @@
             &.type-one {
                 max-width: none;
                 padding: 60px 0;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 80px auto;
             }
         }
-        .tag-list {
-            max-width: 1300px;
-            margin-left: auto;
-            margin-right: auto;
+    }
+    //main-visual
+    .main-visual {
+        max-width: 1300px;
+        height: 810px;
+        margin: 0 auto 100px;
+        padding-bottom: 40px;
+
+        .innercon {
+            bottom: 25px;
+            left: 50%;
+            width: 580px;
+            margin-left: -290px;
+            padding: 0;
         }
-        .main-banner {
-            max-width: 1300px;
-            margin-left: auto;
-            margin-right: auto;
+    }
+    //mainswiper
+    .mainswiper {
+        height: 800px;
+
+        .swiper-slide {
+            background-position: 50% 0;
+
+            .title {
+                bottom: 160px;
+                padding: 0;
+                text-align: center;
+
+                &:after {
+                    bottom: -160px;
+                    left: 0;
+                    height: 802px;
+                    background: url("../images/views/main_visual_shadow.png");
+                }
+                strong {
+                    font-size: 60px;
+                }
+                .btn.round {
+                    height: 36px;
+                    margin-top: 20px;
+                    padding: 8px 25px;
+                }
+            }
         }
     }
     //mainthumbswiper
     .mainthumbswiper {
+        bottom: 130px;
         height: 80px;
+        max-width: 580px;
     
         .swiper-slide {
             width: 80px;
-            margin-right: 20px;
+            margin: 0 10px;
             
         }
+    }
+    //main-banner
+    .main-banner {
+        max-width: 1300px;
+        margin: 60px auto 80px;
     }
 }
