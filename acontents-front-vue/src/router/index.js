@@ -178,6 +178,11 @@ const routes = [
     name: 'Error',
     component: () => import('../views/etc/error'),
   },
+  {// 기타 > 로딩페이지
+    path: '/loading',
+    name: 'Loading',
+    component: () => import('../views/etc/loading'),
+  },
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',

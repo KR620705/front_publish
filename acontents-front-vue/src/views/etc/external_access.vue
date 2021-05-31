@@ -5,7 +5,7 @@
 		<div class="header-external">
 			<div class="logo"></div>
 			<div class="btn-acontent">
-				<button type="button" class="btn round red arrow-right">A 콘텐츠 방문하기</button>
+				<button type="button" class="btn round red">A 콘텐츠 방문하기</button>
 			</div>
 		</div>
 		<!-- //외부 접근 시 헤더 -->

@@ -102,4 +102,32 @@
             }
         }
     }
+
+    .wrap-loading{
+        width:100vw;
+        height:100vh;
+        background-color:rgba(0, 0, 0, .8);
+        position:fixed;
+        z-index:99;
+        top:0;
+        right:0;
+
+        .wrap-svg{
+            width: 10rem;
+            height: 10rem;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform:translate(-50%, -40%);
+
+            svg{
+                width: 150%;
+                height: 100%;
+                display:inline-block;
+            }
+        }
+        
+
+
+    }
 }
