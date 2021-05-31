@@ -531,16 +531,16 @@
           <tr>
             <th scope="row" class="num"></th>
             <td class="alL">콘텐츠 외부 접근 페이지</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/">
-                
-              </router-link> -->
+              <router-link to="/external_access">
+                external_access
+              </router-link>
             </td>
           </tr>
           <tr>

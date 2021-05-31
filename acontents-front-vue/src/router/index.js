@@ -168,6 +168,11 @@ const routes = [
     name: 'Policy',
     component: () => import('../views/etc/policy'),
   },
+  {// 기타 > 콘텐츠 외부 접근 페이지
+    path: '/external_access',
+    name: 'External_access',
+    component: () => import('../views/etc/external_access'),
+  },
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',

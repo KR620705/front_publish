@@ -19,4 +19,39 @@
             @include ellipsis;
         }
     }
+
+    .header-external{
+        height:4.5rem;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:10;
+        background-color: #000;
+
+        .logo{
+            width:7.7rem;
+            height:1.5rem;
+            margin:1.7rem 0 0 2rem;
+            background: url("../images/common/logo_red.png") no-repeat left center / 100%;
+        }
+
+       .btn-acontent{
+           position:absolute;
+           right:1rem;
+           top:0.7rem;
+           button{
+               width:15rem;
+               height:3rem;
+               border-radius:30px;
+               padding:0.5rem 2rem;
+           }
+       }
+    }
+
+    .thumb-list{
+        &.product{
+            margin:4rem -1rem 0 -1rem;
+        }
+    }
 }
