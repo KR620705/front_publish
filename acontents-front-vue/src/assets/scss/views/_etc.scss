@@ -39,12 +39,17 @@
        .btn-acontent{
            position:absolute;
            right:1rem;
-           top:0.7rem;
+           top:0.7rem; 
            button{
+               color:$white-color;
                width:15rem;
                height:3rem;
-               border-radius:30px;
-               padding:0.5rem 2rem;
+               padding:0.5rem 3rem 0.5rem 2rem;
+               background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
+
+               &.round{
+                   border-radius:3rem;
+               }
            }
        }
     }
@@ -52,6 +57,49 @@
     .thumb-list{
         &.product{
             margin:4rem -1rem 0 -1rem;
+        }
+    }
+
+    &.error{
+        .message-error{
+            dl{
+                margin:7rem 1.7rem 0 1.7rem;
+                dt{
+                    margin-bottom:3rem;
+                    height:8rem;
+                    background: url("../images/common/bg_error.svg") no-repeat center center / 20%;
+                }
+                dd{
+                    text-align:center;
+
+                    .first, .second{
+                        font-size:1.8rem;
+                    }
+                    .first{
+                        color:$blue-color;
+                    }
+                    .second{
+                        margin:1rem 0;
+                    }
+                    .third{
+                        width:20rem;
+                        margin:0 auto;
+                        font-size:1.3rem;
+                        color:$lightgray-color;
+                    }
+                }
+            }
+        }
+        
+        .wrap-btn{
+            text-align:center;
+            margin-top:3.5rem;
+
+            button{
+                height:4rem;
+                border-radius:4rem;
+                padding:1.2rem 1.5rem;
+            }
         }
     }
 }

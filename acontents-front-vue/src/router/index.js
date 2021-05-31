@@ -173,6 +173,11 @@ const routes = [
     name: 'External_access',
     component: () => import('../views/etc/external_access'),
   },
+  {// 기타 > 오류페이지
+    path: '/error',
+    name: 'Error',
+    component: () => import('../views/etc/error'),
+  },
   {// 404 (존재하지 않는 경로로 이동시 경고 페이지로 넘김)
     path: '*',
     name: '404',
