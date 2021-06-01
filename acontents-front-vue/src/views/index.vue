@@ -220,7 +220,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">큐레이션 콘텐츠 목록</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -455,7 +455,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

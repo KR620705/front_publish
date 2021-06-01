@@ -135,3 +135,21 @@
     }
   }
 }
+
+/* width:1000~ */
+@include mq('lg') {
+}
+
+/* width:1320~ */
+@include mq('xl') {
+  .list-filter {
+    padding: 0;
+    
+    .select-full {
+      
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+}

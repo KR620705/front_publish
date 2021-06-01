@@ -635,12 +635,17 @@
     }
     //thumb-list.type-column.product
     .thumb-list.type-column.product {
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-top: 32px;
+        padding-bottom: 60px;
 
         .title {
-            height: 42px;
+            height: 50px;
             padding: 12px 0 0;
+            line-height: 18px;
+
+            span {
+
+            }
         }
     }
     

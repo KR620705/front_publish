@@ -92,6 +92,13 @@
   @include prefix(transition, all 0.35s ease-out, webkit moz ms o);
 }
 
+/* width:1000~ */
+@include mq('lg') {
+  .btn {
+    width: 400px;
+  }
+}
+
 /* width:1320~ */
 @include mq('xl') {
   .btn-wrap {

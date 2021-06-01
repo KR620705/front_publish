@@ -109,13 +109,14 @@ input[type="radio"] + span:before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 22px;
-  height: 22px;
+  width: 1.6rem;
+  height: 1.6rem;
   background: url("../images/common/form_rdo.png") no-repeat 0 0;
   background-position-y:0;
+  background-size: 100%;
 }
 input[type="radio"]:checked + span:before {
-  background-position-y: -25px;
+  background-position-y: -2rem;
 }
 
 //input button
@@ -176,4 +177,25 @@ textarea {
   padding: 10px;
   border: 1px solid #e6e6e6;
   resize: none;
+}
+
+/* width:1320~ */
+@include mq('xl') {
+  //input checkbox
+  input[type="checkbox"] + span:before {
+    width: 20px;
+    height: 20px;
+  }
+  input[type="checkbox"]:checked + span:before {
+    background-position-y: -25px;
+  }
+  
+  //input radio
+  input[type="radio"] + span:before {
+    width: 20px;
+    height: 20px;
+  }
+  input[type="radio"]:checked + span:before {
+    background-position-y: -25px;
+  }
 }
