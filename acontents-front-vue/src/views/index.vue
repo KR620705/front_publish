@@ -96,7 +96,7 @@
             <td class="alL">로그인</td>
             <td class="alL" rowspan="4">/views/auth</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

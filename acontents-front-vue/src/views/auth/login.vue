@@ -4,6 +4,22 @@
       <fieldset>
         <legend>로그인</legend>
 
+        <sectio>
+          <div class="header type-sub">
+            <div class="inner">
+              <div class="logo-list">
+                <ul>
+                  <li class="acontent"><h1><a href="javascript:;"><span class="hide">A Content</span></a></h1></li>
+                  <li class="amway"><a href="javascript:;" target="_blank" title="새창으로 열림"><span class="hide">Amway</span></a></li>
+                </ul>
+                <button type="button" class="btn-open"></button>
+              </div>
+              <button type="button" class="btn-search">검색</button>
+              <button type="button" class="btn-menu">메뉴</button>
+            </div>
+          </div>
+        </sectio>
+
         <section class="wrap-login">
           <div class="logo-small"></div>
           <div class="logo"></div>
@@ -55,7 +71,8 @@
     </form>
 <!-- 
   시안은 푸터가 표현돠이 있어, 
-  푸터가 보여져야 합니다.(헤더는 없어도 됨)
+  푸터가 보여져야 합니다.
+  (PC버전에서는 헤더가 다른 서브페이지와 동일하게 변경 되어야 합니다.)
  -->
   </div>
 </template>
