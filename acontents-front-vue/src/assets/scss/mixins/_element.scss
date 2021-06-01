@@ -1,11 +1,13 @@
-@mixin btn-login {
-  width:92%;
-  left: 50%;
-  transform: translateX( -50% );
-  margin:0 auto;
-  position:fixed;
-  bottom:2rem;
-}
+
+// @mixin btn-login {
+//   width:100%;
+//   width:92%;
+//   left: 50%;
+//   transform: translateX( -50% );
+//   margin:0 auto;
+//   position:fixed;
+//   bottom:2rem;
+// }
 
 @mixin btn-bottom {
   width:100%; 
@@ -13,13 +15,13 @@
   position:relative;
 }
 
-@mixin caution{
-  padding-left:3rem;
-  min-height:2rem;
-  font-size:1.4rem;
-  line-height:1.5;
-  background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
-}
+// @mixin caution{
+//   padding-left:3rem;
+//   min-height:2rem;
+//   font-size:1.4rem;
+//   line-height:1.5;
+//   background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
+// }
 
 @mixin btn-small-type1{
   display:inline-block;

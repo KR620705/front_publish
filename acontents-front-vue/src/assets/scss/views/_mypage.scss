@@ -56,7 +56,11 @@
 
         p{
             color:$gray-color;
-            @include caution;
+            padding-left:3rem;
+            min-height:2rem;
+            font-size:1.4rem;
+            line-height:1.5;
+            background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
         }
     }
     .btn-wrap{

@@ -35,6 +35,7 @@
                 margin-left:2rem;
             }
         }
+
         .other-auth-link{
             ul{
                 margin:1.5rem 0 7rem 0;
@@ -46,8 +47,8 @@
                         content:'';
                         position:absolute;
                         background-color: $gray-color;
-                        top:0;
-                        right:-14px;
+                        top:0.3rem;
+                        right:-1.4rem;
                         width:1px;
                         height:12px;
                     }
@@ -68,92 +69,17 @@
                 padding:0;
             }
         }
-
     }
 
     .wrap-caution{
         p{
-            @include caution
+            padding-left:3rem;
+            min-height:2rem;
+            font-size:1.4rem;
+            line-height:1.5;
+            background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
         }
     }
-
-
-    /* width:768~ */
-    @include mq('md') {
-    }
-
-    /* width:1000~ */
-    @include mq('lg') {
-        .auth{
-            .header{
-                display:block;
-            }
-            .wrap-login{
-                .logo-small{
-                    display:none;
-                }
-            }
-        }
-
-        .type-sub{
-            display:block;
-        }
-        .wrap-login{
-            width:400px;
-            margin:0 auto;
-            padding-top:45px;
-            *{
-                font-size:16px;
-            }
-            .logo-small{
-                display:none;
-            }
-            .wrap-checkbox{
-                padding: 20px 0 30px 0;
-                span{
-                    line-height:21px;
-                }
-            }
-        }
-        .wrap-caution{
-            width:360px;
-            margin:0 auto;
-            font-size:13px;
-        }
-        .wrap-login{
-            .other-auth-link{
-                ul{
-                    margin:15px 0 30px 0;
-                    li{
-                        & ::after{
-                            top:8px;
-                            right:-18px;
-                        }
-                        span{
-                            font-size:13px;
-                            font-weight:200;
-                        }
-                    }
-                }
-            }
-        }
-        .wrap-caution{
-            p{
-                font-size:13px;
-                line-height: 26px;
-                color:$gray-color;
-            }
-        }
-        .btn{
-            font-size: 20px;
-            font-weight:500;
-        }
-    }
-
-    /* width:1320~ */
-    @include mq('xl'){
-    }
-
 
 }
 
@@ -332,9 +258,6 @@
 }
 
 .terms{
-    .tit-terms{
-        text-align:center;
-    }
     .wrap-terms{
         label{
             span{
@@ -352,13 +275,209 @@
                 padding: 1rem;
                 border-radius: $radius;
                 border:none;
-                background-color:#363636;
-                color:$lightgray-color;
+                background-color:#292929;
+                color:$gray-color;
             }
         }
     }
 
-    button{
-        @include btn-login
+    .wrap-bottom-btn{
+        text-align:center;
+
+        button{
+            margin:0 auto;
+        }
     }
 }
+
+// 해상도 별 속성적용 
+
+    
+    /* width:768~ */
+    @include mq('md') {
+        .wrap-terms-contents{
+           width:100%;
+        }
+        .wrap-bottom-btn{
+            text-align:center;
+    
+            button{
+                margin:0 auto;
+            }
+        }
+        .terms{
+            .tit-terms{
+                text-align:center;
+            }
+            .wrap-bottom-btn{
+                text-align:center;
+                
+                button{
+                    width:100%;
+                }
+            }
+        }
+        .wrap-login{
+            .other-auth-link{
+                ul{
+                    margin:1.5rem 0 7rem 0;
+                    text-align:center;
+                    li{
+                        display:inline;
+                        position:relative;
+                        & ::after{
+                            content:'';
+                            position:absolute;
+                            background-color: $gray-color;
+                            top:0;
+                            right:-14px;
+                            width:1px;
+                            height:12px;
+                        }
+                        &:last-child{
+                            & ::after{
+                                background-color:transparent;
+                            }
+                        }
+                    }
+                    li + li{
+                        margin-left:2.5rem;
+                    }
+                }
+                a{
+                    color: $gray-color;
+                    width:auto;
+                    height:auto;
+                    padding:0;
+                }
+            }
+        }
+        .wrap-caution{
+            p{
+                padding-left:3rem;
+                min-height:2rem;
+                font-size:1.4rem;
+                line-height:1.5;
+                background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
+            }
+        }
+        
+    }
+
+    /* width:1000~ */
+    @include mq('lg') {
+        .login,
+        .trems{
+            .header{
+                display:block;
+            }
+            .wrap-login{
+                width:400px;
+                .logo-small{
+                    display:none;
+                }
+            }
+        }
+        .terms{
+            *{
+                font-size:16px;
+            }
+            .tit-terms{
+                text-align:left;
+            }
+            .titlearea{
+                .h2-title{
+                    font-size:32px;
+                    line-height:40px;
+                }
+            }
+            .wrap-bottom-btn{
+                text-align:center;
+                
+                button{
+                    width:400px;
+                }
+            }
+        }
+
+        .type-sub{
+            display:block;
+        }
+        .wrap-terms-contents{
+            width:1000px; 
+         }
+        .wrap-login{
+            margin:0 auto;
+            padding-top:60px;
+            *{
+                font-size:16px;
+            }
+            .logo-small{
+                display:none;
+            }
+            .wrap-checkbox{
+                padding: 20px 0 30px 0;
+                span{
+                    line-height:21px;
+                }
+            }
+            
+            .wrap-login{
+                .other-auth-link{
+                    ul{
+                        margin:1.5rem 0 7rem 0;
+                        text-align:center;
+                        li{
+                            display:inline;
+                            position:relative;
+                            & ::after{
+                                content:'';
+                                position:absolute;
+                                background-color: $gray-color;
+                                top:6px;
+                                right:-18px;
+                                width:1px;
+                                height:12px;
+                            }
+                            &:last-child{
+                                & ::after{
+                                    background-color:transparent;
+                                }
+                            }
+                        }
+                        li + li{
+                            margin-left:2.5rem;
+                        }
+                    }
+                    a{
+                        color: $gray-color;
+                        width:auto;
+                        height:auto;
+                        padding:0;
+                    }
+                }
+            }
+        }
+        .wrap-caution{
+            width:360px;
+            margin:0 auto;
+            font-size:13px;
+            p{
+                font-size:13px;
+                line-height: 26px;
+                color:$gray-color;
+            }
+        }
+        .btn{
+            font-size: 20px;
+            font-weight:500;
+        }
+    }
+
+    /* width:1320~ */
+    @include mq('xl'){
+        .wrap-terms-contents{
+            width:1300px; 
+         }
+    }
+

@@ -4,7 +4,23 @@
       <fieldset>
         <legend>서비스 약관동의</legend>
 
-        <section class="wrap-login">
+        <section>
+          <div class="header type-sub">
+            <div class="inner">
+              <div class="logo-list">
+                <ul>
+                  <li class="acontent"><h1><a href="javascript:;"><span class="hide">A Content</span></a></h1></li>
+                  <li class="amway"><a href="javascript:;" target="_blank" title="새창으로 열림"><span class="hide">Amway</span></a></li>
+                </ul>
+                <button type="button" class="btn-open"></button>
+              </div>
+              <button type="button" class="btn-search">검색</button>
+              <button type="button" class="btn-menu">메뉴</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="wrap-login wrap-terms-contents">
           <div class="logo-small"></div>
 
           <div class="titlearea tit-terms">
@@ -36,8 +52,10 @@
 
         </section>
     
-        <!-- 카테고리 선택 후 버튼의 클래스가 btn red ->  btn red 로 변경이 되어야 함. -->
-        <button type="button" class="btn gray">다음</button>
+        <section class="wrap-bottom-btn">
+          <!-- 카테고리 선택 후 버튼의 클래스가 btn red ->  btn red 로 변경이 되어야 함. -->
+          <button type="button" class="btn gray">다음</button>
+        </section>
 
       </fieldset>
     </form>
