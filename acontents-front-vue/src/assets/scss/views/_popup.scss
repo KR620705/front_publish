@@ -8,7 +8,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding: 2rem 20px;
-        background: #F6F6F6;
+        background: #EBEBEB;
 
         li {
             width: 33.333%;
@@ -41,9 +41,9 @@
                 background-image: url("../images/common/icon_link_facebook.png");
                 }
             }
-            &.instagram {
+            &.twitter {
                 a {
-                background-image: url("../images/common/icon_link_instagram.png");
+                background-image: url("../images/common/icon_link_twitter.png");
                 }
             }
             &.band {
@@ -85,17 +85,20 @@
                 font-size: 1.2rem;
                 line-height: 1.7;
             }
-            }
-            &.active {
-            .toggle-btn {
-                &:after {
+        }
+        &.active {
+            .toggle-btn:after {
                 transform: rotate(-180deg);
-                }
             }
-
             .toggle-cont {
                 display: block;
             }
+        }
+    }
+    .modal-btn {
+
+        .modal-body-close {
+            color: #000;
         }
     }
 }
@@ -104,5 +107,43 @@
 @include mq('md') {
     .modal-share {
         width: 520px;
+
+        .link {
+            padding: 30px 20px;
+
+            li {
+
+                a {
+                    padding-top: 90px;
+                    background-size: 80px;
+                    font-size: 18px;
+                }
+                &:nth-child(n + 4) {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .toggle {
+            padding: 20px;
+
+            .toggle-btn {
+                font-size: 24px;
+
+                &:after {
+                    width: 8px;
+                    height: 8px;
+                    margin-left: 10px;
+                    background-size: 8px;
+                }
+            }
+            .toggle-cont {
+                margin-top: 20px;
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
     }
 }

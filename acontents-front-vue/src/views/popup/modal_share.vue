@@ -26,7 +26,7 @@
 							<li class="kakaotalk"><a href="javascript:;">카카오톡</a></li>
 							<li class="kakaostory"><a href="javascript:;">카카오스토리</a></li>
 							<li class="facebook"><a href="javascript:;">페이스북</a></li>
-							<li class="instagram"><a href="javascript:;">인스타그램</a></li>
+							<li class="twitter"><a href="javascript:;">트위터</a></li>
 							<li class="band"><a href="javascript:;">밴드</a></li>
 							<li class="url"><a href="javascript:;">URL 복사</a></li>
 						</ul>

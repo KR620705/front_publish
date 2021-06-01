@@ -93,7 +93,6 @@
 
 //mainthumbswiper
 .mainthumbswiper {
-    max-width: 300px;
     height: 54px;
 
     .swiper-slide {
@@ -236,6 +235,7 @@
         bottom: 130px;
         height: 80px;
         max-width: 580px;
+        margin: 0 auto;
     
         .swiper-slide {
             width: 80px;
