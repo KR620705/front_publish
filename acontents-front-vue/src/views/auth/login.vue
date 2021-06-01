@@ -4,7 +4,7 @@
       <fieldset>
         <legend>로그인</legend>
 
-        <sectio>
+        <section>
           <div class="header type-sub">
             <div class="inner">
               <div class="logo-list">
@@ -18,7 +18,7 @@
               <button type="button" class="btn-menu">메뉴</button>
             </div>
           </div>
-        </sectio>
+        </section>
 
         <section class="wrap-login">
           <div class="logo-small"></div>
