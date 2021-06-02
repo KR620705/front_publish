@@ -92,9 +92,9 @@
           </tr>
           <tr>
             <th scope="row" class="num"></th>
-            <td class="alL" rowspan="4">로그인</td>
+            <td class="alL" rowspan="5">로그인</td>
             <td class="alL">로그인</td>
-            <td class="alL" rowspan="4">/views/auth</td>
+            <td class="alL" rowspan="5">/views/auth</td>
             <td>완료</td>
             <td>완료</td>
             <td></td>
@@ -126,7 +126,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">주/부사업자 선택</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td class="alL red"></td>
             <td></td>
@@ -150,6 +150,21 @@
               <router-link to="/select_category">
                 select_category
               </router-link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">회원탈퇴</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td></td>
+            <td class="alL">
+              <!-- <router-link to="/">
+                
+              </router-link> -->
             </td>
           </tr>
           <tr>

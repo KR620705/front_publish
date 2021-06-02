@@ -169,10 +169,12 @@
             font-size:1.2rem;
             color:$gray-color;
         }
-        
-        button{
-            @include btn-bottom
+        .wrap-bottom-btn{
+            button{
+                @include btn-bottom
+            }
         }
+        
 }
 
 .select-category{
@@ -193,11 +195,12 @@
         }
 
     }
-    
-    button{
-        @include btn-bottom
+    .wrap-bottom-btn{
+        button{
+            @include btn-bottom
+        }  
     }
-     
+    
 }
 
 .check-group{
@@ -258,7 +261,10 @@
 }
 
 .terms{
-    .wrap-terms{
+    .wrap-terms-contents{
+        .tit-terms{
+            padding-top:2rem;
+        }
         label{
             span{
                 color:$white-color;
@@ -367,15 +373,19 @@
     /* width:1000~ */
     @include mq('lg') {
         .login,
-        .trems{
+        .terms,
+        .select-user,
+        .select-category{
             .header{
                 display:block;
             }
             .wrap-login{
-                width:400px;
                 .logo-small{
                     display:none;
                 }
+            }
+            .pc-login{
+                width:400px;
             }
         }
         .terms{
@@ -384,6 +394,7 @@
             }
             .tit-terms{
                 text-align:left;
+                padding-top:60px !important;
             }
             .titlearea{
                 .h2-title{
@@ -391,12 +402,40 @@
                     line-height:40px;
                 }
             }
-            .wrap-bottom-btn{
-                text-align:center;
-                
-                button{
-                    width:400px;
+        }
+        .wrap-bottom-btn{
+            text-align:center;
+            button{
+                width:400px !important;
+            }
+        }
+
+        .select-user{
+            .wrap-select-user{
+                h2{
+                    font-size:36px;
                 }
+                p{
+                    font-size:16px;
+                    line-height:24px;
+                }
+            }
+            .wrap-radio-group{
+                span{
+                    width:220px;
+                    height:220px;
+                }
+                .male,
+                .female{
+                    input[type="radio"] + span:before {
+                        width:220px;
+                        height:220px;
+                    }
+                }
+
+            }
+            .wrap-select-user{
+                width:100%;
             }
         }
 
@@ -404,7 +443,8 @@
             display:block;
         }
         .wrap-terms-contents{
-            width:1000px; 
+            width:100% !important;
+            max-width:1300px !important;
          }
         .wrap-login{
             margin:0 auto;

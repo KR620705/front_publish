@@ -4,12 +4,25 @@
       <fieldset>
         <legend>선호 카테고리 선택</legend>
 
+        <section>
+          <div class="header type-sub">
+            <div class="inner">
+              <div class="logo-list">
+                <ul>
+                  <li class="acontent"><h1><a href="javascript:;"><span class="hide">A Content</span></a></h1></li>
+                  <li class="amway"><a href="javascript:;" target="_blank" title="새창으로 열림"><span class="hide">Amway</span></a></li>
+                </ul>
+                <button type="button" class="btn-open"></button>
+              </div>
+              <button type="button" class="btn-search">검색</button>
+              <button type="button" class="btn-menu">메뉴</button>
+            </div>
+          </div>
+        </section>
+
         <section class="wrap-login">
           <div class="logo-small"></div>
 
-          <!-- <div class="titlearea wrap-select-user">
-            <h2 class="h2-title">활동하실 사용자를 선택해 주세요</h2>
-          </div> -->
           <!-- 최초 가입시에만 보이는 타이틀 -->
           <div class="titlearea wrap-select-category-title">
             <h2 class="h2-title">선호 카테고리 선택</h2>
@@ -52,9 +65,13 @@
           </div>
         </section>
         
-        <section class="check-group">
-          <!-- 카테고리 선택 후 버튼의 클래스가 btn red -> btn red 로 변경이 되어야 함. -->
-          <button type="button" class="btn gray">저장</button>
+        <section class="wrap-bottom-btn">
+          <!-- 
+            선택완료 시 아래의 button 클래스 변경
+            (회색 버튼에서 붉은색 버튼으로)
+            class="btn gray" -> class="btn red"
+          -->
+          <button type="button" class="btn gray">다음</button>
         </section>
 
       </fieldset>

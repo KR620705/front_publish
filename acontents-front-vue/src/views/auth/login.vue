@@ -20,7 +20,7 @@
           </div>
         </section>
 
-        <section class="wrap-login">
+        <section class="wrap-login pc-login">
           <div class="logo-small"></div>
           <div class="logo"></div>
           <div class="wrap-input">
