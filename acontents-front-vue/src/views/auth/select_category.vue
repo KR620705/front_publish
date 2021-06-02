@@ -71,7 +71,7 @@
             (회색 버튼에서 붉은색 버튼으로)
             class="btn gray" -> class="btn red"
           -->
-          <button type="button" class="btn gray">다음</button>
+          <button type="button" class="btn gray">저장</button>
         </section>
 
       </fieldset>

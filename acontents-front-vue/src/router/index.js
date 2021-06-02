@@ -52,6 +52,11 @@ const routes = [
       isIndex: true,
     },
   },
+  {// 로그인 > 회원탈퇴
+    path: '/membership_withdrawal',
+    name: 'Membership_withdrawal',
+    component: () => import('../views/auth/membership_withdrawal'),
+  },
   {// main
     path: '/main',
     name: 'Main',
