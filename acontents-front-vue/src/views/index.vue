@@ -141,7 +141,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 선택</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
