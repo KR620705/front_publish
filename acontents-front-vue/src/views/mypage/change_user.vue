@@ -1,5 +1,5 @@
 <template>
-  <div class="auth select-user">
+  <div class="mypage change-user select-user">
     <form>
       <fieldset>
         <legend>주/부사업자 선택</legend>
@@ -22,11 +22,19 @@
             </label>
           </div>
           <!-- 최초 가입시에만 보이는 문구 -->
-          <!-- <p class="guide-select-user">
+          <p class="guide-select-user">
             사용자는 마이페이지에서 변경이 가능하며,<br> 선택된 사용자에 따라 추천 콘텐츠 내용이 달라집니다.
-          </p> -->
+          </p>
           <!-- // 최초 가입시에만 보이는 문구 -->
-          <button type="button" class="btn red">다음</button>
+        </section>
+
+        <section class="wrap-bottom-btn">
+          <!-- 
+            선택완료 시 아래의 button 클래스 변경
+            (회색 버튼에서 붉은색 버튼으로)
+            class="btn gray" -> class="btn red"
+          -->
+          <button type="button" class="btn gray">저장</button>
         </section>
 
       </fieldset>

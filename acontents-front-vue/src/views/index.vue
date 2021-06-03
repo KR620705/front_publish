@@ -376,7 +376,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">주/부 사업자 변경</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -391,7 +391,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 변경</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

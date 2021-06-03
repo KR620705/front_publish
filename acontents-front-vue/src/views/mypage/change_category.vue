@@ -4,21 +4,6 @@
       <fieldset>
         <legend>선호 카테고리 선택</legend>
 
-        <section class="wrap-login">
-
-          <!-- <div class="titlearea wrap-select-user">
-            <h2 class="h2-title">활동하실 사용자를 선택해 주세요</h2>
-          </div> -->
-          <!-- 최초 가입시에만 보이는 타이틀 -->
-          <div class="titlearea wrap-select-category-title">
-            <h2 class="h2-title">선호 카테고리 선택</h2>
-            <p>선호하시는 카테고리를 <b>최대5개</b>까지 선택해 주세요.</p>
-          </div>
-          <!-- //최초 가입시에만 보이는 타이틀 -->
-
-
-        </section>
-
         <section class="check-group">
           <h2 class="h2-title">어바웃 암웨이</h2>
           <div class="wrap-checkbox-array">
@@ -51,7 +36,7 @@
           </div>
         </section>
         
-        <section class="check-group">
+        <section class="wrap-bottom-btn">
           <!-- 카테고리 선택 후 버튼의 클래스가 btn red -> btn red 로 변경이 되어야 함. -->
           <button type="button" class="btn gray">저장</button>
         </section>
