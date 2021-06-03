@@ -14,12 +14,12 @@
 
 /* width:1000~ */
 @include mq('lg') {
+  .container {
+    min-height: calc(100vh - #{$footer-height-pc});
+  }
 }
 
 /* width:1320~ */
 @include mq('xl') {
-  .container {
-    min-height: calc(100vh - #{$footer-height-pc});
-  }
 }
 

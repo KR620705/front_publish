@@ -34,36 +34,29 @@
     }
 }
 
-/* width:768~ */
-@include mq('md') {
-}
-
 /* width:1000~ */
 @include mq('lg') {
-}
-
-/* width:1320~ */
-@include mq('xl') {
-  .footer {
-    height: $footer-height-pc;
-    
-    .inner {
-        max-width: 1320px;
-        margin: 0 auto;
-        padding: 24px 10px 26px 10px;
-        
-        .info {
-            text-align: right;
-
-            a {
-                font-size: 13px;
-            }
-        }
-        .copyright {
-            margin-top: 0;
-            font-size: 12px;
-        }
+    .footer {
+      height: $footer-height-pc;
+      
+      .inner {
+          max-width: 1320px;
+          margin: 0 auto;
+          padding: 24px 10px 26px 10px;
+          
+          .info {
+              text-align: right;
+  
+              a {
+                  font-size: 13px;
+              }
+          }
+          .copyright {
+              margin-top: 0;
+              font-size: 12px;
+          }
+      }
     }
-  }
 }
+
 
