@@ -7,6 +7,14 @@
         .h2-title {
             padding-right: 10rem;
             font-size: 2.2rem;
+
+            .sub-title {
+                display: block;
+                margin-top: 0.5rem;
+                color: #D1CBCB;
+                font-size: 1.3rem;
+                font-weight: 200;
+            }
         }
         .btn.arrow {
             position: absolute;
@@ -318,7 +326,18 @@
 @include mq('md') {
     //thumb-list
     .thumb-list {
-        
+        .titlearea {
+            .h2-title {
+
+                .sub-title {
+                    display: inline;
+                    margin-top: 0.5rem;
+                    margin-left: 12px;
+                    font-size: 20px;
+                }
+            }
+        }
+
         .swiper-container {
     
             .swiper-slide {
@@ -432,7 +451,7 @@
                         display: block;
                     }
                     .contentbox {
-                        padding: 40px 25px;
+                        padding: 55px 25px;
                     }
                 }
             }
@@ -486,10 +505,6 @@
 
 /* width:1000~ */
 @include mq('lg') {
-}
-
-/* width:1320~ */
-@include mq('xl') {
     //thumb-list
     .thumb-list {
         margin-top: 60px;
@@ -542,6 +557,37 @@
             }
         }
     }
+    //thumb-list.type-column
+    .thumb-list.type-column {
+    
+        .column {
+    
+            & > li {
+                width: 175px;
+                height: 175px;
+                margin-top: 16px;
+            }
+            .title {
+                height: 32px;
+            }
+        }
+    }
+    //thumb-list.type-column.product
+    .thumb-list.type-column.product {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        .title {
+            height: 50px;
+            padding: 12px 0 0;
+            line-height: 18px;
+        }
+    }
+}
+
+/* width:1320~ */
+@include mq('xl') {
+    
     //thumb-list.type-one
     .thumb-list.type-one {
         
@@ -598,7 +644,7 @@
                         height: 340px;
                     }
                     .contentbox {
-                        padding: 60px 50px;
+                        padding: 100px 50px 30px;
                     }
                 }
             }
@@ -618,36 +664,5 @@
             }
         }
     }
-    //thumb-list.type-column
-    .thumb-list.type-column {
-    
-        .column {
-    
-            & > li {
-                width: 175px;
-                height: 175px;
-                margin-top: 16px;
-            }
-            .title {
-                height: 32px;
-            }
-        }
-    }
-    //thumb-list.type-column.product
-    .thumb-list.type-column.product {
-        padding-top: 32px;
-        padding-bottom: 60px;
-
-        .title {
-            height: 50px;
-            padding: 12px 0 0;
-            line-height: 18px;
-
-            span {
-
-            }
-        }
-    }
-    
 }
 

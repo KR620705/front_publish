@@ -16,10 +16,6 @@
     }
     &.fixed {
         background: #222;
-      
-        .logo-list li.acontent a {
-            background-image: url("../images/common/logo_red.png");
-        }
     }
     h1 {
         position: relative;
@@ -62,7 +58,7 @@
                 display: block;
                 
                 &.acontent a {
-                    background-image: url("../images/common/logo_red.png");
+                    background-image: url("../images/common/logo.svg");
                 }
             }
             .btn-open {
@@ -83,7 +79,7 @@
                 background: url("../images/common/logo_white.png") no-repeat 12px 50% /7.7rem;
             }
             &.amway a {
-                background: url("../images/common/logo_amway.png") no-repeat 50% 50% /5.3rem;
+                background: url("../images/common/logo_amway.svg") no-repeat 50% 50% /5.4rem;
             }
             a {
                 display: block;
@@ -207,9 +203,6 @@
             }
             li {
 
-                &:last-child {
-                    border-width: 2px;
-                }
                 &.acontent a {
                     background-position: 20px 50%;
                     background-size: 108px;

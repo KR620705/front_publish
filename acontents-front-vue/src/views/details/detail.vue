@@ -230,10 +230,10 @@
 		</section>
 		<!-- //thumb-list type-column -->
         
-		<!-- thumb-list type-column : 관련 상품// -->
+		<!-- thumb-list type-column : 관련제품// -->
 		<section class="thumb-list type-column product">
 			<div class="titlearea">
-				<h2 class="h2-title">관련 상품</h2>
+				<h2 class="h2-title">관련제품</h2>
 			</div>
 			<div class="columnarea">
 				<ul class="column">
@@ -293,7 +293,7 @@
 				</ul>
 			</div>
 		</section>
-		<!-- //thumb-list type-column : 관련 상품 -->
+		<!-- //thumb-list type-column : 관련제품 -->
 
 	</div>
     

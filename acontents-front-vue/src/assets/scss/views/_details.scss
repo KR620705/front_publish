@@ -199,17 +199,6 @@
     
         //video-wrap
         .video-wrap {
-            height: 450px;
-        }
-    }
-}
-
-/* width:1320~ */
-@include mq('xl') {
-    .details.detail {
-    
-        //video-wrap
-        .video-wrap {
             max-width: 1300px;
             height: 590px;
             margin: 0 auto;
@@ -251,13 +240,14 @@
                 }
                 .h3-title {
                     margin-top: 20px;
+                    font-size: 24px;
                 }
             }
             .tag {
-                margin-top: 3px;
+                margin-top: 13px;
             }
             .year {
-                margin-top: 7px;
+                margin-top: 8px;
                 font-size: 16px;
             }
             .btns {

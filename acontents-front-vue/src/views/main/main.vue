@@ -9,9 +9,10 @@
 			<swiper ref="swiperTop"
 				:options="swiperOptionTop"
 				@ready="swiperReady"
+				@slideChange="slideChangeSwiperTop"
 				class="swiper mainswiper">
         <swiper-slide v-for="(item, key) in mainSlideAry"
-                      :style="`background-image: url(${item.img})`"
+                      :style="`background-image: url(${(isPc) ? item.imgPc : item.imgMb})`"
                       :key="key">
           <div class="title">
             <strong>{{item.title}}</strong>
@@ -21,25 +22,41 @@
 			</swiper>
 			<!-- //mainswiper -->
 
-			<!-- mainthumbswiper// -->
-			<swiper ref="swiperThumbs"
-				:options="swiperOptionThumbs"
-				@ready="swiperReady"
-				class="swiper mainthumbswiper">
-        <swiper-slide v-for="(item, key) in mainSlideAry"
-                       :style="`background-image: url(${item.img})`"
-                       :key="key">
-          &nbsp;
-        </swiper-slide>
-			</swiper>
-			<!-- //mainthumbswiper -->
+			<!-- mainthumb-wrap// -->
+			<div class="mainthumb-wrap">
+				<!-- mainthumbswiper// -->
+				<swiper ref="swiperThumbs"
+					:options="swiperOptionThumbs"
+					@ready="swiperReady"
+					@click="thumbsClick"
+					class="swiper mainthumbswiper">
+			<swiper-slide v-for="(item, key) in mainSlideAry"
+						:data-idx="key"
+						:class="(mainSlideIdx === key)? 'on' : ''"
+						:style="`background-image: url(${(isPc) ? item.imgPc : item.imgMb})`"
+						:key="key">
+			&nbsp;
+			</swiper-slide>
+				</swiper>
+				<!-- //mainthumbswiper -->
 
-			<div class="innercon">
-				<div class="swiper-pagination-tot">
-					<strong>01</strong> / <span>05</span>
+				<!-- innercon// -->
+				<div class="innercon">
+					<div class="swiper-pagination-tot">
+					<strong>
+						<template v-if="mainSlideIdx < 9">0</template>
+						{{mainSlideIdx + 1}}
+					</strong> /
+					<span>
+						<template v-if="mainSlideAry.length < 10">0</template>
+						{{mainSlideAry.length}}
+					</span>
+					</div>
+					<a href="javascript:;" class="btn plus">전체보기</a>
 				</div>
-				<a href="javascript:;" class="btn plus">전체보기</a>
+				<!-- //innercon -->
 			</div>
+			<!-- //mainthumb-wrap -->
 		</section>
 		<!-- //main-visual -->
         
@@ -210,8 +227,8 @@
 		<!-- main-banner// -->
 		<section class="main-banner">
 			<div class="inner">
-				<a href="javascript:;" class="mo"><img src="@/assets/images/views/main_banner.png" alt="시리즈 보러가기"></a>
-				<a href="javascript:;" class="pc"><img src="@/assets/images/views/main_banner_pc.png" alt="시리즈 보러가기"></a>
+				<a href="javascript:;" class="mo"><img src="@/assets/images/views/main_banner.png" alt="신체 나이를 아세요? 건강 라디오 시즌2"></a>
+				<a href="javascript:;" class="pc"><img src="@/assets/images/views/main_banner_pc.png" alt="신체 나이를 아세요? 건강 라디오 시즌2"></a>
 			</div>
 		</section>
 		<!-- //main-banner -->
@@ -220,6 +237,44 @@
 		<section class="thumb-list">
 			<div class="titlearea">
 				<h2 class="h2-title">우리를 강하게 하는 암웨이의 생각들</h2>
+				<a href="javascript:;" class="btn arrow">전체보기</a>
+			</div>
+			<swiper ref="thumbList1"
+              :options="thumbswiper"
+              @ready="swiperReady"
+              class="swiper thumbswiper">
+        <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출 -->
+        <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
+          <span class="icon video"><span class="hide">video</span></span>
+          <span class="icon file"><span class="hide">file</span></span>
+          <span class="icon image"><span class="hide">image</span></span>
+          <span class="icon column"><span class="hide">column</span></span>
+        -->
+				<swiper-slide v-for="(item, key) in tthumbList1Ary"
+                      :key="key">
+					<a href="javascript:;">
+						<div class="title">
+							<span>{{item.title}}</span>
+						</div>
+						<div class="badge">
+							<span :class="`icon ${item.type}`">
+								<span class="hide">{{item.type}}</span>
+							</span>
+						</div>
+
+						<img alt="" :src="item.img" />
+					</a>
+				</swiper-slide>
+			</swiper>
+		</section>
+		<!-- //thumb-list -->
+
+		<!-- thumb-list// -->
+		<section class="thumb-list">
+			<div class="titlearea">
+				<h2 class="h2-title">가장 빠른 현장 스케치
+					<span class="sub-title">[2022 글로벌 리더십 세미나]</span>
+				</h2>
 				<a href="javascript:;" class="btn arrow">전체보기</a>
 			</div>
 			<swiper ref="thumbList1"
@@ -435,28 +490,60 @@ export default {
   name: 'Main',
   data: function () {
     return {
+		isPc: true,
+		mainSlideIdx: 0,
 		// data
 		mainSlideAry: [
-        {
-          title: '강렬한 레드 상하이를 만나다',
-          img: '/assets/images/temp/temp_960X1170.png'
-        },
-        {
-          title: '2강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_2.png'
-        },
-        {
-          title: '3강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_3.png'
-        },
-        {
-          title: '4강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_4.png'
-        },
-        {
-          title: '5강렬한 레드 상하이를 만나다',
-          img: 'assets/images/temp/temp_390X390_5.png'
-        },
+		{
+			title: '강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_960X1170.png',
+			imgMb: '/assets/images/temp/temp_390X390_2.png'
+		},
+		{
+			title: '2강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_2.png',
+			imgMb: '/assets/images/temp/temp_390X390_3.png'
+		},
+		{
+			title: '3강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_3.png',
+			imgMb: '/assets/images/temp/temp_390X390_4.png'
+		},
+		{
+			title: '4강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_4.png',
+			imgMb: '/assets/images/temp/temp_390X390_5.png',
+		},
+		{
+			title: '5강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_5.png',
+			imgMb: '/assets/images/temp/temp_960X1170.png'
+		},
+		{
+			title: '6강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_960X1170.png',
+			imgMb: '/assets/images/temp/temp_390X390_2.png'
+		},
+		{
+			title: '5강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_5.png',
+			imgMb: '/assets/images/temp/temp_960X1170.png'
+		},
+		{
+			title: '6강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_960X1170.png',
+			imgMb: '/assets/images/temp/temp_390X390_2.png'
+		},
+		{
+			title: '5강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_390X390_5.png',
+			imgMb: '/assets/images/temp/temp_960X1170.png'
+		},
+		{
+			title: '6강렬한 레드 상하이를 만나다',
+			imgPc: '/assets/images/temp/temp_960X1170.png',
+			imgMb: '/assets/images/temp/temp_390X390_2.png'
+		},
 		],
 
 		//tthumb List 1 Ary
@@ -518,7 +605,6 @@ export default {
 			spaceBetween: 0,
         },
         swiperOptionThumbs: {
-			centeredSlides: true,
 			slidesPerView: 'auto',
 			touchRatio: 0.2,
 			slideToClickedSlide: true,
@@ -551,18 +637,47 @@ export default {
   },
   mounted() {
     // page start !!
-    this.$nextTick(() => {
-        const swiperTop = this.$refs.swiperTop.$swiper
-        const swiperThumbs = this.$refs.swiperThumbs.$swiper
-        swiperTop.controller.control = swiperThumbs
-        swiperThumbs.controller.control = swiperTop
-      })
+    // this.$nextTick(() => {
+      // const swiperTop = this.$refs.swiperTop.$swiper
+      // const swiperThumbs = this.$refs.swiperThumbs.$swiper
+      // swiperTop.controller.control = swiperThumbs
+      // swiperThumbs.controller.control = swiperTop
+    // })
+  },
+  beforeMount () {
+    // 페이지 시작전 리사이즈 리스너를 실행
+    this.checkWindowWidth()
+    window.addEventListener('resize', this.checkWindowWidth)
+  },
+  beforeDestroy () {
+    // 현재페이지에서 나갈경우 리사이즈 리스너를 종료
+    window.removeEventListener('resize', this.checkWindowWidth)
   },
   methods: {
     swiperReady(swiper) {
       setTimeout(() => {
         swiper.update();
       }, 500)
+    },
+    /** 브라우저 리사이즈 감시
+     *  브라우저 너비가 768px 보다 작을경우
+     *  isPc = false;
+     *  */
+    checkWindowWidth () {
+      this.isPc = (window.innerWidth >= 768);
+    },
+
+    ///SwiperTop 슬라이더
+    slideChangeSwiperTop() {
+      const swiper = this.$refs.swiperTop.$swiper;
+      this.mainSlideIdx = swiper.activeIndex;
+      this.$refs.swiperThumbs.$swiper.slideTo(swiper.activeIndex, 1000)
+    },
+
+    //thumbsClick
+    thumbsClick(evt) {
+      const idx = Number(evt.target.getAttribute('data-idx'));
+      this.$refs.swiperTop.$swiper.slideTo(idx, 1000)
     }
   },
 }

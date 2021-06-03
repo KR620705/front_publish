@@ -179,8 +179,8 @@ textarea {
   resize: none;
 }
 
-/* width:1320~ */
-@include mq('xl') {
+/* width:1000~ */
+@include mq('lg') {
   //input checkbox
   input[type="checkbox"] + span:before {
     width: 20px;

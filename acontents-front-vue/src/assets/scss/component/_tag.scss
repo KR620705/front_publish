@@ -34,8 +34,8 @@
     }
 }
 
-/* width:1320~ */
-@include mq('xl') {
+/* width:1000~ */
+@include mq('lg') {
     .tag {
         margin-top: 20px;
 

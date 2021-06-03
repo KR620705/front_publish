@@ -208,15 +208,3 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
-.mainthumbswiper {
-  max-width: none !important;
-
-  .swiper-slide.swiper-slide-active {
-    opacity: .6 !important;
-  }
-  .swiper-slide.on {
-    opacity: 1 !important;
-  }
-}
-</style>

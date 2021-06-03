@@ -94,13 +94,6 @@
 
 /* width:1000~ */
 @include mq('lg') {
-  .btn {
-    width: 400px;
-  }
-}
-
-/* width:1320~ */
-@include mq('xl') {
   .btn-wrap {
 
     .btn.round ~ .btn.round {
@@ -108,6 +101,7 @@
     }
   }
   .btn {
+    width: 400px;
     height: 60px;
     font-size: 20px;
     font-weight: 600;
