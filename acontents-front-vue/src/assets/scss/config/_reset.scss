@@ -72,7 +72,3 @@ button {background-color: transparent;outline: none;-webkit-tap-highlight-color:
 @include mq('lg') {
   html{font-size:12px;}
 }
-/* width:1320~ */
-@include mq('xl') {
-  html{font-size:13px;}
-}

@@ -496,8 +496,8 @@ export default {
 		mainSlideAry: [
 		{
 			title: '강렬한 레드 상하이를 만나다',
-			imgPc: '/assets/images/temp/temp_960X1170.png',
-			imgMb: '/assets/images/temp/temp_390X390_2.png'
+			imgPc: '/assets/images/temp/temp_1300X800.png',
+			imgMb: '/assets/images/temp/temp_960X1170.png'
 		},
 		{
 			title: '2강렬한 레드 상하이를 만나다',

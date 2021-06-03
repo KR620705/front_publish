@@ -173,7 +173,7 @@
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -205,7 +205,7 @@
             <td class="alL">비주얼 빅배너 목록</td>
             <td class="alL" rowspan="3">/views/list</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
