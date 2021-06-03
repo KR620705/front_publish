@@ -361,7 +361,7 @@
             <td class="alL">마이페이지 메인</td>
             <td class="alL" rowspan="3">/views/mypage</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

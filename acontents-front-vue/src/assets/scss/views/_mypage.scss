@@ -116,3 +116,89 @@
     }
      
 }
+
+/* width:768~ */
+@include mq('md') {
+}
+
+/* width:1000~ */
+@include mq('lg') {
+    .mypage {
+        width:100%;
+        max-width:1300px;
+        margin:0 auto 0 auto;
+
+        .mypage-tb{
+            margin:60px 0 0 0;
+            dl{
+                font-size:18px;
+                dd{
+                    button,
+                    dl{
+                        font-size:16px;
+                    }
+                    .btn{
+                        &.small{
+                            padding:6px 15px 5px 15px;
+                        }
+                    }
+                }
+            }     
+        }
+
+        .h2-title{
+            position:relative;
+            font-size:32px;
+            .btn{
+                &.small{
+                    padding:6px 15px 5px 15px !important;
+                    position:absolute;
+                    top:5px;
+                    right:0;
+                    @include btn-small-type1
+                }
+            }
+        }
+
+        .wrap-checkbox-array{
+            .checkbox-array{
+                li{
+                    width: 145px;
+                    height:90px;
+                    margin:0 0 0 20px;
+                    &:first-child{
+                        margin-left:0; 
+                    }
+                }
+            }
+            label{
+                font-size:18px;
+            }
+        }
+
+        button{
+            font-size:18px;
+        }
+
+        .wrap-caution{
+            margin: 30px 0 60px 0;
+            padding: 12px 9px 12px 20px;
+            width:100%;
+            p{
+                font-size:13px;
+                line-height: 26px;
+                color:$gray-color;
+            }
+        }
+        .btn-wrap-mypage{
+            padding: 82px 0 100px 0;
+            text-align:center;
+        }
+    }
+}
+
+/* width:1320~ */
+@include mq('xl'){
+
+}
+

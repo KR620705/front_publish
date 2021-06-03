@@ -662,25 +662,6 @@
                 dl + dl{
                     margin-top:30px;
                 }
-                // dt{
-                //     margin-bottom:0.5rem;
-                //     position:relative;
-                //     &::before{
-                //         content: "";
-                //         width: 2px;
-                //         height: 2px;
-                //         border-radius:2px;
-                //         position:absolute;
-                //         left:-1rem;
-                //         top:0.7rem;
-                //         background-color:$white-color;
-                //     }
-                // }
-                // dd{
-                //     font-weight:200;
-                //     color:$gray-color;
-                //     line-height:1.8;
-                // }
             }
             .wrap-radio{
                 text-align:center;
@@ -700,35 +681,6 @@
                         font-size:16px;
                         margin-left:0.5rem;
                     }
-                    // input[type="radio"] + span{
-                    //     &:before{
-                    //         content: "";
-                    //         display: inline-block;
-                    //         position: absolute;
-                    //         top: 0;
-                    //         left: 0;
-                    //         width: 1.6rem;
-                    //         height: 1.6rem;
-                    //         background:#C9C9C9;
-                    //         border-radius:1.6rem;
-                    //     }
-                    //     &:after{
-                    //         content: "";
-                    //         display: inline-block;
-                    //         position: absolute;
-                    //         top: 0.5rem;
-                    //         left: 0.5rem;
-                    //         width: 0.6rem;
-                    //         height: 0.6rem;
-                    //         background:$white-color;
-                    //         border-radius:1.6rem;
-                    //     }
-                    // }
-                    // input[type="radio"]:checked + span{
-                    //     &:before{
-                    //         background: #E50914;
-                    //     }
-                    // }
                 }
             }
             .wrap-bottom-btn{

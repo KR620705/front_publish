@@ -12,7 +12,7 @@
                 예시 ) <dl> -> <dl class="none">
                 -->
                 <!-- 주/부 사업자 정보 -->
-                <dl class="none">
+                <dl class="">
                   <dt>
                     <i>주사업자</i> 이용중
                   </dt>
