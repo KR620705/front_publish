@@ -220,7 +220,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">카테고리 콘텐츠 목록</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -269,7 +269,7 @@
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="6">/views/menu</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

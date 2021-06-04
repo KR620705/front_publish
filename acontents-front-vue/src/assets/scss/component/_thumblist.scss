@@ -587,7 +587,6 @@
 
 /* width:1320~ */
 @include mq('xl') {
-    
     //thumb-list.type-one
     .thumb-list.type-one {
         
@@ -661,6 +660,22 @@
                 width: 50px;
                 background-size: 17px;
                 background-position-y: 45%;
+            }
+        }
+    }
+    //thumb-list.type-column
+    .thumb-list.type-column {
+
+        .column {
+
+            & > li {
+                margin-top: 30px;
+            }
+            & > li:nth-child(-n + 7) {
+                margin-top: 16px;
+            }
+            & > li:nth-child(7n) {
+                margin-right: 0;
             }
         }
     }

@@ -3,7 +3,7 @@
 
 	<form>
 		<fieldset>
-			<legend>마이 목록</legend>
+			<legend>즐겨찾기</legend>
 
 			<!-- thumb-list type-column// -->
 			<section class="thumb-list type-column">
