@@ -408,7 +408,7 @@
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

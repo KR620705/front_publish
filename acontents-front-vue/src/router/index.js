@@ -73,6 +73,14 @@ const routes = [
       isMainHeader: true,
     },
   },
+    {// landing
+      path: '/landing',
+      name: 'Landing',
+      component: () => import('../views/main/landing'),
+      meta: {
+        isMainHeader: true,
+      },
+    },
   {// 리스트 > 빅배너
     path: '/bigbanner_list',
     name: 'Bigbanner_list',

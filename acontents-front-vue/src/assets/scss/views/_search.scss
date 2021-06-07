@@ -9,11 +9,29 @@ $rem4: 4rem;  // height:4rem
         size:1.08rem;
     }
 
+    button {
+        position: absolute;
+        text-indent: -9999px;
+
+        &.btn-close {
+            top: 1rem;
+            right: 0;
+            width: 3rem;
+            height: 3rem;
+            background: url("../images/common/sidemenu_close.png") no-repeat 50% 50% /100%;
+        }
+      }
+
+
     .wrap-input{
         
         height:#{$rem4};
         position:relative;
         margin-top:1.5rem;
+
+        .for-pc{
+            display:none;
+        }
 
         .search-input{
             height:#{$rem4};
@@ -25,6 +43,7 @@ $rem4: 4rem;  // height:4rem
             text-align:left;
             float:left;
             color:$black-color;
+            font-size:1.4rem;
 
             &::placeholder{
                 color:$black-color;
@@ -60,6 +79,8 @@ $rem4: 4rem;  // height:4rem
 
                 .search-input{
                     float:none;
+                    border-top-left-radius:20px;
+                    border-top-right-radius:20px;
                 }
 
                 button{
@@ -81,22 +102,12 @@ $rem4: 4rem;  // height:4rem
 
             }
 
-            button {
-                position: absolute;
-                text-indent: -9999px;
-
-                &.btn-close {
-                    top: 1rem;
-                    right: 0;
-                    width: 3rem;
-                    height: 3rem;
-                    background: url("../images/common/sidemenu_close.png") no-repeat 50% 50% /100%;
-                }
-              }
-
               .wrap_latest{
                 
                 padding: 1.6rem 0;
+                h2, ul{
+                    background-color:#f5f5f5;
+                }
 
                 h2,a{
                     color: $black-color;
@@ -112,18 +123,20 @@ $rem4: 4rem;  // height:4rem
                     }
                     .btn-del-word-small{
                         position:absolute;
-                        top:45%;
+                        top:33%;
                         right:0;
-                        width:1rem;
-                        height:1rem;
+                        width:1.5rem;
+                        height:1.5rem;
                         padding:0.5rem;
                         background: url("../images/common/icon_del_list.svg") no-repeat center center / 100%;
                         text-indent: -999px;
+                        font-size:0;
                     }
                     li a{
                         width:calc(100% - 3rem);
                         display:block;
                         padding: 1rem 0;
+                        font-size:1.3rem;
                     }
                 }
 
@@ -238,3 +251,95 @@ $rem4: 4rem;  // height:4rem
     margin-top:30px;
 } 
 
+
+/* width:768~ */
+@include mq('md') {
+}
+
+/* width:1000~ */
+@include mq('lg') {
+    .search {
+        position:absolute;
+        top:0;
+        z-index:10;
+        width:100%;
+        background-color:#292929;
+        margin:0;
+        padding:138px 60px 60px 60px;
+
+        .wrap-relation{
+            .word{
+                max-width:720px;
+                margin:0 auto;
+                .wrap_latest{
+                    text-align:left
+                }
+            }
+        }
+        .wrap-input{
+            .recommand,
+            .recommand-word{
+                max-width:720px;
+                margin:0 auto;
+            }
+            .for-pc{
+                display:block;
+
+                button {
+                    &.btn-close {         
+                        top: -140px;
+                        right: -54px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                  }
+            }
+        }
+
+        .recommand-word{
+            max-width:720px;
+            margin:0 auto;
+            margin:20px auto 0 auto;
+        }
+        .wrap-input{
+            text-align:center;
+
+            .search-input{
+                float:none;
+                max-width:720px;
+            }
+            .wrap-relation{
+                background-color:#292929;
+            }
+        }
+        .recommand-word,
+        .tag-list{
+            h2{
+                font-size:24px !important;
+            }
+        }
+        .tag-list{
+            max-width:720px;
+            margin:0 auto;
+            margin: 30px auto 0 auto;
+            &.recommand{
+                ul{
+                    margin-top:10px;
+                }   
+            }
+        }
+        button {
+            &.btn-close {         
+                top: -80px;
+                right: -25px;
+                width: 30px;
+                height: 30px;
+            }
+          }
+    }
+}
+
+/* width:1320~ */
+@include mq('xl'){
+
+}

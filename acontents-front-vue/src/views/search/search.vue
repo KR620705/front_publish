@@ -3,7 +3,10 @@
     
     <section class="wrap-input">
         <input type="text" class="search-input" placeholder="검색어를 입력하세요">
-        <div class="wrap-relation">
+        <div class="for-pc">
+          <button type="button" class="btn-close"></button>
+        </div>
+        <div class="wrap-relation none">
             <!-- 
               최근 검색어 none 클래스 제거
               EX) wrap-relation -> 최근 검색어 보임
@@ -30,12 +33,12 @@
              </dv>
              <button type="button" class="btn-del-word">전체삭제</button>
           </div>
-          <button type="button" class="btn-close"></button>
         </div>
 
     </section>
 
     <section class="recommand-word">
+      
       <div class="titlearea">
 				<h2 class="h2-title">추천 검색어</h2>
 			</div>
