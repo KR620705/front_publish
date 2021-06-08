@@ -131,6 +131,20 @@
        }
    }
 }
+.loading{
+    .wrap-loading{
+        width:100%;
+        max-width:300px;
+        margin: 0 auto;
+        padding-top:30%;
+    }
+    .wrap-svg{
+        svg{
+            margin:0 auto;
+        }
+    }
+}
+// .error{}
 
 /* width:768~ */
 @include mq('md') {
@@ -203,6 +217,19 @@
                 margin: 1.7rem 0 0 0;
                 background: url(/img/logo.a2e5dd2e.svg) no-repeat left 50%/7.7rem;
                 background-size:109px;
+            }
+        }
+    }
+    .loading{
+        .wrap-loading{
+            width:100%;
+            max-width:300px;
+            margin: 0 auto;
+            padding-top:10%;
+        }
+        .wrap-svg{
+            svg{
+                margin:0 auto;
             }
         }
     }

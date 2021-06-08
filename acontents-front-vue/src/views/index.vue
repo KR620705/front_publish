@@ -517,7 +517,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">로딩페이지</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
