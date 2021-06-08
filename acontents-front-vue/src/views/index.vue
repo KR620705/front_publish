@@ -487,7 +487,7 @@
             <td class="alL">이용약관</td>
             <td class="alL" rowspan="5">/views/etc</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -502,7 +502,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">개인정보처리방침</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -547,7 +547,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">콘텐츠 외부 접근 페이지</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>

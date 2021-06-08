@@ -1,5 +1,6 @@
 
-.etc {
+.etc-terms,
+.policy {
     margin:0 1rem;
 
     .wrap-title{
@@ -9,6 +10,9 @@
         color:$gray-color;
         font-size:1.3rem;
         margin-top:5px;
+        height:16rem;
+        overflow-y: auto;
+        line-height:1.5;
     }
 
     .wrap-select-box{
@@ -18,40 +22,6 @@
             @include select-box;
             @include ellipsis;
         }
-    }
-
-    .header-external{
-        height:4.5rem;
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
-        z-index:10;
-        background-color: #000;
-
-        .logo{
-            width:7.7rem;
-            height:1.5rem;
-            margin:1.7rem 0 0 2rem;
-            background: url("../images/common/logo_red.png") no-repeat left center / 100%;
-        }
-
-       .btn-acontent{
-           position:absolute;
-           right:1rem;
-           top:0.7rem; 
-           button{
-               color:$white-color;
-               width:15rem;
-               height:3rem;
-               padding:0.5rem 3rem 0.5rem 2rem;
-               background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
-
-               &.round{
-                   border-radius:3rem;
-               }
-           }
-       }
     }
 
     .thumb-list{
@@ -127,7 +97,118 @@
             }
         }
         
-
-
     }
+}
+
+.header-external{
+    height:4.5rem;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    background-color: #000;
+
+    .logo{
+        width:7.7rem;
+        height:1.5rem;
+        margin:1.7rem 0 0 2rem;
+        background: url(/img/logo.a2e5dd2e.svg) no-repeat left 50%/7.7rem;
+    }
+
+   .btn-acontent{
+       position:absolute;
+       right:1rem;
+       top:1.3rem; 
+       button{
+           color:$white-color;
+           padding:0.5rem 3rem 0.5rem 2rem;
+           background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
+
+           &.round{
+               border-radius:3rem;
+           }
+       }
+   }
+}
+
+/* width:768~ */
+@include mq('md') {
+}
+
+/* width:1000~ */
+@include mq('lg') {
+    .etc-terms,
+    .policy{
+        .wrap-title,
+        .wrap-select-box{
+            width:100%;
+            max-width:1300px;
+            margin:0 auto;
+        }
+        .wrap-title{
+            margin-top:60px;
+            h2{
+                margin-bottom:18px;
+            }
+            p{
+                background-color:$dark-color;
+                border-radius:10px;
+                padding:20px;
+                height:500px;
+                overflow-y:auto;
+                line-height:24px;
+                font-size:16px;
+            }
+        }
+        .wrap-select-box{
+            position:static;
+            // border:1px solid #fff;
+            margin-top:20px;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: stretch;
+            select{
+                width:400px !important;
+            }
+        }
+    }
+    .external-access{
+        .header-external{
+            width:100%; 
+            max-width:1300px; 
+            height:80px;
+            margin:0 auto 15px auto;
+            position:fixed;
+            left:50%;
+            transform: translate(-50%, 0);
+
+            .btn-acontent{
+                position:absolute;
+                right:0;
+                button{
+                    color:$white-color;
+                    padding: 15px 40px 15px 30px;
+                    margin-right:0;
+                    background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 90% center / 6%;
+                }
+            }
+            .logo{
+                position:absolute;
+                top:0;
+                left:0;
+                width:180px;
+                height:50px;
+                margin: 1.7rem 0 0 0;
+                background: url(/img/logo.a2e5dd2e.svg) no-repeat left 50%/7.7rem;
+                background-size:109px;
+            }
+        }
+    }
+}
+
+/* width:1320~ */
+@include mq('xl'){
+
 }

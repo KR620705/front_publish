@@ -2,12 +2,13 @@
 
 	<div class="etc external-access details detail">
 		<!-- 외부 접근 시 헤더 -->
-		<div class="header-external">
+		<section class="header-external">
+			<!-- 외부 접근 시 보여지는 헤더의 로고 -->
 			<div class="logo"></div>
 			<div class="btn-acontent">
 				<button type="button" class="btn round red">A 콘텐츠 방문하기</button>
 			</div>
-		</div>
+		</section>
 		<!-- //외부 접근 시 헤더 -->
 
 		<!-- video-wrap// -->
