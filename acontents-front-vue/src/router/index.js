@@ -111,20 +111,25 @@ const routes = [
     name: 'Recomlist_nodata',
     component: () => import('../views/menu/recomlist_nodata'),
   },
-  {// 메뉴 > 마이 목록
+  {// 메뉴 > 즐겨찾기
     path: '/mylist',
     name: 'Mylist',
     component: () => import('../views/menu/mylist'),
   },
-  {// 메뉴 > 마이 목록 편집
+  {// 메뉴 > 즐겨찾기 편집
     path: '/mylist_edit',
     name: 'Mylist_edit',
     component: () => import('../views/menu/mylist_edit'),
   },
-  {// 메뉴 > 마이 목록 nodata
+  {// 메뉴 > 즐겨찾기 nodata
     path: '/mylist_nodata',
     name: 'Mylist_nodata',
     component: () => import('../views/menu/mylist_nodata'),
+  },
+  {// 메뉴 > 좋아요 nodata
+    path: '/like_nodata',
+    name: 'Like_nodata',
+    component: () => import('../views/menu/like_nodata'),
   },
   {// 마이페이지 > 마이페이지 메인
     path: '/mypage',

@@ -265,9 +265,9 @@
           </tr>
           <tr>
             <th scope="row" class="num"></th>
-            <td class="alL" rowspan="6">메뉴</td>
+            <td class="alL" rowspan="7">메뉴</td>
             <td class="alL">맞춤추천 목록</td>
-            <td class="alL" rowspan="6">/views/menu</td>
+            <td class="alL" rowspan="7">/views/menu</td>
             <td>완료</td>
             <td>완료</td>
             <td></td>
@@ -284,7 +284,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">맞춤추천 목록 nodata</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -297,9 +297,9 @@
           </tr>
           <tr>
             <th scope="row" class="num"></th>
-            <td class="alL">마이 목록</td>
+            <td class="alL">즐겨찾기</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -312,9 +312,9 @@
           </tr>
           <tr>
             <th scope="row" class="num"></th>
-            <td class="alL">마이 목록 편집</td>
+            <td class="alL">즐겨찾기 편집</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -327,9 +327,9 @@
           </tr>
           <tr>
             <th scope="row" class="num"></th>
-            <td class="alL">마이 목록 nodata</td>
+            <td class="alL">즐겨찾기 nodata</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -337,6 +337,21 @@
             <td class="alL">
               <router-link to="/mylist_nodata">
                 mylist_nodata
+              </router-link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="num"></th>
+            <td class="alL">좋아요 nodata</td>
+            <td>완료</td>
+            <td>완료</td>
+            <td></td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>조우빈</td>
+            <td class="alL">
+              <router-link to="/like_nodata">
+                like_nodata
               </router-link>
             </td>
           </tr>
