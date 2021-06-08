@@ -438,7 +438,7 @@
             <th scope="row" class="num"></th>
             <td class="alL">검색결과 nodata</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
