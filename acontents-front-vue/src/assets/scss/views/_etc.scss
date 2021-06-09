@@ -1,47 +1,49 @@
 
-.etc-terms,
-.policy {
-    margin:0 1rem;
-
-    .wrap-title{
-        margin-top:1.5rem;
-    }
-    .text-box{
-        color:$gray-color;
-        font-size:1.3rem;
-        margin-top:5px;
-        height:16rem;
-        overflow-y: auto;
-        line-height:1.5;
-    }
-
-    .wrap-select-box{
-        select::-ms-expand { display: none; }
-        @include select-position;
-        .select-box{
-            @include select-box;
-            @include ellipsis;
+.etc{
+    &.etc-terms,
+    &.policy {
+        margin:0 1rem;
+    
+        .wrap-title{
+            margin-top:1.5rem;
         }
-    }
-
-    .thumb-list{
-        &.product{
-            margin:4rem -1rem 0 -1rem;
+        .text-box{
+            color:$gray-color;
+            font-size:1.3rem;
+            margin-top:5px;
+            height:16rem;
+            overflow-y: auto;
+            line-height:1.5;
         }
+    
+        .wrap-select-box{
+            select::-ms-expand { display: none; }
+            @include select-position;
+            .select-box{
+                @include select-box;
+                @include ellipsis;
+            }
+        }
+    
+        .thumb-list{
+            &.product{
+                margin:4rem -1rem 0 -1rem;
+            }
+        }
+    
     }
-
     &.error{
         .message-error{
             dl{
-                margin:7rem 1.7rem 0 1.7rem;
+                margin:5rem 1.7rem 0 1.7rem;
                 dt{
                     margin-bottom:3rem;
-                    height:8rem;
-                    background: url("../images/common/bg_error.svg") no-repeat center center / 20%;
+                    padding:8rem;
+                    background: url("../images/common/bg_error.svg") no-repeat center center / 9.8rem;
                 }
                 dd{
                     text-align:center;
-
+                    line-height:1.8rem;
                     .first, .second{
                         font-size:1.8rem;
                     }
@@ -63,7 +65,7 @@
         
         .wrap-btn{
             text-align:center;
-            margin-top:3.5rem;
+            margin:3.5rem 0 9.5rem 0;
 
             button{
                 height:4rem;
@@ -72,79 +74,52 @@
             }
         }
     }
-
-    .wrap-loading{
-        width:100vw;
-        height:100vh;
-        background-color:rgba(0, 0, 0, .8);
+    
+    .header-external{
+        height:4.5rem;
         position:fixed;
-        z-index:99;
         top:0;
-        right:0;
-
-        .wrap-svg{
-            width: 10rem;
-            height: 10rem;
-            position:absolute;
-            top:40%;
-            left:50%;
-            transform:translate(-50%, -40%);
-
-            svg{
-                width: 150%;
-                height: 100%;
-                display:inline-block;
-            }
+        left:0;
+        width:100%;
+        z-index:10;
+        background-color: #000;
+    
+        .logo{
+            width:7.7rem;
+            height:1.5rem;
+            margin:1.7rem 0 0 2rem;
+            background: url("../images/common/logo.svg") no-repeat left 50%/7.7rem;
         }
-        
-    }
-}
-
-.header-external{
-    height:4.5rem;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:10;
-    background-color: #000;
-
-    .logo{
-        width:7.7rem;
-        height:1.5rem;
-        margin:1.7rem 0 0 2rem;
-        background: url(/img/logo.a2e5dd2e.svg) no-repeat left 50%/7.7rem;
-    }
-
-   .btn-acontent{
-       position:absolute;
-       right:1rem;
-       top:1.3rem; 
-       button{
-           color:$white-color;
-           padding:0.5rem 3rem 0.5rem 2rem;
-           background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
-
-           &.round{
-               border-radius:3rem;
+    
+       .btn-acontent{
+           position:absolute;
+           right:1rem;
+           top:1.3rem; 
+           button{
+               color:$white-color;
+               padding:0.5rem 3rem 0.5rem 2rem;
+               background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
+    
+               &.round{
+                   border-radius:3rem;
+               }
            }
        }
-   }
-}
-.loading{
-    .wrap-loading{
-        width:100%;
-        max-width:300px;
-        margin: 0 auto;
-        padding-top:30%;
     }
-    .wrap-svg{
-        svg{
-            margin:0 auto;
+    .loading{
+        .wrap-loading{
+            width:100%;
+            max-width:300px;
+            margin: 0 auto;
+            padding-top:30%;
+        }
+        .wrap-svg{
+            svg{
+                margin:0 auto;
+            }
         }
     }
 }
-// .error{}
 
 /* width:768~ */
 @include mq('md') {
@@ -169,14 +144,14 @@
                 background-color:$dark-color;
                 border-radius:10px;
                 padding:20px;
-                height:500px;
+                height:500px !important;
                 overflow-y:auto;
                 line-height:24px;
                 font-size:16px;
             }
         }
         .wrap-select-box{
-            position:static;
+            position:static !important;
             // border:1px solid #fff;
             margin-top:20px;
             display:flex;
@@ -230,6 +205,49 @@
         .wrap-svg{
             svg{
                 margin:0 auto;
+            }
+        }
+    }
+    .error{
+        .message-error,
+        .wrap-btn{
+            width:100%;
+            max-width:1300px;
+            margin:0 auto;
+            text-align:center;
+        }
+        .wrap-btn{
+            margin: 3.5rem auto 9.5rem auto !important;
+        }
+
+        .message-error{
+            dl{
+                margin:5rem 1.7rem 0 1.7rem;
+                dt{
+                    margin-bottom:0 !important;
+                    margin-bottom:3rem;
+                    height:8rem;
+                    background-size: 9.8rem;
+                }
+                dd{
+                    text-align:center;
+                    line-height:1.8rem;
+                    .first{
+                        font-weight:600;
+                    }
+                    .second{
+                        font-weight:200;
+                    }
+                    .first,
+                    .second{
+                        font-size:40px !important;
+                        height:40px;
+                    }
+                    .third{
+                        line-height:26px;
+                        margin:16px auto 0 auto !important;
+                    }
+                }
             }
         }
     }
