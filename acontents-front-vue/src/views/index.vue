@@ -424,7 +424,7 @@
             <td class="alL" rowspan="3">/views/search</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -439,7 +439,7 @@
             <td class="alL">검색결과</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -454,7 +454,7 @@
             <td class="alL">검색결과 nodata</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
