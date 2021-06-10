@@ -46,7 +46,6 @@
     <div class="guide-tbl">
       <table>
         <colgroup>
-          <col width="3%" />
           <col width="9%" />
           <col width="14%" />
           <col width="10%" />
@@ -60,7 +59,6 @@
         </colgroup>
         <thead>
           <tr>
-            <th scope="col" rowspan="2">번호</th>
             <th scope="col" rowspan="2">1Depth</th>
             <th scope="col" rowspan="2">2Depth</th>
             <th scope="col" rowspan="2">경로</th>
@@ -78,7 +76,6 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">공통</td>
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
@@ -91,7 +88,6 @@
             <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="5">로그인</td>
             <td class="alL">로그인</td>
             <td class="alL" rowspan="5">/views/auth</td>
@@ -108,7 +104,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">약관동의</td>
             <td>완료</td>
             <td>완료</td>
@@ -123,7 +118,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">주/부사업자 선택</td>
             <td>완료</td>
             <td>완료</td>
@@ -138,7 +132,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 선택</td>
             <td>완료</td>
             <td>완료</td>
@@ -153,7 +146,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">회원탈퇴</td>
             <td>완료</td>
             <td>완료</td>
@@ -168,13 +160,12 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="2">메인</td>
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -185,7 +176,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">비회원/비로그인 사전 렌딩</td>
             <td></td>
             <td></td>
@@ -200,13 +190,12 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="3">리스트</td>
             <td class="alL">비주얼 빅배너 목록</td>
             <td class="alL" rowspan="3">/views/list</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -217,11 +206,10 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">카테고리 콘텐츠 목록</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -232,11 +220,10 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">큐레이션 콘텐츠 목록</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -247,13 +234,12 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">상세</td>
             <td class="alL">상세</td>
             <td class="alL">/views/details</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -264,7 +250,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="7">메뉴</td>
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="7">/views/menu</td>
@@ -281,7 +266,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">맞춤추천 목록 nodata</td>
             <td>완료</td>
             <td>완료</td>
@@ -296,7 +280,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">즐겨찾기</td>
             <td>완료</td>
             <td>완료</td>
@@ -311,7 +294,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">즐겨찾기 편집</td>
             <td>완료</td>
             <td>완료</td>
@@ -326,7 +308,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">즐겨찾기 nodata</td>
             <td>완료</td>
             <td>완료</td>
@@ -341,7 +322,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">좋아요 nodata</td>
             <td>완료</td>
             <td>완료</td>
@@ -356,7 +336,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">FAQ</td>
             <td>완료</td>
             <td></td>
@@ -371,7 +350,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="3">마이페이지</td>
             <td class="alL">마이페이지 메인</td>
             <td class="alL" rowspan="3">/views/mypage</td>
@@ -388,7 +366,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">주/부 사업자 변경</td>
             <td>완료</td>
             <td>완료</td>
@@ -403,7 +380,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">선호 카테고리 변경</td>
             <td>완료</td>
             <td>완료</td>
@@ -418,7 +394,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="3">검색</td>
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
@@ -435,7 +410,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">검색결과</td>
             <td>완료</td>
             <td>완료</td>
@@ -450,7 +424,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">검색결과 nodata</td>
             <td>완료</td>
             <td>완료</td>
@@ -465,13 +438,12 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="2">팝업</td>
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -482,11 +454,10 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">공유하기 팝업</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -497,7 +468,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL" rowspan="5">기타</td>
             <td class="alL">이용약관</td>
             <td class="alL" rowspan="5">/views/etc</td>
@@ -514,7 +484,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">개인정보처리방침</td>
             <td>완료</td>
             <td>완료</td>
@@ -529,7 +498,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">로딩페이지</td>
             <td>완료</td>
             <td>완료</td>
@@ -544,7 +512,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">오류페이지</td>
             <td>완료</td>
             <td>완료</td>
@@ -559,7 +526,6 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" class="num"></th>
             <td class="alL">콘텐츠 외부 접근 페이지</td>
             <td>완료</td>
             <td>완료</td>
@@ -575,7 +541,7 @@
           </tr>
           <tr>
             <th scope="row" class="num">※</th>
-            <td class="alL" colspan="9">퍼블리싱 가이드</td>
+            <td class="alL" colspan="8">퍼블리싱 가이드</td>
             <td class="alL">
               <router-link to="/guide">
                 guide
@@ -594,12 +560,10 @@
   .guideindex{padding:50px 10px;background:#fff;color:#000;}
   .guideindex .guideh1{margin-bottom:30px;font-size:26px;font-weight:600;text-align:center;}
   .guideindex .guideh2{margin-top:40px;font-size:16px;font-weight:600;}
-  .guideindex .guide-tbl table {width:100%; border-collapse:collapse;}
+  .guideindex .guide-tbl table {width:100%; border-collapse:collapse;border-right:1px #dedede solid;}
   .guideindex .guide-tbl table {margin-top:10px;text-align:center;border-top:2px #326dc2 solid;}
   .guideindex .guide-tbl table tr > th,
   .guideindex .guide-tbl table tr > td {padding:10px; border-left:1px #dedede solid; border-top:1px #dedede solid;vertical-align:top;}
-  .guideindex .guide-tbl table tr > th:first-child,
-  .guideindex .guide-tbl table tr > td:first-child{border-left:none;}
   .guideindex .guide-tbl table thead tr:first-child > th,
   .guideindex .guide-tbl table tbody tr:first-child > th,
   .guideindex .guide-tbl table tbody tr:first-child > td {border-top:none;}
