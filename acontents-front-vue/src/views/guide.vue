@@ -148,10 +148,6 @@
         <button type="button" class="btn round">이어보기</button>
         <button type="button" class="btn round">처음부터</button>
       </div>
-        <div class="btn-wrap">
-					<a href="javaqscript:;" class="btn">FAQ</a>
-					<a href="javaqscript:;" class="btn">로그아웃</a>
-        </div>
       <!-- //btn-wrap -->
     </div>
 

@@ -17,10 +17,11 @@
     overflow-x: hidden;
     overflow-y: auto;
 
-    //@include scrollbars(5px, #999, #eee);
+    @include scrollbars(5px, #999, #eee);
   }
   &-header {
     height: 5rem;
+    background: $dark-color;
     
     button {
       position: absolute;
@@ -45,6 +46,7 @@
   }
   &-userinfo {
     padding: 0 20px;
+    background: $dark-color;
 
     .user {
       line-height: 1;
@@ -56,7 +58,7 @@
       }
       p {
         display: inline-block;
-        margin-left: 0.5rem;
+        margin-left: 0.6rem;
         font-size: 1.2rem;
         font-weight: 200;
         vertical-align: bottom;
@@ -76,13 +78,12 @@
       line-height: 1.2;
     }
     .sublink {
-      margin: 2rem -20px 0 -20px;
+      padding: 2rem 0;
 
       ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 1.5rem;
         background: $dark-color;
       }
       li {
@@ -90,37 +91,52 @@
         a {
           display: block;
           min-width: 4rem;
-          padding-top: 4.8rem;
-          background-repeat: no-repeat;
-          background-position: 50% 0;
-          background-size: 100%;
           font-size: 1.2rem;
           text-align: center;
+
+          &:before {
+            content: "";
+            display: block;
+            width: 6rem;
+            height: 6rem;
+            margin-bottom: 0.8rem;
+            background-color: $black-color;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border-radius: 100%;
+          }
         }
-        &.video a {
-          background-image: url("../images/common/sidemenu_video.png");
+        &.mypages a:before {
+          background-image: url("../images/common/sidemenu_mypage.png");
+          background-size: 21px;
         }
-        &.bookmark a {
-          background-image: url("../images/common/sidemenu_bookmark.png");
+        &.faq a:before {
+          background-image: url("../images/common/sidemenu_faq.png");
+          background-size: 29px;
         }
-        &.like a {
+        &.recommend a:before {
+          background-image: url("../images/common/sidemenu_recommend.png");
+          background-size: 29px;
+        }
+        &.like a:before {
           background-image: url("../images/common/sidemenu_like.png");
+          background-size: 28px;
         }
       }
     }
   }
   &-accordion {
-    margin-top: 2rem;
+    margin-top: 3rem;
     border-top: 1px solid #363636;
 
     > ul {
-      padding-top: 1rem; 
+      padding-top: 0.5rem;
 
       > li {
 
         button {
           width: 100%;
-          padding: 1rem 2rem;
+          padding: 1.2rem 2rem 1rem;
           text-align: left;
           
           h3 {
@@ -149,19 +165,33 @@
         }
         .depth2 {
           display: none;
+          margin-bottom: 1.2rem;
           background: $dark-color;
 
           ul {
             display: flex;
             flex-wrap: wrap;
-            padding: 1.2rem 2rem;
 
             li {
               width: 50%;
+
+              &:before {
+                content: "";
+                display: block;
+                width: 100vw;
+                border-top: 1px solid #363636;
+
+              }
+              &:nth-of-type(-n + 2):before {
+                display: none;
+              }
+              &:nth-of-type(odd) {
+                border-right: 1px solid #363636;
+              }
   
               a {
                 display: block;
-                padding: 1rem 0;
+                padding: 1.3rem 2rem 1.2rem;
                 color: $white-color;
                 font-size: 1.3rem;
                 font-weight: 200;
@@ -176,33 +206,20 @@
     position: sticky;
     top: 100%;
     left: 0;
-    margin-top: 4rem;
+    margin-top: 3rem;
 
-    .btn-wrap {
-      border-top: 1px solid #373737;
+    .btn {
+      background: $dark-color;
+      font-size: 1.2rem;
 
-      .btn {
-        background: $dark-color;
-
-        &:before {
-          content: "";
-          display: inline-block;
-          margin-right: 1rem;
-          vertical-align: middle;
-        }
-        &.faq:before {
-          width: 2rem;
-          height: 1.9rem;
-          background: url("../images/common/sidemenu_faq.png") no-repeat 0 0 /100%;
-        }
-        &.logout:before {
-          width: 2.2rem;
-          height: 1.6rem;
-          background: url("../images/common/sidemenu_logout.png") no-repeat 0 0 /100%;
-        }
-      }
-      .btn ~ .btn {
-        border-color: #373737;
+      &.logout:before {
+        content: "";
+        display: inline-block;
+        width: 2.2rem;
+        height: 1.6rem;
+        margin-right: 0.8rem;
+        background: url("../images/common/sidemenu_logout.png") no-repeat 0 0 /100%;
+        vertical-align: middle;
       }
     }
   }
@@ -211,4 +228,195 @@
 //== sidemenu open
 .sidemenu.aside-open {
   right: 0;
+}
+
+/* width:1000~ */
+@include mq('lg') {
+  .sidemenu{
+    bottom: auto;
+    background: $dark-color;
+
+    .thumb-list.type-small {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+      vertical-align: top;
+    }
+    &-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: $dark-color;
+
+      @include scrollbars(0, transparent, transparent);
+    }
+    &-userinfo {
+
+      .user {
+
+        h2 {
+          font-size: 40px;
+          vertical-align: middle;
+        }
+        p {
+          margin-left: 10px;
+          font-size: 24px;
+          vertical-align: middle;
+        }
+      }
+      .sublink {
+        width: 480px;
+        margin-top: 40px;
+        padding: 0;
+
+        li {
+
+          a {
+            font-size: 16px;
+
+            &:before {
+              width: 90px;
+              height: 90px;
+              margin-bottom: 12px;
+            }
+          }
+          &.mypages a:before {
+            background-size: 37px;
+          }
+          &.faq a:before {
+            background-size: 48px;
+          }
+          &.recommend a:before {
+            background-size: 45px;
+          }
+          &.like a:before {
+            background-size: 45px;
+          }
+        }
+      }
+    }
+    &-accordion {
+      margin-top: 50px;
+      border-color: #707070;
+
+      > ul {
+        padding-top: 30px;
+        overflow: hidden;
+
+        > li {
+          float: left;
+          width: 16.66%;
+          padding-right: 20px;
+
+          button {
+            height: 58px;
+            padding: 0 0 0 10px;
+            line-height: 58px;
+            
+            &.pc-current {
+              border-bottom: 2px solid $white-color;
+            }
+            h3 {
+              font-size: 24px;
+              font-weight: 600;
+  
+              &:after {
+                display: none;
+              }
+            }
+            &.open ~ .depth2 li a {
+                font-weight: 600;
+            }
+          }
+          .depth2 {
+            display: block;
+            margin: 12px 0 0;
+            background: transparent;
+
+            ul {
+              display: block;
+
+              li {
+                width: 100%;
+                border: none !important;
+
+                &:before {
+                  display: none;
+                }
+                &.pc-current a {
+                  color: #fff;
+                }
+                a {
+                  padding: 7px 10px;
+                  color: #999;
+                  font-size: 18px;
+
+                  &:hover {
+                    color: $white-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-bottom {
+      margin-top: 60px;
+      margin-bottom: 40px;
+      text-align: center;
+  
+      .btn {
+        width: auto;
+        height: auto;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1;
+  
+        &.logout:before {
+          width: 30px;
+          height: 22px;
+          margin-right: 8px;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* width:1320~ */
+@include mq('xl') {
+  .sidemenu{
+
+    .thumb-list.type-small {
+      width: 655px;
+      margin-top: 0;
+      padding: 0;
+    }
+    &-header {
+
+      button {
+
+        &.btn-home {
+          right: 43px;
+        }
+        &.btn-close {
+          right: -7px;
+
+        }
+      }
+    }
+    &-userinfo {
+      display: inline-block;
+      width: 560px;
+      margin-right: 80px;
+      padding: 0;
+      vertical-align: top;
+
+      .sublink {
+        width: 100%;
+        padding-right: 80px;
+        border-right: 1px solid #5A5A5A;
+      }
+    }
+  }
 }

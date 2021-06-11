@@ -101,41 +101,52 @@
 }
 //thumb-list.type-small
 .thumb-list.type-small {
-    margin-top: 3rem;
+    margin-top: 2.7rem;
+    padding: 0 20px;
     overflow: hidden;
 
+    .titlearea {
+        .h3-title {
+            font-size: 1.8rem;
+        }
+    }
     .swiper-container {
+        margin-top: 0.8rem;
         overflow: visible;
 
         .swiper-slide {
             width: 10rem;
             height: 10rem;
             margin-right: 0.8rem;
-        }
-    }
-    .title {
-        height: 3.8rem;
-        font-size: 1rem;
-    }
-    .badge {
-        top: 4px;
-        right: 4px;
-        
-        .icon {
-            width: 1.9rem;
-            height: 1.9rem;
-            
-            &.video {
-                background-size: 0.8rem;
+
+            &:last-child {
+                margin-right: 0;
             }
-            &.file {
-                background-size: 0.8rem;
+            .title {
+                height: 3.8rem;
+                font-size: 1rem;
             }
-            &.image {
-                background-size: 1.3rem;
-            }
-            &.column {
-                background-size: 0.8rem;
+            .badge {
+                top: 4px;
+                right: 4px;
+                
+                .icon {
+                    width: 1.9rem;
+                    height: 1.9rem;
+                    
+                    &.video {
+                        background-size: 0.8rem;
+                    }
+                    &.file {
+                        background-size: 0.8rem;
+                    }
+                    &.image {
+                        background-size: 1.3rem;
+                    }
+                    &.column {
+                        background-size: 0.8rem;
+                    }
+                }
             }
         }
     }
@@ -547,6 +558,24 @@
             }
         }
     }
+    //thumb-list.type-small
+    .thumb-list.type-small {
+
+        .titlearea {
+            .h3-title {
+                font-size: 36px;
+                font-weight: 600;
+            }
+        }
+        .swiper-container {
+            margin-top: 20px;
+
+            .swiper-slide {
+                width: 123px;
+                height: 123px;
+            }
+        }
+    }
     //thumb-list.type-multiline
     .thumb-list.type-multiline {
     
@@ -587,6 +616,13 @@
 
 /* width:1320~ */
 @include mq('xl') {
+    //thumb-list.type-small
+    .thumb-list.type-small {
+
+        .swiper-container {
+            margin-top: 35px;
+        }
+    }
     //thumb-list.type-one
     .thumb-list.type-one {
         
