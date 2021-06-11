@@ -177,16 +177,16 @@
           </tr>
           <tr>
             <td class="alL">비회원/비로그인 사전 렌딩</td>
-            <td></td>
-            <td></td>
+            <td>완료</td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
-            <td></td>
+            <td>이재이</td>
             <td class="alL">
-              <!-- <router-link to="/landing">
+              <router-link to="/landing">
                 landing
-              </router-link> -->
+              </router-link>
             </td>
           </tr>
           <tr>
