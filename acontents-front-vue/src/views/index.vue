@@ -80,7 +80,7 @@
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
@@ -338,7 +338,7 @@
           <tr>
             <td class="alL">FAQ</td>
             <td>완료</td>
-            <td></td>
+            <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
