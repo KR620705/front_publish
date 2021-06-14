@@ -255,7 +255,7 @@
             <td class="alL" rowspan="7">/views/menu</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -269,7 +269,7 @@
             <td class="alL">맞춤추천 목록 nodata</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -283,7 +283,7 @@
             <td class="alL">즐겨찾기</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -297,7 +297,7 @@
             <td class="alL">즐겨찾기 편집</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -311,7 +311,7 @@
             <td class="alL">즐겨찾기 nodata</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -325,7 +325,7 @@
             <td class="alL">좋아요 nodata</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -339,7 +339,7 @@
             <td class="alL">FAQ</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
@@ -355,7 +355,7 @@
             <td class="alL" rowspan="3">/views/mypage</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -369,7 +369,7 @@
             <td class="alL">주/부 사업자 변경</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -383,7 +383,7 @@
             <td class="alL">선호 카테고리 변경</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -473,7 +473,7 @@
             <td class="alL" rowspan="5">/views/etc</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -487,7 +487,7 @@
             <td class="alL">개인정보처리방침</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -501,7 +501,7 @@
             <td class="alL">로딩페이지</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -515,7 +515,7 @@
             <td class="alL">오류페이지</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -529,7 +529,7 @@
             <td class="alL">콘텐츠 외부 접근 페이지</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
