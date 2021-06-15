@@ -98,6 +98,7 @@
            button{
                color:$white-color;
                padding:0.5rem 3rem 0.5rem 2rem;
+               height: 3rem;
                background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 88% 50% / 5%;
     
                &.round{
@@ -106,19 +107,6 @@
            }
        }
     }
-    // .loading{
-    //     .wrap-loading{
-    //         width:100%;
-    //         max-width:300px;
-    //         margin: 0 auto;
-    //         padding-top:30%;
-    //     }
-    //     .wrap-svg{
-    //         svg{
-    //             margin:0 auto;
-    //         }
-    //     }
-    // }
     &.loading{
         .wrap-loading{
             width:100%;
@@ -262,6 +250,7 @@
                 button{
                     color:$white-color;
                     padding: 15px 40px 15px 30px;
+                    height:50px;
                     margin-right:0;
                     background: #{$red-color} url("../images/common/arrow_right.svg") no-repeat 90% center / 6%;
                 }

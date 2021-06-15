@@ -406,8 +406,11 @@
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">
+              - PC : 상단 패딩값 조절, 닫기 버튼 위치 조절<br>
+              - 모바일 : 상단 검색바 수정, 검색바 placeholder 색상 수정, 태그 하단 패딩 수정
+            </td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/search">
@@ -538,8 +541,11 @@
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">
+              - 모바일 &#38; PC 상단 버튼 높이 수정<br>
+              - 좋아요, 공유하기 버튼 삭제
+            </td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/external_access">

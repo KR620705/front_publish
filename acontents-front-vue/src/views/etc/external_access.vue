@@ -46,8 +46,9 @@
 			<p class="year">2021</p>
 
 			<div class="btns">
-				<button type="button" class="btn like on">좋아요</button><!-- 활성화 : on 클래스 추가 -->
-				<button type="button" class="btn share">공유하기</button>
+				<!-- 활성화 : on 클래스 추가 -->
+				<!-- <button type="button" class="btn like on">좋아요</button> -->
+				<!-- <button type="button" class="btn share">공유하기</button> -->
 				<button type="button" class="btn bookmark">즐겨찾기</button>
 			</div>
 
