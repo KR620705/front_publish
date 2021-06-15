@@ -94,8 +94,8 @@
             <td>완료</td>
             <td>완료</td>
             <td></td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">-모바일(안내 폰트 색상 수정)</td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="login">
@@ -122,8 +122,11 @@
             <td>완료</td>
             <td>완료</td>
             <td></td>
-            <td class="alL red"></td>
-            <td></td>
+            <td>20210615</td>
+            <td class="alL red">
+              - 클릭 시 이미지 움직임 수정<br>
+              - 썸네일 이미지 크기 수정
+              </td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/select_user">
@@ -180,8 +183,11 @@
             <td>완료</td>
             <td>완료</td>
             <td></td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">
+              - 텍스트 줄바꿈 수정<br>
+              - 모바일, PC배경 이미지 수정
+            </td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/landing">
@@ -475,7 +481,9 @@
             <td>완료</td>
             <td>06.14</td>
             <td></td>
-            <td class="alL red"></td>
+            <td class="alL red">
+              - 시안과 동일하게 하기 위해서는 개발 파트와의 협업 필요
+            </td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/etc_terms">

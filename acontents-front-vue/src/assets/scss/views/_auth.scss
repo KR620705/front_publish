@@ -77,6 +77,8 @@
             min-height:2rem;
             font-size:1.4rem;
             line-height:1.5;
+            color:$gray-color;
+            font-weight:200;
             background: url("../images/common/icon_caution_login.svg") no-repeat center left / 2rem;
         }
     }
@@ -112,8 +114,8 @@
             span{
                 display:block;
                 padding: 0 0 0 0;
-                width: 110px;
-                height:110px;
+                width: 11rem;
+                height:11rem;
                 position:relative;
                 font-size:1.6rem;
             }
@@ -123,6 +125,9 @@
             label + label{
                 margin-left:2rem;
             }
+            input{
+                background-size:cover;
+            }
             .female{
                 input[type="radio"] + span:before {
                     content: "";
@@ -130,14 +135,14 @@
                     display: inline-block;
                     width: 110px;
                     height:110px;
-                    background: url("../images/common/select_user.png") no-repeat right top/200%;
+                    background: url("../images/common/select_user.png") no-repeat right 0 / 200%;
                     margin-bottom:1rem;
                   }
                   input[type="radio"] + span{
                     color:$white-color;
                   }
                   input[type="radio"]:checked + span:before {
-                    background: url("../images/common/select_user.png") no-repeat right bottom/200%;
+                    background: url("../images/common/select_user.png") no-repeat right 101% / 200%;
                   }
                   input[type="radio"]:checked + span{
                     color:$red-color;
@@ -150,14 +155,14 @@
                     display: inline-block;
                     width: 110px;
                     height:110px;
-                    background: url("../images/common/select_user.png") no-repeat left top/200%;
+                    background: url("../images/common/select_user.png") no-repeat left 0 / 200%;
                     margin-bottom:1rem;
                   }
                   input[type="radio"] + span{
                     color:$white-color;
                   }
                   input[type="radio"]:checked + span:before {
-                    background: url("../images/common/select_user.png") no-repeat left bottom/200%;
+                    background: url("../images/common/select_user.png") no-repeat left 101% / 200%;
                   }
                   input[type="radio"]:checked + span{
                     color:#2CC5D1;
@@ -598,14 +603,17 @@
         .select-user{
             .wrap-radio-group{
                 span{
-                    width:220px;
-                    height:220px;
+                    top:0;
+                    left:0;
+                    width:190px;
+                    height:190px;
+                    font-size:16px;
                 }
                 .male,
                 .female{
                     input[type="radio"] + span:before {
-                        width:220px;
-                        height:220px;
+                        width:190px;
+                        height:190px;
                     }
                 }
 

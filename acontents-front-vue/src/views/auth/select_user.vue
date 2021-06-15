@@ -36,11 +36,11 @@
           <div class="wrap-radio-group">
             <label class="male">
               <input type="radio" id="male" name="select_user" value="male">
-              <span>빈센조</span>
+              <span><div>빈센조</div></span>
             </label>
             <label class="female">
               <input type="radio" id="female" name="select_user" value="female">
-              <span>박보영</span>
+              <span><div>박보영</div></span>
             </label>
           </div>
           <!-- 최초 가입시에만 보이는 문구 -->
