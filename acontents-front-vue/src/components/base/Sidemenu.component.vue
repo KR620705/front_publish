@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidemenu"><!-- 활성화 : aside-open 클래스 추가, body에 ov-hidden 클래스 추가 -->
+  <aside class="sidemenu aside-open"><!-- 활성화 : aside-open 클래스 추가, body에 ov-hidden 클래스 추가 -->
 
     <div class="sidemenu-inner">
 
@@ -33,17 +33,19 @@
         <div class="titlearea">
           <h3 class="h3-title">시청목록</h3>
         </div>
+
+        <!-- 콘텐츠가 있는 경우// -->
         <swiper ref="thumbList1"
           :options="thumbswiper"
           @ready="swiperReady"
           class="swiper thumbswiper">
-        <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출 -->
-        <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
-          <span class="icon video"><span class="hide">video</span></span>
-          <span class="icon file"><span class="hide">file</span></span>
-          <span class="icon image"><span class="hide">image</span></span>
-          <span class="icon column"><span class="hide">column</span></span>
-        -->
+          <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출 -->
+          <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
+            <span class="icon video"><span class="hide">video</span></span>
+            <span class="icon file"><span class="hide">file</span></span>
+            <span class="icon image"><span class="hide">image</span></span>
+            <span class="icon column"><span class="hide">column</span></span>
+          -->
           <swiper-slide v-for="(item, key) in tthumbList1Ary"
               :key="key">
             <a href="javascript:;">
@@ -60,6 +62,14 @@
             </a>
           </swiper-slide>
         </swiper>
+        <!-- //콘텐츠가 있는 경우 -->
+
+        <!-- 콘텐츠가 없는 경우// -->
+        <div class="nodata">
+          시청하신 콘텐츠가 없습니다.
+        </div>
+        <!-- //콘텐츠가 없는 경우 -->
+
       </section>
       <!-- //thumb-list type-small -->
 
