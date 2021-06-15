@@ -166,8 +166,8 @@
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">- 전체보기 버튼 삭제</td>
             <td>조우빈</td>
             <td class="alL">
               <router-link to="/main">
@@ -240,8 +240,8 @@
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">- 버튼 순서 변경</td>
             <td>조우빈</td>
             <td class="alL">
               <router-link to="/detail">

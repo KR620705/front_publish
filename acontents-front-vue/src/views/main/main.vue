@@ -311,7 +311,7 @@
 		<section class="thumb-list type-one">
 			<div class="titlearea">
 				<h2 class="h2-title">자신있게 추천드립니다</h2>
-				<a href="javascript:;" class="btn arrow">전체보기</a>
+				<!-- <a href="javascript:;" class="btn arrow">전체보기</a> --><!-- 20210615 버튼 삭제 -->
 			</div>
 			<div class="thumboneswiper-wrap">
 			<swiper ref="thumbList1"
