@@ -93,7 +93,7 @@
             <td class="alL" rowspan="5">/views/auth</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td>20210615</td>
             <td class="alL red">-모바일(안내 폰트 색상 수정)</td>
             <td>이재이</td>
@@ -107,7 +107,7 @@
             <td class="alL">약관동의</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -121,7 +121,7 @@
             <td class="alL">주/부사업자 선택</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td>20210615</td>
             <td class="alL red">
               - 클릭 시 이미지 움직임 수정<br>
@@ -138,7 +138,7 @@
             <td class="alL">선호 카테고리 선택</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -152,7 +152,7 @@
             <td class="alL">회원탈퇴</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
@@ -182,11 +182,11 @@
             <td class="alL">비회원/비로그인 사전 렌딩</td>
             <td>완료</td>
             <td>완료</td>
-            <td></td>
+            <td>06.15</td>
             <td>20210615</td>
             <td class="alL red">
               - 텍스트 줄바꿈 수정<br>
-              - 모바일, PC배경 이미지 수정
+              - 모바일 &#38; PC배경 이미지 수정
             </td>
             <td>이재이</td>
             <td class="alL">
@@ -524,8 +524,8 @@
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
-            <td></td>
-            <td class="alL red"></td>
+            <td>20210615</td>
+            <td class="alL red">- 모바일 &#38; PC 아이콘과 텍스트 간격 수정</td>
             <td>이재이</td>
             <td class="alL">
               <router-link to="/error">
