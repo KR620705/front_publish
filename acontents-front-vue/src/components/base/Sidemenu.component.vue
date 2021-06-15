@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidemenu aside-open"><!-- 활성화 : aside-open 클래스 추가, body에 ov-hidden 클래스 추가 -->
+  <aside class="sidemenu"><!-- 활성화 : aside-open 클래스 추가, body에 ov-hidden 클래스 추가 -->
 
     <div class="sidemenu-inner">
 
