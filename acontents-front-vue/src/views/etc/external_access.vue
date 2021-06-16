@@ -45,12 +45,12 @@
 
 			<p class="year">2021</p>
 
-			<div class="btns">
-				<!-- 활성화 : on 클래스 추가 -->
-				<!-- <button type="button" class="btn like on">좋아요</button> -->
-				<!-- <button type="button" class="btn share">공유하기</button> -->
+			<!-- 활성화 : on 클래스 추가 -->
+			<!-- <div class="btns">
+				<button type="button" class="btn like on">좋아요</button>
+				<button type="button" class="btn share">공유하기</button>
 				<button type="button" class="btn bookmark">즐겨찾기</button>
-			</div>
+			</div> -->
 
 			<p class="desc">100세 시대를 위한 준비, 건강한 신체를 만드는 것이 중요합니다. 그 핵심은? '진짜' 나이, 즉 생체 나이를 줄여야 하는데요, 100년, 그보다 더 많은 시간을 열일할 우리 몸을 위해 우리가 실천해야 할 운동법, 생활 습관 모~두 알려드립니다!</p>
 
