@@ -16,6 +16,16 @@
           &lt;/div&gt;<br>
         </div>
         &lt;/template&gt;
+        <br><br>
+      - 예외가 있을경우 3개까지 클래스 선언해준다.<br>
+      &nbsp; &nbsp; &nbsp; ex)<br>
+        &lt;template&gt;<br>
+          <div class="guideindent">
+          &lt;div <span class="red">class="details detail-cardnews detail-cardnewsfull"</span>&gt;<br>
+          &lt;/div&gt;<br>
+        </div>
+        &lt;/template&gt;
+
     </div>
 
     <h3 class="guideh3">팝업 페이지 작업</h3>
@@ -103,6 +113,11 @@
         4. page
       </div>
       - 작업중 사용하지 않는 파일은 주석처리로 한다.(페이지 90%이상 됐을때 불필요한 파일 삭제한다.)
+    </div>
+
+    <h3 class="guideh3">header, footer</h3>
+    <div class="guidetxt">
+      - 퍼블본과 개발본이 상이하다. header, footer 작업할때 개발쪽에 확인 후 작업 진행한다.<br>
     </div>
     
     <h2 class="guideh2">※ 공통 마크업 (추가되면 업데이트할 것.)</h2>

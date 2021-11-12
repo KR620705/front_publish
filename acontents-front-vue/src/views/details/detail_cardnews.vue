@@ -1,22 +1,64 @@
 <template>
 
-	<div class="details detail">
-		<!-- video-wrap// -->
-		<section class="video-wrap">
-			<div class="inner">
-				<!-- brightcove 동영상 영역 -->
-			</div>
-
-			<!-- 비디오영역 내 레이어 : 비노출시 hide처리해주세요.// -->
-			<div class="video-dim">
-				<div class="btn-wrap">
-					<button type="button" class="btn round playnext">이어보기</button>
-					<button type="button" class="btn round first">처음부터</button>
+	<div class="details detail-cardnews">
+		<!-- cardnews-wrap// -->
+		<section class="cardnews-wrap">
+			<div class="cardnews-inner" style="max-width:507px;"><!-- 이미지 maxheight:780px에 맞춰 렌더링된 이미지 가로사이즈 구해서 넣어주세요. -->
+				<div class="cardswiper-wrap">
+					<swiper ref="thumbList1"
+              :options="cardswiper"
+              @ready="swiperReady"
+              @slideChange="slideChangeSwiperCard"
+              class="swiper cardswiper">
+        <!-- 콘텐츠 유형 : 해당 유형에 따라 노출 비노출 -->
+        <!-- video:비디오 / file:파일 / image:이미지 / column:칼럼
+          <span class="icon video"><span class="hide">video</span></span>
+          <span class="icon file"><span class="hide">file</span></span>
+          <span class="icon image"><span class="hide">image</span></span>
+          <span class="icon column"><span class="hide">column</span></span>
+        -->
+					<swiper-slide v-for="(item, key) in tthumbList1Ary"
+                      :key="key">
+						<span class="imgbox">
+							<img alt="" :src="item.img" />
+						</span>
+					</swiper-slide>
+					<div class="swiper-pagination" slot="pagination"></div>
+				</swiper>
 				</div>
+
+				<div class="swiper-button-prev" slot="button-prev"></div>
+				<div class="swiper-button-next" slot="button-next"></div>
+
+				<div class="loading">
+					<span style="width:20%;"></span><!-- 로딩에따라 width값 부여해주세요 -->
+				</div>
+				
+				<!-- innercon// -->
+				<div class="innercon">
+					<div class="playoption">
+						<button type="button" class="btn-play"><!-- 일시정지일경우 active 클래스 추가 -->
+							<span class="hide">재생/일시정지</span>
+						</button>
+						<div class="swiper-pagination-tot">
+							<strong>
+								<template v-if="cardswiperIdx < 9">0</template>
+								{{cardswiperIdx + 1}}
+							</strong> /
+							<span>
+								<template v-if="tthumbList1Ary.length < 10">0</template>
+								{{tthumbList1Ary.length}}
+							</span>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn-full">
+						<span class="hide">전체화면으로 이동</span>
+					</a>
+				</div>
+				<!-- //innercon -->
 			</div>
-			<!-- //비디오영역 내 레이어 -->
 		</section>
-		<!-- //video-wrap -->
+		<!-- //cardnews-wrap -->
 
 		<!-- detail-visual// -->
 		<section class="detail-visual">
@@ -38,7 +80,7 @@
 			<div class="btns"><!-- 20210615 버튼 순서 변경 --><!-- 2021-11-02 좋아요 개수 추가로 마크업 수정 -->
 				<span>
 					<button type="button" class="btn like on">좋아요</button><!-- 활성화 : on 클래스 추가 -->
-					<span class="like-num">56</span>
+					<span class="like-num">563</span>
 				</span>
 				<span>
 					<button type="button" class="btn bookmark">즐겨찾기</button>
@@ -310,21 +352,68 @@
 <script>
 
 export default {
-  name: 'Detail',
+  name: 'Detail_cardnews',
   data: function () {
     return {
+		cardswiperIdx: 0,
+		//thumb List 1 Ary
+		tthumbList1Ary: [
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+        {
+          img: "/assets/images/temp/temp_780X1200.png",
+        },
+		],
+
+		cardswiper: {
+			slidesPerView: 'auto',
+			centeredSlides: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		}
 
     }
   },
   mounted() {
     // page start !!
-    this.AAA();
+    // this.$nextTick(() => {
+      // const swiperTop = this.$refs.swiperTop.$swiper
+      // const swiperThumbs = this.$refs.swiperThumbs.$swiper
+      // swiperTop.controller.control = swiperThumbs
+      // swiperThumbs.controller.control = swiperTop
+    // })
   },
-  methods:{
-    AAA() {
-      console.log('aaaa');
-    }
+  methods: {
+    swiperReady(swiper) {
+      setTimeout(() => {
+        swiper.update();
+      }, 500)
+    },
 
+    ///SwiperTop 슬라이더
+    slideChangeSwiperCard() {
+      const swiper = this.$refs.thumbList1.$swiper;
+      this.cardswiperIdx = swiper.activeIndex;
+    },
   },
 }
 </script>

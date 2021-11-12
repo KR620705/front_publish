@@ -6,7 +6,19 @@
     </section>
 
     <section class="search-thumnail result-no">
-      <div class="search-result-text">총 <i>10개</i>가 검색되었습니다</div>
+		<div class="search-result-text">총 <i>10개</i>가 검색되었습니다</div>
+
+		<!-- list-filter// --><!-- 2021-11-02 추가 -->
+		<section class="list-filter">
+			<div class="select"><!-- 활성화 : open 클래스 추가 -->
+				<button type="button">최신순</button>
+				<ul>
+					<li class="active"><a href="javascript:;">최신순</a></li><!-- 현재 선택값 : active 클래스 추가 -->
+					<li><a href="javascript:;">인기순</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- //list-filter -->
     </section>
 
     <!-- 카테고리 -->

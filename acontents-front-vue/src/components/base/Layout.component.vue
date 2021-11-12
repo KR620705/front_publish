@@ -17,7 +17,12 @@
       </transition>
     </div>
 
-    <Footer />
+    <div v-if="$route.meta.isFooter">
+    </div>
+
+    <div v-else>
+      <Footer />
+    </div>
   </div>
 </template>
 

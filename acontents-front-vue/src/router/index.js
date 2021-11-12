@@ -101,6 +101,19 @@ const routes = [
     name: 'Detail',
     component: () => import('../views/details/detail'),
   },
+  {// 상세 > 카드뉴스
+    path: '/detail_cardnews',
+    name: 'Detail_cardnews',
+    component: () => import('../views/details/detail_cardnews'),
+  },
+  {// 상세 > 카드뉴스 전체보기
+    path: '/detail_cardnewsfull',
+    name: 'detail_cardnewsfull',
+    component: () => import('../views/details/detail_cardnewsfull'),
+    meta: {
+      isFooter: true,
+    },
+  },
   {// 메뉴 > 맞춤추천 목록
     path: '/recomlist',
     name: 'Recomlist',

@@ -49,24 +49,24 @@
           <col width="9%" />
           <col width="14%" />
           <col width="10%" />
+          <col width="15%" />
           <col width="5%" />
           <col width="5%" />
           <col width="9%" />
           <col width="9%" />
           <col width="*" />
           <col width="6%" />
-          <col width="15%" />
         </colgroup>
         <thead>
           <tr>
             <th scope="col" rowspan="2">1Depth</th>
             <th scope="col" rowspan="2">2Depth</th>
             <th scope="col" rowspan="2">경로</th>
+            <th scope="col" rowspan="2">파일명&amp;Link</th>
             <th scope="col" colspan="3">완료여부</th>
             <th scope="col" rowspan="2">수정일</th>
             <th scope="col" rowspan="2">비고</th>
             <th scope="col" rowspan="2">작업자</th>
-            <th scope="col" rowspan="2">파일명&amp;Link</th>
           </tr>
           <tr>
             <th scope="col">MO</th>
@@ -79,46 +79,51 @@
             <td class="alL">공통</td>
             <td class="alL">gnb</td>
             <td class="alL">/components/base</td>
+            <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
             <td>완료</td>
             <td>완료</td>
             <td></td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
-            <td class="alL">sidemenu.component파일에서 '.sidemenu'에 aside-open 클래스추가하여 페이지 확인</td>
           </tr>
           <tr>
             <td class="alL" rowspan="5">로그인</td>
             <td class="alL">로그인</td>
             <td class="alL" rowspan="5">/views/auth</td>
+            <td class="alL">
+              <router-link to="login">
+                login
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.15</td>
             <td>20210615</td>
             <td class="alL red">-모바일(안내 폰트 색상 수정)</td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="login">
-                login
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">약관동의</td>
+            <td class="alL">
+              <router-link to="/terms">
+                terms
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.15</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/terms">
-                terms
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">주/부사업자 선택</td>
+            <td class="alL">
+              <router-link to="/select_user">
+                select_user
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.15</td>
@@ -128,58 +133,58 @@
               - 썸네일 이미지 크기 수정
               </td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/select_user">
-                select_user
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">선호 카테고리 선택</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.15</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>이재이</td>
             <td class="alL">
               <router-link to="/select_category">
                 select_category
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">회원탈퇴</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.15</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
+          </tr>
+          <tr>
+            <td class="alL">회원탈퇴</td>
             <td class="alL">
               <router-link to="/membership_withdrawal">
                 membership_withdrawal
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.15</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>이재이</td>
           </tr>
           <tr>
             <td class="alL" rowspan="2">메인</td>
             <td class="alL">메인</td>
             <td class="alL" rowspan="2">/views/main</td>
+            <td class="alL">
+              <router-link to="/main">
+                main
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
             <td>20210615</td>
             <td class="alL red">- 전체보기 버튼 삭제</td>
             <td>조우빈</td>
-            <td class="alL">
-              <router-link to="/main">
-                main
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">비회원/비로그인 사전 렌딩</td>
+            <td class="alL">
+              <router-link to="/landing">
+                landing
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.15</td>
@@ -189,220 +194,250 @@
               - 모바일 &#38; PC배경 이미지 수정
             </td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/landing">
-                landing
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL" rowspan="3">리스트</td>
             <td class="alL">비주얼 빅배너 목록</td>
             <td class="alL" rowspan="3">/views/list</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>조우빈</td>
             <td class="alL">
               <router-link to="/bigbanner_list">
                 bigbanner_list
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">카테고리 콘텐츠 목록</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">카테고리 콘텐츠 목록</td>
             <td class="alL">
               <router-link to="/category_list">
                 category_list
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">큐레이션 콘텐츠 목록</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">큐레이션 콘텐츠 목록</td>
             <td class="alL">
               <router-link to="/curation_list">
                 curation_list
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">상세</td>
-            <td class="alL">상세</td>
-            <td class="alL">/views/details</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
-            <td>20210615</td>
-            <td class="alL red">- 버튼 순서 변경</td>
+            <td></td>
+            <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL" rowspan="3">상세</td>
+            <td class="alL">동영상 상세</td>
+            <td class="alL" rowspan="3">/views/details</td>
             <td class="alL">
               <router-link to="/detail">
                 detail
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.10</td>
+            <td>20210615</td>
+            <td class="alL red">- 버튼 순서 변경<br>
+              - 2021-11-02 좋아요 개수 추가, 관련상품 sop 케이스 추가, caption 영역 수정
+            </td>
+            <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">카드뉴스 상세</td>
+            <td class="alL">
+              <router-link to="/detail_cardnews">
+                detail_cardnews
+              </router-link>
+            </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>2021-11-02</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">카드뉴스 전체보기</td>
+            <td class="alL">
+              <router-link to="/detail_cardnewsfull">
+                detail_cardnewsfull
+              </router-link>
+            </td>
+            <td>완료</td>
+            <td>PC 해당없음</td>
+            <td>2021-11-02</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>조우빈</td>
           </tr>
           <tr>
             <td class="alL" rowspan="7">메뉴</td>
             <td class="alL">맞춤추천 목록</td>
             <td class="alL" rowspan="7">/views/menu</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.14</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>조우빈</td>
             <td class="alL">
               <router-link to="/recomlist">
                 recomlist
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">맞춤추천 목록 nodata</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">맞춤추천 목록 nodata</td>
             <td class="alL">
               <router-link to="/recomlist_nodata">
                 recomlist_nodata
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">즐겨찾기</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">즐겨찾기</td>
             <td class="alL">
               <router-link to="/mylist">
                 mylist
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">즐겨찾기 편집</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">즐겨찾기 편집</td>
             <td class="alL">
               <router-link to="/mylist_edit">
                 mylist_edit
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">즐겨찾기 nodata</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">즐겨찾기 nodata</td>
             <td class="alL">
               <router-link to="/mylist_nodata">
                 mylist_nodata
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">좋아요 nodata</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">좋아요 nodata</td>
             <td class="alL">
               <router-link to="/like_nodata">
                 like_nodata
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">FAQ</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">FAQ</td>
             <td class="alL">
               <router-link to="/faq">
                 faq
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.14</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>조우빈</td>
           </tr>
           <tr>
             <td class="alL" rowspan="3">마이페이지</td>
             <td class="alL">마이페이지 메인</td>
             <td class="alL" rowspan="3">/views/mypage</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.14</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>이재이</td>
             <td class="alL">
               <router-link to="/mypage">
                 mypage
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">주/부 사업자 변경</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
+          </tr>
+          <tr>
+            <td class="alL">주/부 사업자 변경</td>
             <td class="alL">
               <router-link to="/change_user">
                 change_user
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">선호 카테고리 변경</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
+          </tr>
+          <tr>
+            <td class="alL">선호 카테고리 변경</td>
             <td class="alL">
               <router-link to="/change_category">
                 change_category
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.14</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>이재이</td>
           </tr>
           <tr>
             <td class="alL" rowspan="3">검색</td>
             <td class="alL">검색</td>
             <td class="alL" rowspan="3">/views/search</td>
+            <td class="alL">
+              <router-link to="/search">
+                search
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
@@ -412,74 +447,74 @@
               - 모바일 : 상단 검색바 수정, 검색바 placeholder 색상 수정, 태그 하단 패딩 수정
             </td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/search">
-                search
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">검색결과</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>이재이</td>
             <td class="alL">
               <router-link to="/search_result">
                 search_result
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.10</td>
+            <td></td>
+            <td class="alL red">- 2021-11-02 sort 추가</td>
+            <td>이재이</td>
           </tr>
           <tr>
             <td class="alL">검색결과 nodata</td>
+            <td class="alL">
+              <router-link to="/search_result_nodata">
+                search_result_nodata
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/search_result_nodata">
-                search_result_nodata
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL" rowspan="2">팝업</td>
             <td class="alL">이미지 팝업</td>
             <td class="alL" rowspan="2">/views/popup</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.10</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>조우빈</td>
             <td class="alL">
               <router-link to="/modal_image">
                 modal_image
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">공유하기 팝업</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.10</td>
             <td></td>
             <td class="alL red"></td>
             <td>조우빈</td>
+          </tr>
+          <tr>
+            <td class="alL">공유하기 팝업</td>
             <td class="alL">
               <router-link to="/modal_share">
                 modal_share
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.10</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>조우빈</td>
           </tr>
           <tr>
             <td class="alL" rowspan="5">기타</td>
             <td class="alL">이용약관</td>
             <td class="alL" rowspan="5">/views/etc</td>
+            <td class="alL">
+              <router-link to="/etc_terms">
+                etc_terms
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
@@ -488,56 +523,56 @@
               - 시안과 동일하게 하기 위해서는 개발 파트와의 협업 필요
             </td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/etc_terms">
-                etc_terms
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">개인정보처리방침</td>
-            <td>완료</td>
-            <td>완료</td>
-            <td>06.14</td>
-            <td></td>
-            <td class="alL red"></td>
-            <td>이재이</td>
             <td class="alL">
               <router-link to="/policy">
                 policy
               </router-link>
             </td>
-          </tr>
-          <tr>
-            <td class="alL">로딩페이지</td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td></td>
             <td class="alL red"></td>
             <td>이재이</td>
+          </tr>
+          <tr>
+            <td class="alL">로딩페이지</td>
             <td class="alL">
               <router-link to="/loading">
                 loading
               </router-link>
             </td>
+            <td>완료</td>
+            <td>완료</td>
+            <td>06.14</td>
+            <td></td>
+            <td class="alL red"></td>
+            <td>이재이</td>
           </tr>
           <tr>
             <td class="alL">오류페이지</td>
+            <td class="alL">
+              <router-link to="/error">
+                error
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
             <td>20210615</td>
             <td class="alL red">- 모바일 &#38; PC 아이콘과 텍스트 간격 수정</td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/error">
-                error
-              </router-link>
-            </td>
           </tr>
           <tr>
             <td class="alL">콘텐츠 외부 접근 페이지</td>
+            <td class="alL">
+              <router-link to="/external_access">
+                external_access
+              </router-link>
+            </td>
             <td>완료</td>
             <td>완료</td>
             <td>06.14</td>
@@ -547,11 +582,6 @@
               - 좋아요, 공유하기 버튼 삭제
             </td>
             <td>이재이</td>
-            <td class="alL">
-              <router-link to="/external_access">
-                external_access
-              </router-link>
-            </td>
           </tr>
           <tr>
             <th scope="row" class="num">※</th>

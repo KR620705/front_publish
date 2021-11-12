@@ -185,7 +185,6 @@ $rem4: 4rem;  // height:4rem
         position:relative;
 
         &-text{
-           text-decoration:underline;
             position:absolute;
             top:35%;
             width:100%;
@@ -210,12 +209,27 @@ $rem4: 4rem;  // height:4rem
     }
 
     &-thumnail{
-
-        padding:1.9rem 0 1.9rem 0;
         position:relative;
+        padding-top:2.5rem;
 
+        .search-result-text {
+            position: relative;
+            width: calc(100% - 100px);
+        }
+        .list-filter {
+            position: absolute;
+            top: 1.9rem;
+            right: 0;
+            padding: 0;
+    
+            .select {
+                button {
+                    position: relative;
+                    text-indent: 0;
+                }
+            }
+        }
     }
-
  
 }
 
@@ -223,7 +237,6 @@ $rem4: 4rem;  // height:4rem
 
     text-align:left ;
     line-height:2rem;
-    text-decoration:underline;
     margin-bottom:20px;
     font: {
         size:1.5rem;
@@ -376,7 +389,7 @@ $rem4: 4rem;  // height:4rem
 
         .result-no{
             border-bottom:1px solid #363636;
-            padding-bottom:30px;
+            padding-bottom:20px;
             margin-bottom:30px;
         }
         .wrap-input{

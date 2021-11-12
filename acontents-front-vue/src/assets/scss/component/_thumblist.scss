@@ -50,7 +50,7 @@
         height: 50px;
         padding: 8px 5px;
         background: rgba(34,34,34,.5);
-        color: #fff;
+        color: $white-color;
         font-size: 13px;
 
         span {
@@ -86,7 +86,7 @@
             }
             &.column {
                 background-image: url("../images/common/badge_column.png");
-                background-size: 1rem;
+                background-size: 1.8rem;
             }
             &.cart {
                 width: 3.5rem;
@@ -97,6 +97,21 @@
                 border-radius: 5px;
             }
         }
+    }
+    .sop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 2rem;
+        line-height: 2rem;
+        background: #8F66D8;
+        color: $white-color;
+        font-size: 1.2rem;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        text-align: center;
+        letter-spacing: 1px;
     }
 }
 //thumb-list.type-small
@@ -548,7 +563,7 @@
                     background-size: 16px;
                 }
                 &.column {
-                    background-size: 11px;
+                    background-size: 18px;
                 }
                 &.cart {
                     width: 35px;
@@ -556,6 +571,12 @@
                     background-size: 35px;
                 }
             }
+        }
+        .sop {
+            width: 42px;
+            height: 21px;
+            font-size: 13px;
+            letter-spacing: 0;
         }
     }
     //thumb-list.type-small
