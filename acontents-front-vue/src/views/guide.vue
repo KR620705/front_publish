@@ -1,7 +1,7 @@
 <template>
   <div class="guideindex">
 
-    <h1 class="guideh1">A Content Front GUIDE</h1>
+    <h1 class="guideh1">A Content Front GUIDE </h1>
 
     <h2 class="guideh2">※ Page</h2>
 
